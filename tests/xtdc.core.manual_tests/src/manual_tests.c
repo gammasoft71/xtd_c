@@ -21,15 +21,15 @@ int main(int argc, char* argv[]) {
   xtd_object_to_string(XTD_OBJECT_PTR(str), string, 5);
   printf("to_string : %s\n", string);
 
-  xtd_object_destroy(xtd_to_xtd_object_ptr(str));
+  xtd_object_destroy(xtd_ptr_to_xtd_object_ptr(str));
   xtd_ustring_destroy(wstr);
   xtd_ustring_destroy(str16);
   xtd_ustring_destroy(str32);
    */
   xtd_object* my_object = xtd_object_create(); //xtd_create_version(1, 2, 3);
-  size_t size = xtd_object_to_string(xtd_to_xtd_object_ptr(my_object), NULL, 0);
+  size_t size = xtd_object_to_string(xtd_ptr_to_xtd_object_ptr(my_object), NULL, 0);
   char* string = (char*)malloc(size);
-  xtd_object_to_string(xtd_to_xtd_object_ptr(my_object), string, size);
+  xtd_object_to_string(xtd_ptr_to_xtd_object_ptr(my_object), string, size);
   printf("%s\n", string);
   free(string);
   xtd_object_destroy(my_object);

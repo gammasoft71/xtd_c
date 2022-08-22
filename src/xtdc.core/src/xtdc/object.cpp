@@ -8,7 +8,7 @@ extern "C" {
 
   using namespace xtd;
   
-  xtd_object* xtd_to_xtd_object_ptr(void* ptr) {
+  xtd_object* xtd_ptr_to_xtd_object_ptr(void* ptr) {
     return (xtd_object*)ptr;
   }
 
