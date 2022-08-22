@@ -103,9 +103,9 @@ The classic first application 'Hello World'.
 #include <xtdc/xtdc>
 
 int main() {
-  console_set_background_color(console_color_blue);
-  console_set_foreground_color(console_color_white);
-  console_write_line("Hello, World!");
+  xtd_console_set_background_color(xtd_console_color_blue);
+  xtd_console_set_foreground_color(xtd_console_color_white);
+  xtd_console_write_line("Hello, World!");
 }
 ```
 
