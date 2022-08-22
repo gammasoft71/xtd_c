@@ -99,7 +99,7 @@ The classic first application 'Hello World'.
 
 #### hello_world_console.c
 
-```c++
+```c
 #include <xtdc/xtdc>
 
 int main() {
@@ -136,7 +136,7 @@ xtdc run
 
 #### hello_world_forms.c
 
-```c++
+```c
 #include <xtdc/xtdc>
 
 void on_button1_click(const xtd_forms_control* sender, const xtd_forms_event_args* e) {
