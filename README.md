@@ -139,7 +139,7 @@ xtdc run
 ```c
 #include <xtdc/xtdc>
 
-void on_button1_click(const xtd_forms_control* sender, const xtd_forms_event_args* e) {
+void on_button1_click(xtd_forms_control* sender, const xtd_forms_event_args* e) {
   xtd_forms_message_box_show_with_title("Hello, World!");
 }
 
