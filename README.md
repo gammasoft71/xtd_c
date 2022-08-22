@@ -145,13 +145,13 @@ void on_button1_click(const xtd_forms_control* sender, const xtd_forms_event_arg
 
 int main() {
   xtd_forms_form* form1 = xtd_forms_form_create();
-  xtd_forms_control_text(XTD_FORMS_CONTROL_PTR(form1), "Hello world (message_box)");
+  xtd_forms_control_set_text(XTD_FORMS_CONTROL_PTR(form1), "Hello world (message_box)");
 
   xtd_forms_button* button1 = xtd_forms_button_create();
-  xtd_forms_control_location(XTD_FORMS_CONTROL_PTR(button1), 10, 10);
-  xtd_forms_control_parent(XTD_FORMS_CONTROL_PTR(button1), XTD_FORMS_CONTROL_PTR(form1));
-  xtd_forms_control_text(XTD_FORMS_CONTROL_PTR(button1), "&Click me");
-  xtd_forms_control_click_add_event_handler(XTD_FORMS_CONTROL_PTR(button1), &on_button1_click);
+  xtd_forms_control_set_location(XTD_FORMS_CONTROL_PTR(button1), 10, 10);
+  xtd_forms_control_set_parent(XTD_FORMS_CONTROL_PTR(button1), XTD_FORMS_CONTROL_PTR(form1));
+  xtd_forms_control_set_text(XTD_FORMS_CONTROL_PTR(button1), "&Click me");
+  xtd_forms_control_set_click(XTD_FORMS_CONTROL_PTR(button1), &on_button1_click);
   xtd_forms_application_run(form);
   
   xtd_forms_button_destroy(button1);
