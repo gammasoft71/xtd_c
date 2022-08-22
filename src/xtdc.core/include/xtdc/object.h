@@ -21,7 +21,7 @@ typedef struct xtd_object xtd_object;
  xtdc.core
  @ingroup xtdc_core system object
  */
-#define XTD_OBJECT_PTR(ptr) ((xtd_object*)ptr)
+xtd_object* xtd_to_xtd_object_ptr(void* ptr);
 
  /**
  @brief Create a new instance of the ultimate base object.

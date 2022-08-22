@@ -145,13 +145,13 @@ void on_button1_click(xtd_forms_control* sender, const xtd_forms_event_args* e) 
 
 int main() {
   xtd_forms_form* form1 = xtd_forms_form_create();
-  xtd_forms_control_set_text(XTD_FORMS_CONTROL_PTR(form1), "Hello world (message_box)");
+  xtd_forms_control_set_text(xtd_to_xtd_forms_control_ptr(form1), "Hello world (message_box)");
 
   xtd_forms_button* button1 = xtd_forms_button_create();
-  xtd_forms_control_set_location(XTD_FORMS_CONTROL_PTR(button1), 10, 10);
-  xtd_forms_control_set_parent(XTD_FORMS_CONTROL_PTR(button1), XTD_FORMS_CONTROL_PTR(form1));
-  xtd_forms_control_set_text(XTD_FORMS_CONTROL_PTR(button1), "&Click me");
-  xtd_forms_control_add_click(XTD_FORMS_CONTROL_PTR(button1), &on_button1_click);
+  xtd_forms_control_set_location(xtd_to_xtd_forms_control_ptr(button1), 10, 10);
+  xtd_forms_control_set_parent(xtd_to_xtd_forms_control_ptr(button1), xtd_to_xtd_forms_control_ptr(form1));
+  xtd_forms_control_set_text(xtd_to_xtd_forms_control_ptr(button1), "&Click me");
+  xtd_forms_control_add_click(xtd_to_xtd_forms_control_ptr(button1), &on_button1_click);
   
   xtd_forms_application_run(form);
   

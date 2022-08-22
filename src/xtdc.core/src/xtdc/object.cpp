@@ -8,6 +8,10 @@ extern "C" {
 
   using namespace xtd;
   
+  xtd_object* xtd_to_xtd_object_ptr(void* ptr) {
+    return (xtd_object*)ptr;
+  }
+
   xtd_object* xtd_object_create() {
     return reinterpret_cast<xtd_object*>(new object());
   }

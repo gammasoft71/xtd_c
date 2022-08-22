@@ -4,6 +4,10 @@
 extern "C" {
   #include "../include/xtdc/ustring.h"
   
+  xtd_ustring* xtd_to_xtd_ustring_ptr(void* ptr) {
+    return (xtd_ustring*)ptr;
+  }
+  
   xtd_ustring* xtd_ustring_create() {
     xtd::object* result = new xtd::ustring();
     return reinterpret_cast<xtd_ustring*>(result);
@@ -55,7 +59,7 @@ extern "C" {
   }
   
   void xtd_ustring_destroy(xtd_ustring* value) {
-    xtd_object_destroy(XTD_OBJECT_PTR(value));
+    xtd_object_destroy(xtd_to_xtd_object_ptr(value));
   }
 
   const char* xtd_ustring_get_char_ptr(const xtd_ustring* value) {
