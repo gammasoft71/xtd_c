@@ -12,7 +12,7 @@ extern "C" {
     return (xtd_object*)ptr;
   }
 
-  xtd_object* xtd_object_create() {
+  xtd_object* xtd_object_create(void) {
     return reinterpret_cast<xtd_object*>(new object());
   }
     

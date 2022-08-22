@@ -39,7 +39,7 @@ xtd_object* xtd_ptr_to_xtd_object_ptr(void* ptr);
  }
  @endcode
  */
-xtd_object* xtd_object_create();
+xtd_object* xtd_object_create(void);
 
  /**
  @brief Destroy the instance of the specfied object

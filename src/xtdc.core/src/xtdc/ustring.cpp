@@ -8,7 +8,7 @@ extern "C" {
     return (xtd_ustring*)ptr;
   }
   
-  xtd_ustring* xtd_ustring_create() {
+  xtd_ustring* xtd_ustring_create(void) {
     xtd::object* result = new xtd::ustring();
     return reinterpret_cast<xtd_ustring*>(result);
   }
