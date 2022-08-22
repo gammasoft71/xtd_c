@@ -100,7 +100,7 @@ The classic first application 'Hello World'.
 #### hello_world_console.c
 
 ```c
-#include <xtdc/xtdc>
+#include <xtdc/xtdc.h>
 
 int main() {
   xtd_console_set_background_color(xtd_console_color_blue);
@@ -137,7 +137,7 @@ xtdc run
 #### hello_world_forms.c
 
 ```c
-#include <xtdc/xtdc>
+#include <xtdc/xtdc.h>
 
 void on_button1_click(xtd_control* sender, const xtd_event_args* e) {
   xtd_message_box_show_with_title("Hello, World!");
