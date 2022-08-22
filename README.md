@@ -97,7 +97,7 @@ The classic first application 'Hello World'.
 
 ### Console (CLI)
 
-#### hello_world_console.cpp
+#### hello_world_console.c
 
 ```c++
 #include <xtdc/xtdc>
@@ -134,7 +134,7 @@ xtdc run
 
 ### Forms (GUI like WinForms)
 
-#### hello_world_forms.cpp
+#### hello_world_forms.c
 
 ```c++
 #include <xtdc/xtdc>
