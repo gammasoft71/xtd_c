@@ -140,7 +140,7 @@ xtdc run
 #include <xtdc/xtdc.h>
 
 void on_button1_click(xtd_control* sender, const xtd_event_args* e) {
-  xtd_message_box_show_with_title("Hello, World!");
+  xtd_message_box_show("Hello, World!", "", );
 }
 
 int main() {
