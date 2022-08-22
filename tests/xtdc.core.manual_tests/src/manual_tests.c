@@ -3,6 +3,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+struct xtd_point {
+  int32_t x;
+  int32_t y;
+};
+typedef struct xtd_point xtd_point;
+
+struct xtd_size {
+  int32_t width;
+  int32_t height;
+};
+typedef struct xtd_size xtd_size;
+
+struct xtd_graphics;
+typedef struct xtd_graphics xtd_graphics;
+
+void xtd_graphics_draw_line(xtd_graphics* graphics, xtd_point point) {
+  printf("xtd_graphics_draw_line : graphics %p, point [%d, %d]\n", (void*)graphics, point.x, point.y);
+}
+
 /* The main entry point for the application. */
 int main(int argc, char* argv[]) {
   /*printf("Hello, World!\n");*/
@@ -26,6 +45,8 @@ int main(int argc, char* argv[]) {
   xtd_ustring_destroy(str16);
   xtd_ustring_destroy(str32);
    */
+  //xtd_point point = {10, 20};
+  xtd_graphics_draw_line(NULL, (xtd_point){10, 20});
   xtd_object* my_object = xtd_object_create(); //xtd_create_version(1, 2, 3);
   size_t size = xtd_object_to_string(xtd_ptr_to_xtd_object_ptr(my_object), NULL, 0);
   char* string = (char*)malloc(size);

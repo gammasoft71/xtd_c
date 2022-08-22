@@ -12,5 +12,6 @@ add_sources(
 add_sources(
   src/xtdc/object.cpp
   src/xtdc/ustring.cpp
+  src/xtdc/ustring_helper.h
 )
 target_type(STATIC_LIBRARY)

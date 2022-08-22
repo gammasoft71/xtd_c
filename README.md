@@ -148,7 +148,7 @@ int main() {
   xtd_control_set_text(form1, "Hello world (message_box)");
 
   xtd_control* button1 = xtd_button_create();
-  xtd_control_set_location(button1, 10, 10);
+  xtd_control_set_location(button1, (xtd_point){10, 10});
   xtd_control_set_parent(button1, form1);
   xtd_control_set_text(button1, "&Click me");
   xtd_control_add_click(button1, &on_button1_click);

@@ -3,7 +3,7 @@
 inline size_t to_c_string(const xtd::ustring& value, char* string, size_t size) {
   if (string == nullptr) return value.size() + 1;
     
-  if (value.size() < size) size = value.size();
+  if (value.size() + 1 < size) size = value.size() + 1;
   strncpy(string, value.c_str(), size);
   string[size - 1] = 0;
   return size;
