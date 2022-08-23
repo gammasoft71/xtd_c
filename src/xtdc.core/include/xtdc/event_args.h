@@ -6,6 +6,12 @@
 #pragma once
 #include "types.h"
 
+/**
+ @brief Represent an instance of the event args object.
+ @par Library
+ xtdc.core
+ @ingroup xtdc_core system events
+ */
 struct xtd_event_args {
   xtd_handle user_data;
 };
