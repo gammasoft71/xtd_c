@@ -1,0 +1,197 @@
+/// @file
+/// @brief Contains main page.
+
+/// @mainpage xtdc - Reference Guide Documentation
+///
+/// <b>C11 framework to create console, forms (GUI like WinForms) and unit test applications on Windows, macOS, Linux, iOS and android.</b>
+///
+/// @image html logo.png
+///
+/// @section FeaturesSection Features
+///   * Free and open-source (<a href="https://gammasoft71.wixsite.com/xtdpro/license">MIT License</a>);
+///   * a collection of native C++ classes libraries, to complete std;
+///   * API close to the .net API with a modern C++ approach and full integration with the std standard;
+///   * xtd is designed to manage GUI controls and dialogs in pure <a href="https://github.com/gammasoft71/xtd/blob/master/docs/control_appearance.md">native mode</a> or with <a href="https://github.com/gammasoft71/xtd/blob/master/docs/guide_style_sheets_overview.md">CSS styles</a>.
+///   * written in efficient, modern C++17 / C++20 with <a href="https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization">RAII</a> programming idiom;
+///   * and <a href="https://gammasoft71.wixsite.com/xtdpro/portability">highly</a> portable and available on <a href="https://gammasoft71.wixsite.com/xtdpro/portability">many different platforms</a> (Windows, macOS, Linux, iOS and android);
+///
+/// @section xtdLibrariesArchitectureSection xtd libraries architecture
+///
+/// @image html block_diagram_onion.png
+///
+/// xtdc is composed of several libraries.
+///
+/// @subsection coreSubSection xtdc.core
+/// @image html xtdc.core.png
+/// The <a href="https://codedocs.xyz/gammasoft71/xtdc/group__xtd__core.html">xtd.core</a> library is modern C++17/20 libraries of classes, interfaces, and value types that provide access to system functionality. It is the foundation on which c++ applications, components, and controls are built.
+///
+/// @subsection DrawingSubSection xtdc.drawing
+/// @image html xtdc.drawing.png
+/// The <a href="https://codedocs.xyz/gammasoft71/xtdc/group__xtd__drawing.html">xtd.drawing</a> library contains types that support basic GDI+ graphics functionality. Child namespaces support advanced two-dimensional and vector graphics functionality, advanced imaging functionality, and print-related and typographical services. A child namespace also contains types that extend design-time user-interface logic and drawing.
+///
+/// @subsection FormsSubSection xtdc.forms
+/// @image html xtdc.forms.png
+/// The <a href="https://codedocs.xyz/gammasoft71/xtdc/group__xtd__forms.html">xtd.forms</a> library contains classes for creating Windows-based applications that take full advantage of the rich user interface features available in the Microsoft Windows, Apple macOS and linux base operating system.
+///
+/// @subsection TUinitSubSection xtdc.tunit
+/// @image html xtdc.tunit.png
+/// The <a href="https://codedocs.xyz/gammasoft71/xtdc/group__xtd__tunit.html">xtd.tunit</a> library is a unit-testing framework for modern C++17/20 inspired by <a href="https://docs.microsoft.com/en-us/visualstudio/test/microsoft-visualstudio-testtools-cppunittestframework-api-reference">Microsoft.VisualStudio.TestTools.Cpp</a>.
+///
+/// @section GettingStartedSection Getting Started
+///  * <a href="https://gammasoft71.wixsite.com/xtdcpro/download">Installation</a> provides download, install and uninstall documentation.
+///  * <a href="https://gammasoft71.wixsite.com/xtdcpro/guides">Guide</a> provides xtd guides and tutorials.
+///  * <a href="https://github.com/gammasoft71/xtdc/blob/mmain/examples/README.md">Examples</a> provides some examples.
+///
+/// @section ExamplesSection Examples
+/// The classic first application 'Hello World'.
+///
+/// @subsection ExamplesConsoleSubsection Console
+/// hello_world_console.c:
+/// @code
+/// #include <xtdc/xtdc.h>
+/// 
+/// int main(void) {
+///   xtd_console_set_background_color(xtd_console_color_blue);
+///   xtd_console_set_foreground_color(xtd_console_color_white);
+///   xtd_console_write_line("Hello, World!");
+///   return EXIT_SUCCESS;
+/// }/// @endcode
+///
+/// CMakeLists.txt:
+/// @code
+/// cmake_minimum_required(VERSION 3.3)
+///
+/// project(hello_world_console)
+/// find_package(xtd REQUIRED)
+/// add_sources(hello_world_console.c)
+/// target_type(C_CONSOLE_APPLICATION)
+/// @endcode
+///
+/// @subsubsection ExamplesConsoleBuildAndRunSubsubsection Build and run
+/// Open "Command Prompt" or "Terminal". Navigate to the folder that contains the project and type the following:
+/// @code
+/// xtdc run
+/// @endcode
+///
+/// @subsubsection ExamplesConsoleOutputSubsubsection Output
+/// @code
+/// Hello, World!
+/// @endcode
+///
+/// @subsection ExamplesFormsSubsection Forms
+/// hello_world_forms.c:
+/// @code
+/// #include <xtdc/xtdc.h>
+/// 
+/// void on_button1_click(xtd_object* sender, xtd_event_args e) {
+///   xtd_message_box_show(NULL, "Hello, World!", "", xtd_message_box_buttons_ok, xtd_message_box_icon_none, xtd_message_box_default_button_1, (xtd_message_box_options)0, xtd_false);
+/// }
+/// 
+/// int main(void) {
+///   xtd_control* form1 = xtd_form_create();
+///   xtd_control_set_text(form1, "Hello world (message_box)");
+///   
+///   xtd_control* button1 = xtd_button_create();
+///   xtd_control_set_location(button1, (xtd_point){10, 10});
+///   xtd_control_set_parent(button1, form1);
+///   xtd_control_set_text(button1, "&Click me");
+///   xtd_control_set_click_event(button1, &on_button1_click, NULL);
+/// 
+///   xtd_application_run(xtd_ptr_to_xtd_form_ptr(form1));
+///   
+///   xtd_control_destroy(button1);
+///   xtd_control_destroy(form1);
+///   return EXIT_SUCCESS;
+/// }
+/// @endcode
+///
+/// CMakeLists.txt:
+/// @code
+/// cmake_minimum_required(VERSION 3.3)
+///
+/// project(hello_world_forms)
+/// find_package(xtd REQUIRED)
+/// add_sources(hello_world_forms.c)
+/// target_type(C_GUI_APPLICATION)
+/// @endcode
+///
+/// @subsubsection ExamplesFormsBuildAndRunSubsubsection Build and run
+/// Open "Command Prompt" or "Terminal". Navigate to the folder that contains the project and type the following:
+/// @code
+/// xtdc run
+/// @endcode
+///
+/// @subsubsection ExamplesFormsOutputSubsubsection Output
+///
+/// Windows:
+///  @image html hello_world_message_box_w.png
+/// <br>
+///  @image html hello_world_message_box_wd.png
+///
+/// macOS:
+///  @image html hello_world_message_box_m.png
+/// <br>
+///  @image html hello_world_message_box_md.png
+///
+/// Linux Gnome:
+///  @image html hello_world_message_box_g.png
+/// <br>
+///  @image html hello_world_message_box_gd.png
+///
+/// @subsection ExamplesUnitTestSubsection Unit tests
+/// hello_world_test.c:
+/// @code
+/// #include <xtdc/xtdc.h>
+/// #include <string.h>
+///
+/// void test_(hello_world_test, create_string_from_literal) {
+///   const char* s = "Hello, World!";
+///   xtd_assert_are_equal("Hello, World!", s);
+/// }
+///
+/// void test_(hello_world_test, create_string_from_chars) {
+///   const char* s = {'H', 'e', 'l', 'l', 'o', ',', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
+///   xtd_valid_are_equal(13, s.size());
+///   xtd_string_assert_starts_with("Hello,", s);
+///   xtd_string_assert_ends_with(" World!", s);
+/// }
+///
+/// int main() {
+///   return xtd_console_unit_test(argv, argc).run();
+/// }
+/// @endcode
+///
+/// CMakeLists.txt:
+/// @code
+/// cmake_minimum_required(VERSION 3.3)
+///
+/// project(hello_world_test)
+/// find_package(xtd REQUIRED)
+/// add_sources(hello_world_test.c)
+/// target_type(C_TEST_APPLICATION)
+/// @endcode
+///
+/// @subsubsection ExamplesUnitTestBuildAndRunSubsubsection Build and run
+/// Open "Command Prompt" or "Terminal". Navigate to the folder that contains the project and type the following:
+/// @code
+/// xtdc run
+/// @endcode
+///
+/// @subsubsection ExamplesUnitTestOutputSubsubsection Output
+/// @code
+/// Start 2 tests from 1 test case
+/// Run tests:
+///   SUCCEED hello_world_test.create_string_from_literal (0 ms total)
+///   SUCCEED hello_world_test.create_string_from_chars (0 ms total)
+///
+/// Test results:
+///   SUCCEED 2 tests.
+/// End 2 tests from 1 test case ran. (0 ms total)
+/// @endcode
+///
+/// @subsection SeeAlsoSubsection See also
+///  * <a href="https://gammasoft71.wixsite.com/xtdcpro">website</a>
+///  * <a href="https://github.com/gammasoft71/xtdc/tree/main/docs/home.md">wiki</a>
+///  * <a href="https://github.com/gammasoft71/xtdc">sources</a>
+///  * <a href="https://sourceforge.net/projects/xtdcpro/">project</a>
+///  * <a href="https://codedocs.xyz/gammasoft71/xtdc/">Reference Guide</a>

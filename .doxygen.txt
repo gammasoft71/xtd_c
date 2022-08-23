@@ -1,0 +1,38 @@
+# Doxyfile 1.8.14
+
+#---------------------------------------------------------------------------
+# Remarks
+#---------------------------------------------------------------------------
+
+# This file is use for CMake script RUN_REFERENCE_GUIDE.
+# This file contains meta settings for CMake like @CMAKE_CURRENT_SOURCE_DIR@.
+# CMake will generate the clean ${CMAKE_CURRENT_DIR}/doxygen.txt file with the meta parameters replaced by the corresponding values.
+# If you want to generate doxygen manually, use ${CMAKE_CURRENT_BINARY_DIR}/doxygen.txt or {CMAKE_CURRENT_SOURCE_DIR}/docs/doxygen/doxygen.txt.
+
+#---------------------------------------------------------------------------
+# Common guide configuration options
+#---------------------------------------------------------------------------
+
+@INCLUDE = @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen/doxygen.txt
+
+#---------------------------------------------------------------------------
+# Specific guide configuration options (for root location)
+#---------------------------------------------------------------------------
+
+EXAMPLE_PATH          = @CMAKE_CURRENT_SOURCE_DIR@/examples
+HTML_EXTRA_FILES      = @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen/doxygen-awesome-css/doxygen-awesome-darkmode-toggle.js @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen/favicon.png
+HTML_EXTRA_STYLESHEET = @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen/doxygen-awesome-css/doxygen-awesome.css @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen/custom_images.css
+HTML_FOOTER           = @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen/html_footer.html
+HTML_HEADER           = @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen/html_header.html
+IMAGE_PATH            = @CMAKE_CURRENT_SOURCE_DIR@/docs/pictures
+INPUT                 = @CMAKE_CURRENT_SOURCE_DIR@/src/xtdc/include/doxygen \
+                        @CMAKE_CURRENT_SOURCE_DIR@/src/xtdc/include/xtd \
+                        @CMAKE_CURRENT_SOURCE_DIR@/src/xtdc.core/include \
+                        @CMAKE_CURRENT_SOURCE_DIR@/src/xtdc.drawing/include \
+                        @CMAKE_CURRENT_SOURCE_DIR@/src/xtdc.forms/include \
+                        @CMAKE_CURRENT_SOURCE_DIR@/src/xtdc.tunit/include
+LAYOUT_FILE           = @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen/xtd_doxygen_layout.xml
+OUTPUT_DIRECTORY      = 
+PROJECT_LOGO          = @CMAKE_CURRENT_SOURCE_DIR@/docs/pictures/xtdc_doxygen.png
+STRIP_FROM_PATH       = @CMAKE_CURRENT_SOURCE_DIR@/src
+WARN_LOGFILE          = @CMAKE_CURRENT_BINARY_DIR@/doxygen_warnings.txt
