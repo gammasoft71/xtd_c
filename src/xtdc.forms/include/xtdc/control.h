@@ -9,7 +9,11 @@
 #include <xtdc/point.h>
 #include <xtdc/size.h>
 
-struct xtd_control;
+struct xtd_control {
+  /// @brief Internal handle.
+  /// @warning Internal use only
+  xtd_handle internal_handle;
+};
 typedef struct xtd_control xtd_control;
 
 xtd_control* xtd_ptr_to_xtd_control_ptr(void* ptr);

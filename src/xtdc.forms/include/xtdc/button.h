@@ -5,7 +5,12 @@
  */
 #pragma once
 #include "control.h"
-struct xtd_button;
+
+struct xtd_button {
+  /// @brief Internal handle.
+  /// @warning Internal use only
+  xtd_handle internal_handle;
+};
 typedef struct xtd_button xtd_button;
 
 xtd_button* xtd_ptr_to_xtd_button_ptr(void* ptr);

@@ -12,7 +12,11 @@
  xtdc.core
  @ingroup xtdc_core system object
  */
-struct xtd_object;
+struct xtd_object {
+  /// @brief Internal handle.
+  /// @warning Internal use only
+  xtd_handle internal_handle;
+};
 typedef struct xtd_object xtd_object;
 
 /**
@@ -23,6 +27,13 @@ typedef struct xtd_object xtd_object;
  */
 xtd_object* xtd_ptr_to_xtd_object_ptr(void* ptr);
 
+/**
+ @name Constructors
+ */
+
+/**
+ @{
+ */
  /**
  @brief Create a new instance of the ultimate base object.
  @return New object created.
@@ -65,7 +76,17 @@ xtd_object* xtd_object_create(void);
  @endcode
  */
 void xtd_object_destroy(xtd_object* value);
+/**
+ @}
+ */
 
+/**
+ @name Methods
+ */
+
+/**
+ @{
+ */
 /**
  @brief Returns a string that represents the specified object.
  @param value The object to retrieve the string.
@@ -102,3 +123,6 @@ void xtd_object_destroy(xtd_object* value);
  @endcode
  */
 size_t xtd_object_to_string(const xtd_object* value, char* string, size_t size);
+/**
+ @}
+ */

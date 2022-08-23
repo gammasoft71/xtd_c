@@ -11,9 +11,13 @@
  @brief Represents text as a sequence of UTF-8 code units.
  @par Library
  xtdc.core
- @ingroup xtdc_core system object
+ @ingroup xtdc_core system ustring
  */
-struct xtd_ustring;
+struct xtd_ustring {
+  /// @brief Internal handle.
+  /// @warning Internal use only
+  xtd_handle internal_handle;
+};
 typedef struct xtd_ustring xtd_ustring;
 
 xtd_ustring* xtd_ptr_to_xtd_ustring_ptr(void* ptr);

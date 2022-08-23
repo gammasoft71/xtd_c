@@ -6,7 +6,11 @@
 #pragma once
 #include "control.h"
 
-struct xtd_form;
+struct xtd_form {
+  /// @brief Internal handle.
+  /// @warning Internal use only
+  xtd_handle internal_handle;
+};
 typedef struct xtd_form xtd_form;
 
 xtd_form* xtd_ptr_to_xtd_form_ptr(void* ptr);
