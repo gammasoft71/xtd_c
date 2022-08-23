@@ -82,7 +82,7 @@ void xtd_object_destroy(xtd_object* value);
  xtdc.core
  @ingroup xtdc_core system object
  */
-xtd_object* xtd_ptr_to_xtd_object_ptr(void* ptr);
+xtd_object* xtd_ptr_to_xtd_object_ptr(xtd_handle ptr);
 
 /**
  @brief Returns a string that represents the specified object.

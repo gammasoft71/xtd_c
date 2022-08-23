@@ -6,7 +6,7 @@ extern "C" {
   using namespace xtd;
   using namespace xtd::forms;
   
-  xtd_form* xtd_ptr_to_xtd_form_ptr(void* ptr) {
+  xtd_form* xtd_ptr_to_xtd_form_ptr(xtd_handle ptr) {
     return (xtd_form*)ptr;
   }
   

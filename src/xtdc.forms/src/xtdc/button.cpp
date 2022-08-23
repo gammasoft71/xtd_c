@@ -6,7 +6,7 @@ extern "C" {
   using namespace xtd;
   using namespace xtd::forms;
 
-  xtd_button* xtd_ptr_to_xtd_button_ptr(void* ptr) {
+  xtd_button* xtd_ptr_to_xtd_button_ptr(xtd_handle ptr) {
     return (xtd_button*)ptr;
   }
 

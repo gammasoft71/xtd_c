@@ -16,7 +16,7 @@ struct xtd_control {
 };
 typedef struct xtd_control xtd_control;
 
-xtd_control* xtd_ptr_to_xtd_control_ptr(void* ptr);
+xtd_control* xtd_ptr_to_xtd_control_ptr(xtd_handle ptr);
 
 xtd_control* xtd_control_create(void);
 void xtd_control_destroy(xtd_control* value);

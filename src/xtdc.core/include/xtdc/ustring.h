@@ -20,7 +20,7 @@ struct xtd_ustring {
 };
 typedef struct xtd_ustring xtd_ustring;
 
-xtd_ustring* xtd_ptr_to_xtd_ustring_ptr(void* ptr);
+xtd_ustring* xtd_ptr_to_xtd_ustring_ptr(xtd_handle ptr);
 
 xtd_ustring* xtd_ustring_create(void);
 xtd_ustring* xtd_ustring_create_from_xtd_ustring(const xtd_ustring* value);

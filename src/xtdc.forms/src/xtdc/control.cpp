@@ -7,7 +7,7 @@ extern "C" {
   using namespace xtd;
   using namespace xtd::forms;
   
-  xtd_control* xtd_ptr_to_xtd_control_ptr(void* ptr) {
+  xtd_control* xtd_ptr_to_xtd_control_ptr(xtd_handle ptr) {
     return (xtd_control*)ptr;
   }
 

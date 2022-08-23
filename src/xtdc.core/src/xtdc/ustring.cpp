@@ -4,7 +4,7 @@
 extern "C" {
   #include "../include/xtdc/ustring.h"
   
-  xtd_ustring* xtd_ptr_to_xtd_ustring_ptr(void* ptr) {
+  xtd_ustring* xtd_ptr_to_xtd_ustring_ptr(xtd_handle ptr) {
     return (xtd_ustring*)ptr;
   }
   

@@ -13,7 +13,7 @@ struct xtd_form {
 };
 typedef struct xtd_form xtd_form;
 
-xtd_form* xtd_ptr_to_xtd_form_ptr(void* ptr);
+xtd_form* xtd_ptr_to_xtd_form_ptr(xtd_handle ptr);
 
 xtd_control* xtd_form_create(void);
 void xtd_form_destroy(xtd_form* value);

@@ -9,7 +9,7 @@ struct xtd_graphics;
 typedef struct xtd_graphics xtd_graphics;
 
 void xtd_graphics_draw_line(xtd_graphics* graphics, xtd_point point) {
-  printf("xtd_graphics_draw_line : graphics %p, point [%d, %d]\n", (void*)graphics, point.x, point.y);
+  printf("xtd_graphics_draw_line : graphics %p, point [%d, %d]\n", (xtd_handle)graphics, point.x, point.y);
 }
  */
 
