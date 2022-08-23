@@ -26,7 +26,7 @@ HTML_FOOTER           = @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen/html_footer.html
 HTML_HEADER           = @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen/html_header.html
 IMAGE_PATH            = @CMAKE_CURRENT_SOURCE_DIR@/docs/pictures
 INPUT                 = @CMAKE_CURRENT_SOURCE_DIR@/src/xtdc/include/doxygen \
-                        @CMAKE_CURRENT_SOURCE_DIR@/src/xtdc/include/xtd \
+                        @CMAKE_CURRENT_SOURCE_DIR@/src/xtdc/include/xtdc \
                         @CMAKE_CURRENT_SOURCE_DIR@/src/xtdc.core/include \
                         @CMAKE_CURRENT_SOURCE_DIR@/src/xtdc.drawing/include \
                         @CMAKE_CURRENT_SOURCE_DIR@/src/xtdc.forms/include \
