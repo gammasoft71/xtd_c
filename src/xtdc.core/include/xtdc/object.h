@@ -10,7 +10,6 @@
  @brief Represent an instance of the ultimate base object.
  @par Library
  xtdc.core
- @ingroup xtdc_core system object
  */
 struct xtd_object;
 typedef struct xtd_object xtd_object;
