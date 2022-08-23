@@ -13,6 +13,8 @@
  @ingroup xtdc_core system events
  */
 struct xtd_event_args {
+  /// @brief The user's data that is associated with the event.
+  /// @remarks User data can be NULL.
   xtd_handle user_data;
 };
 typedef struct xtd_event_args xtd_event_args;

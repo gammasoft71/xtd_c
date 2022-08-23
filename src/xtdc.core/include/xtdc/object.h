@@ -20,18 +20,8 @@ struct xtd_object {
 typedef struct xtd_object xtd_object;
 
 /**
- @brief Convert a pointer of any xtd object to ultimate base object.
- @par Library
- xtdc.core
- @ingroup xtdc_core system object
- */
-xtd_object* xtd_ptr_to_xtd_object_ptr(void* ptr);
+ @name Creation/Destruction
 
-/**
- @name Constructors
- */
-
-/**
  @{
  */
  /**
@@ -82,11 +72,18 @@ void xtd_object_destroy(xtd_object* value);
 
 /**
  @name Methods
+
+ @{
  */
 
 /**
- @{
+ @brief Convert a pointer of any xtd object to ultimate base object.
+ @par Library
+ xtdc.core
+ @ingroup xtdc_core system object
  */
+xtd_object* xtd_ptr_to_xtd_object_ptr(void* ptr);
+
 /**
  @brief Returns a string that represents the specified object.
  @param value The object to retrieve the string.
