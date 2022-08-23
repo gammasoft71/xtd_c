@@ -8,6 +8,10 @@
 
 [![License](https://img.shields.io/github/license/gammasoft71/xtd)](https://github.com/gammasoft71/xtdc/blob/main/docs/license.md) [![Language](https://img.shields.io/badge/language-C11/20-004080.svg)]() [![web](https://img.shields.io/badge/website-xtdc-004080.svg)](https://gammasoft71.wixsite.com/xtdcpro) [![Reference Guide](https://img.shields.io/badge/code-reference%20guide-004080.svg)](https://codedocs.xyz/gammasoft71/xtdc/index.html) [![wiki](https://img.shields.io/badge/wiki-documentation-004080.svg)](https://github.com/gammasoft71/xtdc/blob/main/docs/home.md) [![discord](https://img.shields.io/badge/discord-gammasoft-7289DA.svg)](https://discordapp.com/users/gammasoft#9288)
 
+## Warning
+
+⚠️ XTDC IS UNDER INTENSIVE DEVELOPMENT AND IS NOT READY To BE USED. ⚠️
+
 ## Features
 
 * Free and open-source ([MIT License](https://github.com/gammasoft71/xtdc/blob/main/docs/license.md));
