@@ -55,7 +55,7 @@ extern "C" {
   void xtd_control_set_click_event(xtd_control* control, xtd_event_handler e, xtd_handle user_data) {
     xtd_control_reset_click_event(control);
     reinterpret_cast<class control*>(control)->click += [handler=e, data=user_data](object& sender, const event_args& e) {
-      handler(reinterpret_cast<xtd_object*>(&sender), xtd_event_args {data});
+      handler(reinterpret_cast<xtd_object*>(&sender), xtd_event_args_with_user_data(data));
     };
   }
 

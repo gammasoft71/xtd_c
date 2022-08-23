@@ -18,6 +18,7 @@ add_sources(
 )
 add_sources(
   src/xtdc/console.cpp
+  src/xtdc/event_args.cpp
   src/xtdc/object.cpp
   src/xtdc/ustring.cpp
 )

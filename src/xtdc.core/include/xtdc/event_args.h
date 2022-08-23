@@ -19,3 +19,6 @@ struct xtd_event_args {
 };
 typedef struct xtd_event_args xtd_event_args;
 
+xtd_event_args xtd_event_args_empty();
+
+xtd_event_args xtd_event_args_with_user_data(xtd_handle user_data);
