@@ -7,14 +7,20 @@
 (*) See [portability](https://github.com/gammasoft71/xtd/blob/master/docs/portability.md#the-xtd-libraries-portability-list) for more information.
 
 [![License](https://img.shields.io/github/license/gammasoft71/xtd)](https://gammasoft71.wixsite.com/xtdpro/license) [![Language](https://img.shields.io/badge/language-C++17/20-004080.svg)](https://gammasoft71.wixsite.com/xtdpro/portability) [![web](https://img.shields.io/badge/website-xtd-004080.svg)](https://gammasoft71.wixsite.com/xtdpro) [![Reference Guide](https://img.shields.io/badge/code-reference%20guide-004080.svg)](https://codedocs.xyz/gammasoft71/xtd/index.html) [![wiki](https://img.shields.io/badge/wiki-documentation-004080.svg)](https://github.com/gammasoft71/xtd/blob/master/docs/home.md) [![discord](https://img.shields.io/badge/discord-gammasoft-7289DA.svg)](https://discordapp.com/users/gammasoft#9288) [![Download xtd](https://img.shields.io/sourceforge/dt/xtdpro.svg)](https://sourceforge.net/projects/xtdpro/files/latest/download)
+
 ## Features
 
 * Free and open-source ([MIT License](https://gammasoft71.wixsite.com/xtdpro/license));
-* a collection of native C11 libraries, to complete std;
+* a collection of native C11 libraries, to complete C11 standard;
 * API close to the [xtd](https://gammasoft71.wixsite.com/xtdpro) with a modern C11 approach and full integration with the ANSI/ISO standard;
 * xtdc is designed to manage GUI controls and dialogs in pure [native mode](https://github.com/gammasoft71/xtd/blob/master/docs/control_appearance.md) or with [CSS styles](https://github.com/gammasoft71/xtd/blob/master/docs/guide_style_sheets_overview.md).
 * written in efficient, C11;
 * and [highly portable](https://gammasoft71.wixsite.com/xtdpro/portability) and available on [many different platforms](https://gammasoft71.wixsite.com/xtdpro/portability);
+
+## Dependency
+
+xtdc is a C11 wrapper on [xtd](https://gammasoft71.wixsite.com/xtdpro) framework.
+You need to [install](https://gammasoft71.wixsite.com/xtdpro/download) xtd before using xtdc.
 
 ## xtd libraries architecture
 
