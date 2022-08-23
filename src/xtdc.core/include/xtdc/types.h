@@ -64,6 +64,14 @@ typedef uint16_t char16;
 typedef uint32_t char32;
 
 /**
+ @brief Represents a wide character.
+ @par Library
+ xtdc.core
+ @ingroup xtdc_core types
+ */
+typedef wchar_t wchar;
+
+/**
  @brief Represents a decimal-precision floating-point number.
  @par Library
  xtdc.core

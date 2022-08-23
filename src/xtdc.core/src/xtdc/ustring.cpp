@@ -23,13 +23,18 @@ extern "C" {
     return reinterpret_cast<xtd_ustring*>(result);
   }
   
-  xtd_ustring* xtd_ustring_create_from_wchar_ptr(const wchar_t* value) {
+  xtd_ustring* xtd_ustring_create_from_wchar_ptr(const wchar* value) {
     xtd::object* result = new xtd::ustring(value);
     return reinterpret_cast<xtd_ustring*>(result);
   }
   
+  xtd_ustring* xtd_ustring_create_from_char8_ptr(const char8* value) {
+    xtd::object* result = new xtd::ustring(reinterpret_cast<const char8_t*>(value));
+    return reinterpret_cast<xtd_ustring*>(result);
+  }
+
   xtd_ustring* xtd_ustring_create_from_char16_ptr(const uint16_t* value) {
-      xtd::object* result = new xtd::ustring(reinterpret_cast<const char16_t*>(value));
+    xtd::object* result = new xtd::ustring(reinterpret_cast<const char16_t*>(value));
     return reinterpret_cast<xtd_ustring*>(result);
   }
   
