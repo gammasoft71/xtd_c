@@ -200,7 +200,7 @@ xtdc run
 
 #### Output
 
-![Screenshot](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/examples/hello_world_tunit.png)
+* Comming soon...
 
 ## Gallery
 
