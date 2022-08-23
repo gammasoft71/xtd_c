@@ -5,7 +5,7 @@
     <tab type="mainpage" visible="yes" title="Home"/>
     <tab type="modules" visible="yes" title="Categories" intro="Contains class list by category."/>
     <tab type="pages" visible="yes" title="Documentation" intro="Contains the xtd documentation."/>
-    <tab type="namespacelist" visible="yes" title="Namespaces" intro="Contains a list of all documented namespaces with brief descriptions."/>
+    <tab type="namespacelist" visible="no" title="Namespaces" intro="Contains a list of all documented namespaces with brief descriptions."/>
     <tab type="classes" visible="yes" title="">
       <tab type="classlist" visible="yes" title="" intro="Contains the classes, structs and interfaces with brief descriptions."/>
       <tab type="classindex" visible="$ALPHABETICAL_INDEX" title=""/> 
