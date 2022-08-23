@@ -2,7 +2,7 @@
 
 **C11 framework to create console (CLI), forms (GUI like WinForms) and tunit (unit tests like Microsoft Unit Testing Framework) applications on Windows, macOS, Linux, iOS and android (*).**
 
-[![logo](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/logo.png)](https://gammasoft71.wixsite.com/xtdpro)
+[![logo](https://github.com/gammasoft71/xtdc/blob/master/docs/pictures/logo.png)](https://gammasoft71.wixsite.com/xtdpro)
 
 (*) See [portability](https://github.com/gammasoft71/xtd/blob/master/docs/portability.md#the-xtd-libraries-portability-list) for more information.
 
@@ -24,7 +24,7 @@ You need to [install](https://gammasoft71.wixsite.com/xtdpro/download) xtd befor
 
 ## xtd libraries architecture
 
-[![architecture_logo](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/block_diagram_onion.png)](https://gammasoft71.wixsite.com/xtdpro/hierarchy)
+[architecture_logo](https://github.com/gammasoft71/xtdc/blob/master/docs/pictures/block_diagram_onion.png)]
 
 xtdc is composed of several libraries.
 
