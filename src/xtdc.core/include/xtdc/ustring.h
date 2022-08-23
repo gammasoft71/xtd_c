@@ -7,6 +7,12 @@
 #include "object.h"
 #include <wchar.h>
 
+/**
+ @brief Represents text as a sequence of UTF-8 code units.
+ @par Library
+ xtdc.core
+ @ingroup xtdc_core system object
+ */
 struct xtd_ustring;
 typedef struct xtd_ustring xtd_ustring;
 
