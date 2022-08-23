@@ -79,6 +79,10 @@
 /// @brief Network definitions.
 /// @ingroup system
 
+/// @defgroup object object
+/// @brief object definitions.
+/// @ingroup system
+
 /// @defgroup renderers renderers
 /// @brief Control renderers definitions.
 /// @ingroup gui
