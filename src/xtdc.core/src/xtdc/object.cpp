@@ -1,6 +1,6 @@
 #include <xtd/object.h>
 #include <xtd/ustring.h>
-#include "ustring_helper.h"
+#include "../include/xtdc/privates/__ustring_helper__.h"
 
 extern "C" {
   #include <string.h>

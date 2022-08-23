@@ -6,3 +6,5 @@ find_package(xtd REQUIRED)
 
 # Projects
 add_projects(xtdc.core)
+add_projects(xtdc.drawing)
+add_projects(xtdc.forms)

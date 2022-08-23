@@ -1,10 +1,10 @@
 /**
  @file
- @brief Contains object methods.
+ @brief Contains object definitions.
+ @copyright Copyright (c) 2022 Gammasoft. All rights reserved.
  */
 #pragma once
-#include <stddef.h>
-#include <stdint.h>
+#include "types.h"
 
 /**
  @brief Represent an instance of the ultimate base object.

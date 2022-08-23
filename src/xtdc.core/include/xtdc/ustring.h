@@ -1,5 +1,8 @@
-/** @file **/
-/** @brief Contains ustring methods. **/
+/**
+ @file
+ @brief Contains ustring definitions.
+ @copyright Copyright (c) 2022 Gammasoft. All rights reserved.
+ */
 #pragma once
 #include "object.h"
 #include <wchar.h>
