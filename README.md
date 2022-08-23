@@ -6,16 +6,16 @@
 
 (*) See [portability](https://github.com/gammasoft71/xtd/blob/master/docs/portability.md#the-xtd-libraries-portability-list) for more information.
 
-[![License](https://img.shields.io/github/license/gammasoft71/xtd)](https://gammasoft71.wixsite.com/xtdpro/license) [![Language](https://img.shields.io/badge/language-C++17/20-004080.svg)](https://gammasoft71.wixsite.com/xtdpro/portability) [![web](https://img.shields.io/badge/website-xtd-004080.svg)](https://gammasoft71.wixsite.com/xtdpro) [![Reference Guide](https://img.shields.io/badge/code-reference%20guide-004080.svg)](https://codedocs.xyz/gammasoft71/xtd/index.html) [![wiki](https://img.shields.io/badge/wiki-documentation-004080.svg)](https://github.com/gammasoft71/xtd/blob/master/docs/home.md) [![discord](https://img.shields.io/badge/discord-gammasoft-7289DA.svg)](https://discordapp.com/users/gammasoft#9288) [![Download xtd](https://img.shields.io/sourceforge/dt/xtdpro.svg)](https://sourceforge.net/projects/xtdpro/files/latest/download)
+[![License](https://img.shields.io/github/license/gammasoft71/xtdc)](https://github.com/gammasoft71/xtdc/blob/main/docs/license.md) [![Language](https://img.shields.io/badge/language-C11/20-004080.svg)]() [![web](https://img.shields.io/badge/website-xtdc-004080.svg)](https://gammasoft71.wixsite.com/xtdcpro) [![Reference Guide](https://img.shields.io/badge/code-reference%20guide-004080.svg)](https://codedocs.xyz/gammasoft71/xtdc/index.html) [![wiki](https://img.shields.io/badge/wiki-documentation-004080.svg)](https://github.com/gammasoft71/xtdc/blob/main/docs/home.md) [![discord](https://img.shields.io/badge/discord-gammasoft-7289DA.svg)](https://discordapp.com/users/gammasoft#9288)
 
 ## Features
 
-* Free and open-source ([MIT License](https://gammasoft71.wixsite.com/xtdpro/license));
+* Free and open-source ([MIT License](https://github.com/gammasoft71/xtdc/blob/main/docs/license.md));
 * a collection of native C11 libraries, to complete C11 standard;
 * API close to the [xtd](https://gammasoft71.wixsite.com/xtdpro) with a modern C11 approach and full integration with the ANSI/ISO standard;
-* xtdc is designed to manage GUI controls and dialogs in pure [native mode](https://github.com/gammasoft71/xtd/blob/master/docs/control_appearance.md) or with [CSS styles](https://github.com/gammasoft71/xtd/blob/master/docs/guide_style_sheets_overview.md).
+* xtdc is designed to manage GUI controls and dialogs in pure [native mode]() or with [CSS styles]().
 * written in efficient, C11;
-* and [highly portable](https://gammasoft71.wixsite.com/xtdpro/portability) and available on [many different platforms](https://gammasoft71.wixsite.com/xtdpro/portability);
+* and [highly portable](y) and available on [many different platforms]();
 
 ## Dependency
 
@@ -30,23 +30,23 @@ xtdc is composed of several libraries.
 
 ### xtdc.core
 
-[![core](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/xtd.core.png)](https://codedocs.xyz/gammasoft71/xtd/group__xtd__core.html)
-The [xtdc.core](https://codedocs.xyz/gammasoft71/xtd/group__xtd__core.html) library is C11 libraries of struct, enum, and value types that provide access to system functionality. It is the foundation on which C11 applications, components, and controls are built.
+[![core](https://github.com/gammasoft71/xtdc/blob/main/docs/pictures/xtd.core.png)](https://codedocs.xyz/gammasoft71/xtd/group__xtd__core.html)
+The [xtdc.core]() library is C11 libraries of struct, enum, and value types that provide access to system functionality. It is the foundation on which C11 applications, components, and controls are built.
 
 ### xtdc.drawing
 
-[![drawing](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/xtd.drawing.png)](https://codedocs.xyz/gammasoft71/xtd/group__xtd__drawing.html)
-The [xtdc.drawing](https://codedocs.xyz/gammasoft71/xtd/group__xtd__drawing.html) library contains types that support basic GDI+ graphics functionality. Child namespaces support advanced two-dimensional and vector graphics functionality, advanced imaging functionality, and print-related and typographical services. A child namespace also contains types that extend design-time user-interface logic and drawing.
+[![drawing](https://github.com/gammasoft71/xtdc/blob/main/docs/pictures/xtd.drawing.png)](https://codedocs.xyz/gammasoft71/xtd/group__xtd__drawing.html)
+The [xtdc.drawing]() library contains types that support basic GDI+ graphics functionality. Child namespaces support advanced two-dimensional and vector graphics functionality, advanced imaging functionality, and print-related and typographical services. A child namespace also contains types that extend design-time user-interface logic and drawing.
 
 ### xtdc.forms
 
-[![forms](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/xtd.forms.png)](https://codedocs.xyz/gammasoft71/xtd/group__xtd__forms.html)
-The [xtdc.forms](https://codedocs.xyz/gammasoft71/xtd/group__xtd__forms.html) library contains classes for creating Windows-based applications that take full advantage of the rich user interface features available in the Microsoft Windows, Apple macOS and linux base operating system.
+[![forms](https://github.com/gammasoft71/xtdc/blob/main/docs/pictures/xtd.forms.png)](https://codedocs.xyz/gammasoft71/xtd/group__xtd__forms.html)
+The [xtdc.forms]() library contains classes for creating Windows-based applications that take full advantage of the rich user interface features available in the Microsoft Windows, Apple macOS and linux base operating system.
 
 ### xtdc.tunit
 
-[![tunit](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/xtd.tunit.png)](https://codedocs.xyz/gammasoft71/xtd/group__xtd__tunit.html)
-The [xtdc.tunit](https://codedocs.xyz/gammasoft71/xtd/group__xtd__tunit.html) library is a unit-testing framework for modern C11, inspired by [Microsoft.VisualStudio.TestTools.Cpp](https://docs.microsoft.com/en-us/visualstudio/test/microsoft-visualstudio-testtools-cppunittestframework-api-reference).
+[![tunit](https://github.com/gammasoft71c/xtd/blob/main/docs/pictures/xtd.tunit.png)](https://codedocs.xyz/gammasoft71/xtd/group__xtd__tunit.html)
+The [xtdc.tunit]() library is a unit-testing framework for modern C11, inspired by [Microsoft.VisualStudio.TestTools.Cpp](https://docs.microsoft.com/en-us/visualstudio/test/microsoft-visualstudio-testtools-cppunittestframework-api-reference).
 
 ## Getting Started
 
@@ -112,7 +112,7 @@ xtdc run
 
 #### Output
 
-![Screenshot](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/examples/hello_world_console.png)
+![Screenshot](https://github.com/gammasoft71/xtdc/blob/main/docs/pictures/examples/hello_world_console.png)
 
 ### Forms (GUI like WinForms)
 
@@ -166,21 +166,21 @@ xtdc run
 
 ##### Windows
 
-![Screenshot](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/examples/hello_world_message_box_w.png)
+![Screenshot](https://github.com/gammasoft71/xtdc/blob/main/docs/pictures/examples/hello_world_message_box_w.png)
 
-![Screenshot](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/examples/hello_world_message_box_wd.png)
+![Screenshot](https://github.com/gammasoft71/xtdc/blob/main/docs/pictures/examples/hello_world_message_box_wd.png)
 
 ##### macOS
 
-![Screenshot](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/examples/hello_world_message_box_m.png)
+![Screenshot](https://github.com/gammasoft71/xtdc/blob/main/docs/pictures/examples/hello_world_message_box_m.png)
 
-![Screenshot](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/examples/hello_world_message_box_md.png)
+![Screenshot](https://github.com/gammasoft71/xtdc/blob/main/docs/pictures/examples/hello_world_message_box_md.png)
 
 ##### Linux Gnome
 
-![Screenshot](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/examples/hello_world_message_box_g.png)
+![Screenshot](https://github.com/gammasoft71/xtdc/blob/main/docs/pictures/examples/hello_world_message_box_g.png)
 
-![Screenshot](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/examples/hello_world_message_box_gd.png)
+![Screenshot](https://github.com/gammasoft71/xtdc/blob/main/docs/pictures/examples/hello_world_message_box_gd.png)
 
 ### tunit (Unit tests like Microsoft Unit Testing Framework)
 
@@ -208,51 +208,19 @@ xtdc run
 
 * Comming soon...
 
-## Gallery
+## xtd
 
-[![minesweeper](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/minesweeper.png)](https://github.com/gammasoft71/xtd/blob/master/examples/xtd.forms.examples/games/minesweeper/README.md)
-
-[minesweeper (on Windows)](https://github.com/gammasoft71/xtd/blob/master/examples/xtd.forms.examples/games/minesweeper/README.md)
-
-______________________________________________________________________________________________
-
-[![game_of_life](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/game_of_life.png)](https://github.com/gammasoft71/xtd/blob/master/examples/xtd.forms.examples/games/game_of_life/README.md)
-
-[game_of_life (on macOS)](https://github.com/gammasoft71/xtd/blob/master/examples/xtd.forms.examples/games/game_of_life/README.md)
-
-______________________________________________________________________________________________
-
-[![xtdc-gui](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/xtdc-gui.png)](https://github.com/gammasoft71/xtd/blob/master/tools/xtdc-gui/README.md)
-
-[xtdc-gui - Create a new project (on macOS)](https://github.com/gammasoft71/xtd/blob/master/tools/xtdc-gui/README.md)
-
-______________________________________________________________________________________________
-
-[![calculator](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/calculator.png)](https://github.com/gammasoft71/xtd/blob/master/examples/xtd.forms.examples/others/calculator/README.md)
-
-[calculator (on Ubuntu)](https://github.com/gammasoft71/xtd/blob/master/examples/xtd.forms.examples/others/calculator/README.md)
-
-______________________________________________________________________________________________
-
-[![stopwatch](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/stopwatch.png)](https://github.com/gammasoft71/xtd/blob/master/examples/xtd.forms.examples/others/stopwatch_form/README.md)
-
-[stopwatch (on Windows)](https://github.com/gammasoft71/xtd/blob/master/examples/xtd.forms.examples/others/stopwatch_form/README.md)
-
-______________________________________________________________________________________________
-
-[![painting](https://github.com/gammasoft71/xtd/blob/master/docs/pictures/painting.png)](https://github.com/gammasoft71/xtd/blob/master/examples/xtd.forms.examples/others/painting/README.md)
-
-[painting (on Ubuntu)](https://github.com/gammasoft71/xtd/blob/master/examples/xtd.forms.examples/others/painting/README.md)
+For more information about xtd framework see [xtd website](https://gammasoft71.wixsite.com/xtdpro).
 
 ## Contributing
 
-The [authors file](https://github.com/gammasoft71/xtd/blob/master/AUTHORS.md) lists contributors together with contact information. If you make a contribution, please add yourself to the list.
+The [authors file](https://github.com/gammasoft71/xtdc/blob/main/AUTHORS.md) lists contributors together with contact information. If you make a contribution, please add yourself to the list.
 
 **Your contributions are welcome.**
 
-* First read [Code of conduct](https://github.com/gammasoft71/xtd/blob/master/CODE_OF_CONDUCT.md) and the [design guidelines](https://gammasoft71.wixsite.com/xtdpro/designguidelines) to make sure your contribution follows the rules.
-* [Fork](https://github.com/gammasoft71/xtd/fork) the project and use a pull request for adding your contribution.
-* If you face any problems feel free to open an issue at the [issues tracker](https://github.com/gammasoft71/xtd/issues), If you feel like there is a missing feature, please raise a ticket on Github. Pull request are also welcome.
+* First read [Code of conduct](https://github.com/gammasoft71/xtdc/blob/main/CODE_OF_CONDUCT.md) and the [design guidelines](https://gammasoft71.wixsite.com/xtdpro/designguidelines) to make sure your contribution follows the rules.
+* [Fork](https://github.com/gammasoft71/xtdc/fork) the project and use a pull request for adding your contribution.
+* If you face any problems feel free to open an issue at the [issues tracker](https://github.com/gammasoft71/xtdc/issues), If you feel like there is a missing feature, please raise a ticket on Github. Pull request are also welcome.
 
 **Your feedback is important for the evolution of the project.**
 
