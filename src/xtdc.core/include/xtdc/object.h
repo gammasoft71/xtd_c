@@ -36,7 +36,7 @@ typedef struct xtd_object xtd_object;
  @code
  int main(int argc, char* argv[]) {
    xtd_object* object = xtd_object_create();
-   xtd_version_destroy(object);
+   xtd_object_destroy(object);
  }
  @endcode
  */
@@ -54,14 +54,14 @@ xtd_object* xtd_object_create(void);
  @code
  int main(int argc, char* argv[]) {
    xtd_object* object = xtd_object_create();
-   xtd_version_destroy(object);
+   xtd_object_destroy(object);
  }
  @endcode
- This example shows how to use xtd_object_destroy to destroy an xtd_version object.
+  This example shows how to use xtd_object_destroy to destroy an xtd_version object by using the xtd_ptr_to_xtd_object_ptr method to convert xtd_version to xtd_object.
  @code
  int main(int argc, char* argv[]) {
    xtd_version* version = xtd_create_version(1, 2, 3);
-   xtd_version_destroy(XTD_OBJECT_PTR(version));
+   xtd_object_destroy(xtd_ptr_to_xtd_object_ptr(version));
  }
  @endcode
  */
@@ -99,10 +99,10 @@ xtd_object* xtd_ptr_to_xtd_object_ptr(xtd_handle ptr);
  @code
  int main(int argc, char* argv[]) {
    xtd_version* version = xtd_create_version(1, 2, 3);
-   size_t size = xtd_object_to_string(XTD_OBJECT_PTR(version), NULL, 0);
+   size_t size = xtd_object_to_string(xtd_ptr_to_xtd_object_ptr(version), NULL, 0);
    char version_string[256];
-   xtd_object_to_string(XTD_OBJECT_PTR(version), version_string, 256);
-   printf("%s\n", version_string);
+   xtd_object_to_string(xtd_ptr_to_xtd_object_ptr(version), version_string, 256);
+   console::write_line("%s", version_string);
    xtd_version_destroy(version);
  }
  @endcode
@@ -110,10 +110,10 @@ xtd_object* xtd_ptr_to_xtd_object_ptr(xtd_handle ptr);
  This example shows how to use xtd_object_to_string with the xtd_version object by using the possibility to get the size before allocating the string.
  @code
    xtd_version* version = xtd_create_version(1, 2, 3);
-   size_t size = xtd_object_to_string(XTD_OBJECT_PTR(version), NULL, 0);
+   size_t size = xtd_object_to_string(xtd_ptr_to_xtd_object_ptr(version), NULL, 0);
    char* version_string = (char*)malloc(size);
-   xtd_object_to_string(XTD_OBJECT_PTR(version), version_string, size);
-   printf("%s\n", version_string);
+   xtd_object_to_string(xtd_ptr_to_xtd_object_ptr(version), version_string, size);
+   console_write_line("%s", version_string);
    free(version_string);
    xtd_version_destroy(version);
  }

@@ -22,4 +22,5 @@ add_sources(
   src/xtdc/object.cpp
   src/xtdc/ustring.cpp
 )
+message("LANGUAGES=${LANGUAGES}")
 target_type(STATIC_LIBRARY)

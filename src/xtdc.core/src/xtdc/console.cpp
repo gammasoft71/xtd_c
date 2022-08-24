@@ -14,6 +14,14 @@ extern "C" {
     console::background_color(static_cast<console_color>(color));
   }
   
+  int32_t xtd_console_get_buffer_height() {
+    return console::buffer_height();
+  }
+  
+  void xtd_console_set_buffer_height(int32_t height) {
+    console::buffer_height(height);
+  }
+  
   xtd_console_color xtd_console_get_foreground_color() {
     return static_cast<xtd_console_color>(console::foreground_color());
   }

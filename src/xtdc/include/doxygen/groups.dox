@@ -9,6 +9,10 @@
 /// @brief collections definitions.
 /// @ingroup system
 
+/// @defgroup console console
+/// @brief console definitions.
+/// @ingroup system
+
 /// @defgroup components components
 /// @brief Components are objects that an application uses in conjunction with another window.
 /// @ingroup gui
