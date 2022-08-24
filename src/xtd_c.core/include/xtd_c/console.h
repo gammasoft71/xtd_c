@@ -8,7 +8,7 @@
 #include "types.h"
 
 /**
- @name Methods
+ @name Properties
 
  @{
  */
@@ -223,6 +223,7 @@ void xtd_console_set_foreground_color(xtd_console_color color);
 
 /**
  @brief Writes the text representation of the specified list of values to the standard output stream using the specified format information.
+ @param format A string format specifying how to interpret the data.
  @param ... Values to write,
  @par Library
  xtd_c.core
@@ -232,7 +233,8 @@ void xtd_console_write(const char* format, ...);
 
 /**
  @brief Writes the text representation of the specified list of values, followed by the current line terminator, to the standard output stream using the specified format information.
- @param values Values to write,
+ @param format A string format specifying how to interpret the data.
+ @param ... Values to write,
  @par Library
  xtd_c.core
  @ingroup xtd_c_core system console
