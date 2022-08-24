@@ -23,19 +23,19 @@
 ///
 /// @subsection coreSubSection xtd_c.core
 /// @image html xtd_c.core.png
-/// The <a href="https://codedocs.xyz/gammasoft71/xtd_c/group__xtd_c__core.html">xtd.core</a> library is modern C++17/20 libraries of classes, interfaces, and value types that provide access to system functionality. It is the foundation on which c++ applications, components, and controls are built.
+/// The <a href="https://codedocs.xyz/gammasoft71/xtd_c/group__xtd_c__core.html">xtd_c.core</a> library is modern C++17/20 libraries of classes, interfaces, and value types that provide access to system functionality. It is the foundation on which c++ applications, components, and controls are built.
 ///
 /// @subsection DrawingSubSection xtd_c.drawing
 /// @image html xtd_c.drawing.png
-/// The <a href="https://codedocs.xyz/gammasoft71/xtd_c/group__xtd_c__drawing.html">xtd.drawing</a> library contains types that support basic GDI+ graphics functionality. Child namespaces support advanced two-dimensional and vector graphics functionality, advanced imaging functionality, and print-related and typographical services. A child namespace also contains types that extend design-time user-interface logic and drawing.
+/// The <a href="https://codedocs.xyz/gammasoft71/xtd_c/group__xtd_c__drawing.html">xtd_c.drawing</a> library contains types that support basic GDI+ graphics functionality. Child namespaces support advanced two-dimensional and vector graphics functionality, advanced imaging functionality, and print-related and typographical services. A child namespace also contains types that extend design-time user-interface logic and drawing.
 ///
 /// @subsection FormsSubSection xtd_c.forms
 /// @image html xtd_c.forms.png
-/// The <a href="https://codedocs.xyz/gammasoft71/xtd_c/group__xtd_c__forms.html">xtd.forms</a> library contains classes for creating Windows-based applications that take full advantage of the rich user interface features available in the Microsoft Windows, Apple macOS and linux base operating system.
+/// The <a href="https://codedocs.xyz/gammasoft71/xtd_c/group__xtd_c__forms.html">xtd_c.forms</a> library contains classes for creating Windows-based applications that take full advantage of the rich user interface features available in the Microsoft Windows, Apple macOS and linux base operating system.
 ///
 /// @subsection TUinitSubSection xtd_c.tunit
 /// @image html xtd_c.tunit.png
-/// The <a href="https://codedocs.xyz/gammasoft71/xtd_c/group__xtd_c__tunit.html">xtd.tunit</a> library is a unit-testing framework for modern C++17/20 inspired by <a href="https://docs.microsoft.com/en-us/visualstudio/test/microsoft-visualstudio-testtools-cppunittestframework-api-reference">Microsoft.VisualStudio.TestTools.Cpp</a>.
+/// The <a href="https://codedocs.xyz/gammasoft71/xtd_c/group__xtd_c__tunit.html">xtd_c.tunit</a> library is a unit-testing framework for modern C++17/20 inspired by <a href="https://docs.microsoft.com/en-us/visualstudio/test/microsoft-visualstudio-testtools-cppunittestframework-api-reference">Microsoft.VisualStudio.TestTools.Cpp</a>.
 ///
 /// @section GettingStartedSection Getting Started
 ///  * <a href="https://gammasoft71.wixsite.com/xtd_cpro/download">Installation</a> provides download, install and uninstall documentation.
