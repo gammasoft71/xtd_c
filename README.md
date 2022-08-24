@@ -34,23 +34,23 @@ xtd_c is composed of several libraries.
 
 ### xtd_c.core
 
-[![core](https://github.com/gammasoft71/xtd_c/blob/main/docs/pictures/xtd_c.core.png)](https://codedocs.xyz/gammasoft71/xtd_c/group__xtd_c__core.html)
-The [xtd_c.core](https://codedocs.xyz/gammasoft71/xtd_c/group__xtd_c__core.html) library is C11 libraries of struct, enum, and value types that provide access to system functionality. It is the foundation on which C11 applications, components, and controls are built.
+[![core](https://github.com/gammasoft71/xtd_c/blob/main/docs/pictures/xtd_c.core.png)](https://codedocs.xyz/gammasoft71/xtd_c/group__xtd__c__core.html)
+The [xtd_c.core](https://codedocs.xyz/gammasoft71/xtd_c/group__xtd__c__core.html) library is C11 libraries of struct, enum, and value types that provide access to system functionality. It is the foundation on which C11 applications, components, and controls are built.
 
 ### xtd_c.drawing
 
-[![drawing](https://github.com/gammasoft71/xtd_c/blob/main/docs/pictures/xtd_c.drawing.png)](https://codedocs.xyz/gammasoft71/xtd_c/group__xtd_c__drawing.html)
-The [xtd_c.drawing](https://codedocs.xyz/gammasoft71/xtd_c/group__xtd_c__drawing.html) library contains types that support basic GDI+ graphics functionality. Child namespaces support advanced two-dimensional and vector graphics functionality, advanced imaging functionality, and print-related and typographical services. A child namespace also contains types that extend design-time user-interface logic and drawing.
+[![drawing](https://github.com/gammasoft71/xtd_c/blob/main/docs/pictures/xtd_c.drawing.png)](https://codedocs.xyz/gammasoft71/xtd_c/group__xtd__c__drawing.html)
+The [xtd_c.drawing](https://codedocs.xyz/gammasoft71/xtd_c/group__xtd__c__drawing.html) library contains types that support basic GDI+ graphics functionality. Child namespaces support advanced two-dimensional and vector graphics functionality, advanced imaging functionality, and print-related and typographical services. A child namespace also contains types that extend design-time user-interface logic and drawing.
 
 ### xtd_c.forms
 
-[![forms](https://github.com/gammasoft71/xtd_c/blob/main/docs/pictures/xtd_c.forms.png)](https://codedocs.xyz/gammasoft71/xtd_c/group__xtd_c__forms.html)
-The [xtd_c.forms](https://codedocs.xyz/gammasoft71/xtd_c/group__xtd_c__forms.html) library contains classes for creating Windows-based applications that take full advantage of the rich user interface features available in the Microsoft Windows, Apple macOS and linux base operating system.
+[![forms](https://github.com/gammasoft71/xtd_c/blob/main/docs/pictures/xtd_c.forms.png)](https://codedocs.xyz/gammasoft71/xtd_c/group__xtd__c__forms.html)
+The [xtd_c.forms](https://codedocs.xyz/gammasoft71/xtd_c/group__xtd__c__forms.html) library contains classes for creating Windows-based applications that take full advantage of the rich user interface features available in the Microsoft Windows, Apple macOS and linux base operating system.
 
 ### xtd_c.tunit
 
-[![tunit](https://github.com/gammasoft71/xtd_c/blob/main/docs/pictures/xtd_c.tunit.png)](https://codedocs.xyz/gammasoft71/xtd_c/group__xtd_c__tunit.html)
-The [xtd_c.tunit](https://codedocs.xyz/gammasoft71/xtd_c/group__xtd_c__tunit.html) library is a unit-testing framework for modern C11, inspired by [Microsoft.VisualStudio.TestTools.Cpp](https://docs.microsoft.com/en-us/visualstudio/test/microsoft-visualstudio-testtools-cppunittestframework-api-reference).
+[![tunit](https://github.com/gammasoft71/xtd_c/blob/main/docs/pictures/xtd_c.tunit.png)](https://codedocs.xyz/gammasoft71/xtd_c/group__xtd__c__tunit.html)
+The [xtd_c.tunit](https://codedocs.xyz/gammasoft71/xtd_c/group__xtd__c__tunit.html) library is a unit-testing framework for modern C11, inspired by [Microsoft.VisualStudio.TestTools.Cpp](https://docs.microsoft.com/en-us/visualstudio/test/microsoft-visualstudio-testtools-cppunittestframework-api-reference).
 
 ## Getting Started
 
