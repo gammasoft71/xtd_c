@@ -133,17 +133,17 @@ IMAGE_PATH = docs/pictures
 # INLINE_INHERITED_MEMB =
 # INLINE_SIMPLE_STRUCTS =
 # INLINE_SOURCES =
-INPUT = src/xtdc/include/doxygen \
-        src/xtdc/include/xtdc \
-        src/xtdc.core/include \
-        src/xtdc.drawing/include \
-        src/xtdc.forms/include \
-        src/xtdc.tunit/include
+INPUT = src/xtd_c/include/doxygen \
+        src/xtd_c/include/xtd_c \
+        src/xtd_c.core/include \
+        src/xtd_c.drawing/include \
+        src/xtd_c.forms/include \
+        src/xtd_c.tunit/include
 # INPUT_ENCODING =
 # INTERACTIVE_SVG =
 # INTERNAL_DOCS =
 # JAVADOC_AUTOBRIEF =
-LAYOUT_FILE = docs/doxygen/xtdc_doxygen_layout.xml
+LAYOUT_FILE = docs/doxygen/xtd_c_doxygen_layout.xml
 # MACRO_EXPANSION =
 # MARKDOWN_SUPPORT =
 # MAX_DOT_GRAPH_DEPTH =
@@ -158,7 +158,7 @@ OUTPUT_DIRECTORY = build
 # PLANTUML_JAR_PATH =
 # PREDEFINED =
 # PROJECT_BRIEF =
-PROJECT_LOGO = docs/pictures/xtdc_doxygen.png
+PROJECT_LOGO = docs/pictures/xtd_c_doxygen.png
 # PROJECT_NAME =
 # PROJECT_NUMBER =
 # QT_AUTOBRIEF =

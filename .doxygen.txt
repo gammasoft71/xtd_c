@@ -25,14 +25,14 @@ HTML_EXTRA_STYLESHEET = @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen/doxygen-awesome-
 HTML_FOOTER           = @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen/html_footer.html
 HTML_HEADER           = @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen/html_header.html
 IMAGE_PATH            = @CMAKE_CURRENT_SOURCE_DIR@/docs/pictures
-INPUT                 = @CMAKE_CURRENT_SOURCE_DIR@/src/xtdc/include/doxygen \
-                        @CMAKE_CURRENT_SOURCE_DIR@/src/xtdc/include/xtdc \
-                        @CMAKE_CURRENT_SOURCE_DIR@/src/xtdc.core/include \
-                        @CMAKE_CURRENT_SOURCE_DIR@/src/xtdc.drawing/include \
-                        @CMAKE_CURRENT_SOURCE_DIR@/src/xtdc.forms/include \
-                        @CMAKE_CURRENT_SOURCE_DIR@/src/xtdc.tunit/include
-LAYOUT_FILE           = @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen/xtdc_doxygen_layout.xml
+INPUT                 = @CMAKE_CURRENT_SOURCE_DIR@/src/xtd_c/include/doxygen \
+                        @CMAKE_CURRENT_SOURCE_DIR@/src/xtd_c/include/xtd_c \
+                        @CMAKE_CURRENT_SOURCE_DIR@/src/xtd_c.core/include \
+                        @CMAKE_CURRENT_SOURCE_DIR@/src/xtd_c.drawing/include \
+                        @CMAKE_CURRENT_SOURCE_DIR@/src/xtd_c.forms/include \
+                        @CMAKE_CURRENT_SOURCE_DIR@/src/xtd_c.tunit/include
+LAYOUT_FILE           = @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen/xtd_c_doxygen_layout.xml
 OUTPUT_DIRECTORY      = 
-PROJECT_LOGO          = @CMAKE_CURRENT_SOURCE_DIR@/docs/pictures/xtdc_doxygen.png
+PROJECT_LOGO          = @CMAKE_CURRENT_SOURCE_DIR@/docs/pictures/xtd_c_doxygen.png
 STRIP_FROM_PATH       = @CMAKE_CURRENT_SOURCE_DIR@/src
 WARN_LOGFILE          = @CMAKE_CURRENT_BINARY_DIR@/doxygen_warnings.txt
