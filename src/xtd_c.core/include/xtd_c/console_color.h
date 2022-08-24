@@ -8,7 +8,7 @@
 /// @enum xtd_console_color
 /// @par Library
 /// xtd_c.core
-/// @ingroup xtd_c_core
+/// @ingroup xtd_c_core system console
 /// @brief Specifies constants that define foreground and background colors for the console.
 enum xtd_console_color {
   /// @brief The color black.
