@@ -111,7 +111,7 @@ target_type(C_CONSOLE_APPLICATION)
 Open "Command Prompt" or "Terminal". Navigate to the folder that contains the project and type the following:
 
 ```shell
-xtd_c run
+xtdc run
 ```
 
 #### Output
@@ -163,7 +163,7 @@ target_type(C_GUI_APPLICATION)
 Open "Command Prompt" or "Terminal". Navigate to the folder that contains the project and type the following:
 
 ```shell
-xtd_c run
+xtdc run
 ```
 
 #### Output
@@ -205,7 +205,7 @@ xtd_c run
 Open "Command Prompt" or "Terminal". Navigate to the folder that contains the project and type the following:
 
 ```shell
-xtd_c run
+xtdc run
 ```
 
 #### Output

@@ -22,6 +22,50 @@ extern "C" {
     console::buffer_height(height);
   }
   
+  int32_t xtd_console_get_buffer_width() {
+    return console::buffer_width();
+  }
+
+  void xtd_console_set_buffer_width(int32_t width) {
+    console::buffer_width(width);
+  }
+  
+  xtd_bool xtd_console_get_caps_lock() {
+    return console::caps_lock();
+  }
+
+  int32_t xtd_console_get_cursor_left() {
+    return console::cursor_left();
+  }
+
+  void xtd_console_set_cursor_left(int32_t left) {
+    console::cursor_left(left);
+  }
+
+  int32_t xtd_console_get_cursor_size() {
+    return console::cursor_size();
+  }
+
+  void xtd_console_set_cursor_size(int32_t size) {
+    console::cursor_size(size);
+  }
+
+  int32_t xtd_console_get_cursor_top() {
+    return console::cursor_top();
+  }
+
+  void xtd_console_set_cursor_top(int32_t top) {
+    console::cursor_top(top);
+  }
+
+  xtd_bool xtd_console_get_cursor_visible() {
+    return console::cursor_visible();
+  }
+
+  void xtd_console_set_cursor_visible(xtd_bool visible) {
+    console::cursor_visible(visible);
+  }
+
   xtd_console_color xtd_console_get_foreground_color() {
     return static_cast<xtd_console_color>(console::foreground_color());
   }
