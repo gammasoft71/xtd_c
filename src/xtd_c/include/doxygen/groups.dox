@@ -49,8 +49,8 @@
  @defgroup events events
  @brief events are event args and event handler needed to response to window messages.
 
- @defgroup exceptions exceptions
- @brief Exceptions definitions.
+ @defgroup errors errors
+ @brief errors definitions.
 
  @defgroup format_parse format and parse
  @brief All needed for formating or parsing object.
