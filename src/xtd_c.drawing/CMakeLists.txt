@@ -10,6 +10,7 @@ add_sources(
   include/xtd_c/point.h
   include/xtd_c/size.h
   include/xtd_c/xtd_c.drawing.h
+  include/xtd_c/drawing_template.txt
 )
 add_sources(
   src/xtd_c/point.cpp

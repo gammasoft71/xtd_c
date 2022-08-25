@@ -15,6 +15,7 @@ add_sources(
   include/xtd_c/ustring.h
   include/xtd_c/xtd_c.core.h
   include/xtd_c/privates/__ustring_helper__.h
+  include/xtd_c/object_template.txt
 )
 add_sources(
   src/xtd_c/console.cpp

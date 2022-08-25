@@ -27,12 +27,9 @@ typedef struct xtd_object xtd_object;
   (xtd_object())
 /** @endcond */
 
-/**
- @name Converter
+/** @name Converter */
  
- @{
- */
-
+/**  @{ */
 /**
  @brief Convert n xtd object to ultimate base object.
  @par Library
@@ -41,17 +38,11 @@ typedef struct xtd_object xtd_object;
  */
 #define XTD_OBJECT(object) \
   (XTD_TYPE_CAST(object, XTD_OBJECT_TYPE, xtd_object))
+/** @} */
 
-/**
- @}
- */
+/** @name Creation/Destruction */
 
-/**
- @name Creation/Destruction
-
- @{
- */
-
+/**  @{ */
 /**
 @brief Create a new instance of the ultimate base object.
 @return New object created.
@@ -94,17 +85,11 @@ int main(int argc, char* argv[]) {
 @endcode
 */
 void xtd_object_destroy(xtd_object* value);
+/** @} */
 
-/**
- @}
- */
+/** @name Methods */
 
-/**
- @name Methods
-
- @{
- */
-
+/**  @{ */
 /**
  @brief Returns a string that represents the specified object.
  @param value The object to retrieve the string.
@@ -141,6 +126,4 @@ void xtd_object_destroy(xtd_object* value);
  @endcode
  */
 size_t xtd_object_to_string(const xtd_object* value, char* string, size_t size);
-/**
- @}
- */
+/** @} */

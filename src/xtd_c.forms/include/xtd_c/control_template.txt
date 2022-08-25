@@ -1,0 +1,76 @@
+/**
+ @file
+ @brief Contains xxx definitions.
+ @copyright Copyright (c) 2022 Gammasoft. All rights reserved.
+*/
+#pragma once
+#include "control.h"
+
+/**
+ @brief Defines the xxx control.
+ @par Library
+ xtd_c.forms
+ @ingroup xtd_c_forms controls xxx
+ */
+struct xtd_forms_xxx {
+  /// @brief Internal handle.
+  /// @warning Internal use only
+  xtd_handle internal_handle;
+};
+
+/** @cond */
+typedef struct xtd_forms_xxx xtd_forms_xxx;
+
+#define XTD_FORMS_XXX_TYPE \
+(xtd_forms_xxx())
+/** @endcond */
+
+/** @name Converter */
+
+/**  @{ */
+/**
+ @brief Convert an xtd object to xxx control.
+ @par Library
+ xtd_c.forms
+ @ingroup xtd_c_forms controls xxx
+ */
+#define XTD_FORMS_XXX(object) \
+(XTD_TYPE_CAST(object, XTD_FORMS_XXX_TYPE, xtd_forms_xxx))
+/** @} */
+
+/** @name Creation/Destruction */
+ 
+/** @{ */
+/**
+@brief Initializes a new instance of the xtd_forms_xxx with default settings.
+@return New xxx created.
+@par Library
+xtd_c.forms
+@ingroup xtd_c_forms controls control xxx
+@remarks The xtd_forms_xxx structure is the base structure for all controls used in a Windows Forms application. Because this class is not typically used to create an instance of the class, this constructor is typically not called directly but is instead called by a derived control.
+*/
+xtd_forms_control* xtd_forms_xxx_create(void);
+/**
+ @brief Destroy the instance of the specfied xxx
+ @param value The xxx control to delete.
+ @par Library
+ xtd_c.forms
+ @ingroup xtd_c_forms controls control xxx
+ */
+void xtd_forms_xxx_destroy(xtd_forms_xxx* value);
+/** @} */
+
+/** @name Properties */
+ 
+/** @{ */
+/** @} */
+
+/** @name Events */
+ 
+/** @{ */
+/** @} */
+
+/** @name Methods */
+ 
+/** @{ */
+/** @} */

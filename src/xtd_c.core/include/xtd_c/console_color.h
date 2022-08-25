@@ -46,4 +46,7 @@ enum xtd_console_color {
   /** @brief The color white. */
   xtd_console_color_white
 };
+
+/** @cond */
 typedef enum xtd_console_color xtd_console_color;
+/** @endcond */

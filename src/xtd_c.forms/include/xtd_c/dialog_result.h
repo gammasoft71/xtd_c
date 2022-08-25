@@ -15,4 +15,7 @@ enum xtd_forms_dialog_result {
   xtd_forms_dialog_result_yes = 6,
   xtd_forms_dialog_result_no = 7,
 };
+
+/** @cond */
 typedef enum xtd_forms_dialog_result xtd_forms_dialog_result;
+/** @endcond */

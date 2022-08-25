@@ -13,4 +13,7 @@ enum xtd_forms_message_box_buttons {
   xtd_forms_message_box_buttons_yes_no = 4,
   xtd_forms_message_box_buttons_retry_ignore = 5,
 };
+
+/** @cond */
 typedef enum xtd_forms_message_box_buttons xtd_forms_message_box_buttons;
+/** @endcond */

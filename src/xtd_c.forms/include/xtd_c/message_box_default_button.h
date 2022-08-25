@@ -10,4 +10,7 @@ enum xtd_forms_message_box_default_button {
   xtd_forms_message_box_default_button_2,
   xtd_forms_message_box_default_button_3,
 };
+
+/** @cond */
 typedef enum xtd_forms_message_box_default_button xtd_forms_message_box_default_button;
+/** @endcond */

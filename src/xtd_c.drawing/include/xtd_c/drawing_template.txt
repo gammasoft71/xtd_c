@@ -1,0 +1,75 @@
+/**
+ @file
+ @brief Contains xxx definitions.
+ @copyright Copyright (c) 2022 Gammasoft. All rights reserved.
+*/
+#pragma once
+#include <xtd_c/object.h>
+
+/**
+ @brief Defines the xxx object.
+ @par Library
+ xtd_c.drawing
+ @ingroup xtd_c_drawing xxx
+ */
+struct xtd_drawing_xxx {
+  /// @brief Internal handle.
+  /// @warning Internal use only
+  xtd_handle internal_handle;
+};
+
+/** @cond */
+typedef struct xtd_drawing_xxx xtd_drawing_xxx;
+
+#define XTD_DRAWING_XXX_TYPE \
+(xtd_drawing_xxx())
+/** @endcond */
+
+/** @name Converter */
+
+/**  @{ */
+/**
+ @brief Convert an xtd object to xxx object.
+ @par Library
+ xtd_c.drawing
+ @ingroup xtd_c_drawing xxx
+ */
+#define XTD_DRAWING_XXX(object) \
+(XTD_TYPE_CAST(object, XTD_DRAWING_XXX_TYPE, xtd_drawing_xxx))
+/** @} */
+
+/** @name Creation/Destruction */
+ 
+/** @{ */
+/**
+@brief Initializes a new instance of the xtd_drawing_xxx with default settings.
+@return New xxx created.
+@par Library
+xtd_c.drawing
+@ingroup xtd_c_drawing xxx
+*/
+xtd_object* xtd_drawing_xxx_create(void);
+/**
+ @brief Destroy the instance of the specfied xxx
+ @param value The xxx to delete.
+ @par Library
+ xtd_c.drawing
+ @ingroup xtd_c_drawing xxx
+ */
+void xtd_drawing_xxx_destroy(xtd_drawing_xxx* value);
+/** @} */
+
+/** @name Properties */
+ 
+/** @{ */
+/** @} */
+
+/** @name Events */
+ 
+/** @{ */
+/** @} */
+
+/** @name Methods */
+ 
+/** @{ */
+/** @} */

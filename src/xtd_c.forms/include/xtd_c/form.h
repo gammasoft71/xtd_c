@@ -21,12 +21,9 @@ typedef struct xtd_forms_form xtd_forms_form;
   (xtd_forms_form())
 /** @endcond */
 
-/**
- @name Converter
+/** @name Converter */
  
- @{
- */
-
+/**  @{ */
 /**
  @brief Convert an xtd object to form object.
  @par Library
@@ -35,10 +32,7 @@ typedef struct xtd_forms_form xtd_forms_form;
  */
 #define XTD_FORMS_FORM(object) \
   (XTD_TYPE_CAST(object, XTD_FORMS_FORM_TYPE, xtd_forms_form))
-
-/**
- @}
- */
+/** @} */
 
 xtd_forms_control* xtd_forms_form_create(void);
 void xtd_forms_form_destroy(xtd_forms_form* value);

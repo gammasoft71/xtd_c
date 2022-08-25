@@ -30,12 +30,9 @@ typedef struct xtd_forms_control xtd_forms_control;
   (xtd_forms_control())
 /** @endcond */
 
-/**
- @name Converter
+/** @name Converter */
  
- @{
- */
-
+/**  @{ */
 /**
  @brief Convert an xtd object to control object.
  @par Library
@@ -44,18 +41,11 @@ typedef struct xtd_forms_control xtd_forms_control;
  */
 #define XTD_FORMS_CONTROL(object) \
   (XTD_TYPE_CAST(object, XTD_FORMS_CONTROL_TYPE, xtd_forms_control))
+/** @} */
 
-/**
- @}
- */
-
-/**
- @name Creation/Destruction
+/** @name Creation/Destruction */
  
- @{
- */
-
-
+/**  @{ */
 /**
  @brief Initializes a new instance of the xtd_forms_control with default settings.
  @return New control created.
@@ -73,17 +63,11 @@ xtd_forms_control* xtd_forms_control_create(void);
  @ingroup xtd_c_forms controls control
  */
 void xtd_forms_control_destroy(xtd_forms_control* value);
+/** @} */
 
-/**
- @}
- */
-
-/**
- @name Properties
+/** @name Properties */
  
- @{
- */
-
+/**  @{ */
 /**
  @brief Gets the coordinates of the upper-left corner of the control relative to the upper-left corner of its container.
  @param control The control.
@@ -109,30 +93,16 @@ void xtd_forms_control_reset_parent(xtd_forms_control* control);
 
 size_t xtd_forms_control_get_text(xtd_forms_control* control, char* text, size_t size);
 void xtd_forms_control_set_text(xtd_forms_control* control, const char* text);
+/** @} */
 
-/**
- @}
- */
-
-/**
- @name Events
+/** @name Events */
  
- @{
- */
-
+/** @{ */
 void xtd_forms_control_set_click_event(xtd_forms_control* control, xtd_event_handler e, xtd_handle user_data);
 void xtd_forms_control_reset_click_event(xtd_forms_control* control);
+/** @} */
 
-/**
- @}
- */
-
-/**
- @name Methods
+/** @name Methods */
  
- @{
- */
-
-/**
- @}
- */
+/**  @{ */
+/** @} */

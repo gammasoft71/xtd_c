@@ -20,12 +20,9 @@ typedef struct xtd_forms_button xtd_forms_button;
   (xtd_forms_button())
 /** @endcond */
 
-/**
- @name Converter
+/** @name Converter */
  
- @{
- */
-
+/**  @{ */
 /**
  @brief Convert an xtd object to button object.
  @par Library
@@ -34,10 +31,7 @@ typedef struct xtd_forms_button xtd_forms_button;
  */
 #define XTD_FORMS_BUTTON(object) \
   (XTD_TYPE_CAST(object, XTD_FORMS_BUTTON_TYPE, xtd_forms_button))
-
-/**
- @}
- */
+/** @} */
 
 xtd_forms_control* xtd_forms_button_create(void);
 void xtd_forms_button_destroy(xtd_forms_button* value);

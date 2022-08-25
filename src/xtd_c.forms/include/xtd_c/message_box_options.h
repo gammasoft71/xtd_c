@@ -12,4 +12,7 @@ enum xtd_forms_message_box_options {
   xtd_forms_message_box_options_rtl_reading = 0x00100000L,
   xtd_forms_message_box_options_service_notification = 0x00200000L
 };
+
+/** @cond */
 typedef enum xtd_forms_message_box_options xtd_forms_message_box_options;
+/** @endcond */

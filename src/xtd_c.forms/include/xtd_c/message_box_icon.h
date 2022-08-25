@@ -16,4 +16,7 @@ enum xtd_forms_message_box_icon {
   xtd_forms_message_box_icon_asterisk = 0x00000040L,
   xtd_forms_message_box_icon_information = 0x00000040L,
 };
+
+/** @cond */
 typedef enum xtd_forms_message_box_icon xtd_forms_message_box_icon;
+/** @endcond */

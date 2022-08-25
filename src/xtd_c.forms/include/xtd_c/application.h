@@ -7,12 +7,9 @@
 #include "control.h"
 #include "form.h"
 
-/**
- @name Methods
+/** @name Methods */
  
- @{
- */
-
+/** @{ */
 /**
  @brief Begins running a standard application message loop on the current thread, and makes the specified form visible.
  @param main_form A form that represents the form to make visible.
@@ -26,7 +23,4 @@
  @include application.c
 */
 void xtd_forms_application_run(xtd_forms_form* main_form);
-
-/**
- @}
- */
+/** @} */

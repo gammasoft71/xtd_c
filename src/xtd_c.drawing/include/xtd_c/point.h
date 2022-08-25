@@ -10,4 +10,7 @@ struct xtd_drawing_point {
   int32_t x;
   int32_t y;
 };
+
+/** @cond */
 typedef struct xtd_drawing_point xtd_drawing_point;
+/** @endcond */

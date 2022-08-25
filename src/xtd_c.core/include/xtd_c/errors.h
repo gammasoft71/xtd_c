@@ -1,15 +1,18 @@
 /**
  @file
- @brief Contains console definitions.
+ @brief Contains errors definitions.
  @copyright Copyright (c) 2022 Gammasoft. All rights reserved.
  */
 #pragma once
 #include "console_color.h"
 #include "types.h"
 
-/** @name Properties */
+/**
+ @name Properties
 
-/** @{ */
+ @{
+ */
+
 /**
  @brief Gets the background color of the console.
  @return the background xtd_console_color.
@@ -207,11 +210,17 @@ xtd_console_color xtd_console_get_foreground_color();
  @include console_color4.cpp
  */
 void xtd_console_set_foreground_color(xtd_console_color color);
-/** @} */
 
-/** @name Methods */
+/**
+ @}
+ */
 
-/** @{ */
+/**
+ @name Methods
+
+ @{
+ */
+
 /**
  @brief Writes the text representation of the specified list of values to the standard output stream using the specified format information.
  @param format A string format specifying how to interpret the data.
@@ -231,5 +240,6 @@ void xtd_console_write(const char* format, ...);
  @ingroup xtd_c_core system console
  */
 void xtd_console_write_line(const char* format, ...);
+
 /** @} */
 

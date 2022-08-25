@@ -10,4 +10,7 @@ struct xtd_drawing_size {
   int32_t width;
   int32_t height;
 };
+
+/** @cond */
 typedef struct xtd_drawing_size xtd_drawing_size;
+/** @endcond */

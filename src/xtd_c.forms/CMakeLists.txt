@@ -18,6 +18,7 @@ add_sources(
   include/xtd_c/message_box_icon.h
   include/xtd_c/message_box_options.h
   include/xtd_c/xtd_c.forms.h
+  include/xtd_c/control_template.txt
 )
 add_sources(
   src/xtd_c/application.cpp
