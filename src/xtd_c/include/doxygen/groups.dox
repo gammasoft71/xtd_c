@@ -1,154 +1,156 @@
-/// @file
-/// @brief Contains groups definitions.
+/**
+ @file
+ @brief Contains groups definitions.
 
-/// @defgroup application application
-/// @brief application definitions.
-/// @ingroup gui
+ @defgroup application application
+ @brief application definitions.
+ @ingroup gui
 
-/// @defgroup collections collections
-/// @brief collections definitions.
-/// @ingroup system
+ @defgroup collections collections
+ @brief collections definitions.
+ @ingroup system
 
-/// @defgroup console console
-/// @brief console definitions.
-/// @ingroup system
+ @defgroup console console
+ @brief console definitions.
+ @ingroup system
 
-/// @defgroup components components
-/// @brief Components are objects that an application uses in conjunction with another window.
-/// @ingroup gui
+ @defgroup components components
+ @brief Components are objects that an application uses in conjunction with another window.
+ @ingroup gui
 
-/// @defgroup containers containers
-/// @brief Containers are  container for other controls.
-/// @ingroup gui
+ @defgroup containers containers
+ @brief Containers are  container for other controls.
+ @ingroup gui
 
-/// @defgroup control control
-/// @brief control definitions.
-/// @ingroup controls
+ @defgroup control control
+ @brief control definitions.
+ @ingroup controls
 
-/// @defgroup controls controls
-/// @brief Controls are children windows that an application uses in conjunction with another window to enable interaction with the user.
-/// @ingroup gui
+ @defgroup controls controls
+ @brief Controls are children windows that an application uses in conjunction with another window to enable interaction with the user.
+ @ingroup gui
 
-/// @defgroup debug debug
-/// @brief All needed for debugging and tracing.
+ @defgroup debug debug
+ @brief All needed for debugging and tracing.
 
-/// @defgroup diagnostics diagnostics
-/// @brief diagnostics definitions.
-/// @ingroup system
+ @defgroup diagnostics diagnostics
+ @brief diagnostics definitions.
+ @ingroup system
 
-/// @defgroup dialogs dialogs
-/// @brief Dalogs consist of the open file, save file, open folder, find and replace, print, page setup, font, color dialog boxes, about, busy, message dialog boxes, ...
-/// @ingroup gui
+ @defgroup dialogs dialogs
+ @brief Dalogs consist of the open file, save file, open folder, find and replace, print, page setup, font, color dialog boxes, about, busy, message dialog boxes, ...
+ @ingroup gui
 
-/// @defgroup drawing drawing
-/// @brief All needed for drawing something.
-/// @remarks A xtd::drawing::graphics class is create from xtd::forms::control::create_graphics or xtd::forms::screen::create_graphics or xtd::drawing::image::create_graphics.
-/// @remarks And also when xtd::forms::control::paint event is sent, the xtd::forms::paint_event_args contains a xtd::drawing::graphics associate to the control event paint.
+ @defgroup drawing drawing
+ @brief All needed for drawing something.
+ @remarks A xtd::drawing::graphics class is create from xtd::forms::control::create_graphics or xtd::forms::screen::create_graphics or xtd::drawing::image::create_graphics.
+ @remarks And also when xtd::forms::control::paint event is sent, the xtd::forms::paint_event_args contains a xtd::drawing::graphics associate to the control event paint.
 
-/// @defgroup events events
-/// @brief events are event args and event handler needed to response to window messages.
+ @defgroup events events
+ @brief events are event args and event handler needed to response to window messages.
 
-/// @defgroup exceptions exceptions
-/// @brief Exceptions definitions.
+ @defgroup exceptions exceptions
+ @brief Exceptions definitions.
 
-/// @defgroup format_parse format and parse
-/// @brief All needed for formating or parsing object.
-/// @remarks for more information about format see @ref FormatPage "Format".
+ @defgroup format_parse format and parse
+ @brief All needed for formating or parsing object.
+ @remarks for more information about format see @ref FormatPage "Format".
 
-/// @defgroup forms forms
-/// @brief forms definitions.
-/// @ingroup gui
+ @defgroup forms forms
+ @brief forms definitions.
+ @ingroup gui
 
-/// @defgroup interfaces interfaces
-/// @brief Interfaces definitions.
+ @defgroup interfaces interfaces
+ @brief Interfaces definitions.
 
-/// @defgroup io io
-/// @brief io definitions.
-/// @ingroup system
+ @defgroup io io
+ @brief io definitions.
+ @ingroup system
 
-/// @defgroup keywords keywords
-/// @brief Keywords are predefined, reserved identifiers that have special meanings to the compiler.
+ @defgroup keywords keywords
+ @brief Keywords are predefined, reserved identifiers that have special meanings to the compiler.
 
-/// @defgroup keywords keywords
-/// @brief Keywords are predefined, reserved identifiers that have special meanings to the compiler.
+ @defgroup keywords keywords
+ @brief Keywords are predefined, reserved identifiers that have special meanings to the compiler.
 
-/// @defgroup libraries libraries
-/// @brief The xtd libraries.
+ @defgroup libraries libraries
+ @brief The xtd libraries.
 
-/// @defgroup media media
-/// @brief media definitions.
-/// @ingroup system
+ @defgroup media media
+ @brief media definitions.
+ @ingroup system
 
-/// @defgroup menus_and_toolbars  menus and toolbars
-/// @brief menus and toolbars definitions.
-/// @ingroup gui
+ @defgroup menus_and_toolbars  menus and toolbars
+ @brief menus and toolbars definitions.
+ @ingroup gui
 
-/// @defgroup message_box message_box
-/// @brief message_box definitions.
-/// @ingroup dialogs
+ @defgroup message_box message_box
+ @brief message_box definitions.
+ @ingroup dialogs
 
-/// @defgroup net net
-/// @brief Network definitions.
-/// @ingroup system
+ @defgroup net net
+ @brief Network definitions.
+ @ingroup system
 
-/// @defgroup object object
-/// @brief object definitions.
-/// @ingroup system
+ @defgroup object object
+ @brief object definitions.
+ @ingroup system
 
-/// @defgroup renderers renderers
-/// @brief Control renderers definitions.
-/// @ingroup gui
+ @defgroup renderers renderers
+ @brief Control renderers definitions.
+ @ingroup gui
 
-/// @defgroup system system
-/// @brief Contains system classes.
+ @defgroup system system
+ @brief Contains system classes.
 
-/// @defgroup system_information system information
-/// @brief System information contains classes that provides informations about the current system environment.
+ @defgroup system_information system information
+ @brief System information contains classes that provides informations about the current system environment.
 
-/// @defgroup threading threading
-/// @brief threading definitions.
-/// @ingroup system
+ @defgroup threading threading
+ @brief threading definitions.
+ @ingroup system
 
-/// @defgroup types types
-/// @brief Types definitions
+ @defgroup types types
+ @brief Types definitions
 
-/// @defgroup tunit unit tests
-/// @brief Unit tests definitions
+ @defgroup tunit unit tests
+ @brief Unit tests definitions
 
-/// @defgroup assertions assertions
-/// @brief Assertions definitions
-/// @ingroup tunit
+ @defgroup assertions assertions
+ @brief Assertions definitions
+ @ingroup tunit
 
-/// @defgroup assumptions assumptions
-/// @brief Assumptions definitions
-/// @ingroup tunit
+ @defgroup assumptions assumptions
+ @brief Assumptions definitions
+ @ingroup tunit
 
-/// @defgroup validations validations
-/// @brief validations definitions
-/// @ingroup tunit
+ @defgroup validations validations
+ @brief validations definitions
+ @ingroup tunit
 
-/// @defgroup gui forms
-/// @brief All needed for GUI application.
+ @defgroup gui forms
+ @brief All needed for GUI application.
 
-/// @defgroup style_sheets style_sheets
-/// @brief Contains various properties, states, and subcontrols that make it possible to customize the look of control.
+ @defgroup style_sheets style_sheets
+ @brief Contains various properties, states, and subcontrols that make it possible to customize the look of control.
 
-/// @defgroup xtd_c_core xtd_c.core
-/// @brief The xtd_c.core library contains all fundamental classes to access Hardware, Os, System, and more.
-/// @ingroup libraries
+ @defgroup xtd_c_core xtd_c.core
+ @brief The xtd_c.core library contains all fundamental classes to access Hardware, Os, System, and more.
+ @ingroup libraries
 
-/// @defgroup xtd_c_drawing xtd_c.drawing
-/// @brief The xtd_c.drawing library provides access to GDI+ basic graphics functionality.
-/// @ingroup libraries
+ @defgroup xtd_c_drawing xtd_c.drawing
+ @brief The xtd_c.drawing library provides access to GDI+ basic graphics functionality.
+ @ingroup libraries
 
-/// @defgroup xtd_c_forms xtd_c.forms
-/// @brief The xtd_c.forms library contains classes for creating Windows-based applications that take full advantage of the rich user interface features available in the Microsoft Windows operating system, Apple macOS and Linux like Ubuntu operating system.
-/// @ingroup libraries
+ @defgroup xtd_c_forms xtd_c.forms
+ @brief The xtd_c.forms library contains classes for creating Windows-based applications that take full advantage of the rich user interface features available in the Microsoft Windows operating system, Apple macOS and Linux like Ubuntu operating system.
+ @ingroup libraries
 
-/// @defgroup xtd_c_tunit xtd_c.tunit
-/// @brief The xtd_c.tunit library contains components needed for unit testing.
-/// @ingroup libraries
+ @defgroup xtd_c_tunit xtd_c.tunit
+ @brief The xtd_c.tunit library contains components needed for unit testing.
+ @ingroup libraries
 
-/// @defgroup web web
-/// @brief web definitions.
-/// @ingroup system
+ @defgroup web web
+ @brief web definitions.
+ @ingroup system
+*/

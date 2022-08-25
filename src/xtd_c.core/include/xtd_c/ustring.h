@@ -21,11 +21,12 @@ struct xtd_ustring {
   xtd_handle internal_handle;
 };
 
-/// @cond
+/** @cond */
 typedef struct xtd_ustring xtd_ustring;
 
-#define XTD_USTRING_TYPE (xtd_ustring())
-/// @endcond
+#define XTD_USTRING_TYPE \
+  (xtd_ustring())
+/** @endcond */
 
 /**
  @name Converter
@@ -39,7 +40,8 @@ typedef struct xtd_ustring xtd_ustring;
  xtd_c.core
  @ingroup xtd_c_core system ustring
  */
-#define XTD_USTRING(object) (XTD_TYPE_CAST(object, XTD_USTRING_TYPE, xtd_ustring))
+#define XTD_USTRING(object) \
+  (XTD_TYPE_CAST(object, XTD_USTRING_TYPE, xtd_ustring))
 
 /**
  @}

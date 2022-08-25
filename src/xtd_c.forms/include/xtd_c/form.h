@@ -7,16 +7,19 @@
 #include "control.h"
 
 struct xtd_forms_form {
-  /// @brief Internal handle.
-  /// @warning Internal use only
+  /**
+   @brief Internal handle.
+   @warning Internal use only
+   */
   xtd_handle internal_handle;
 };
 
-/// @cond
+/** @cond */
 typedef struct xtd_forms_form xtd_forms_form;
 
-#define XTD_FORMS_FORM_TYPE (xtd_forms_form())
-/// @endcond
+#define XTD_FORMS_FORM_TYPE \
+  (xtd_forms_form())
+/** @endcond */
 
 /**
  @name Converter
@@ -30,7 +33,8 @@ typedef struct xtd_forms_form xtd_forms_form;
  xtd_c.core
  @ingroup xtd_c_forms controls form
  */
-#define XTD_FORMS_FORM(object) (XTD_TYPE_CAST(object, XTD_FORMS_FORM_TYPE, xtd_forms_form))
+#define XTD_FORMS_FORM(object) \
+  (XTD_TYPE_CAST(object, XTD_FORMS_FORM_TYPE, xtd_forms_form))
 
 /**
  @}

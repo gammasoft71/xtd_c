@@ -16,16 +16,19 @@
  @ingroup xtd_c_forms controls control
  */
 struct xtd_forms_control {
-  /// @brief Internal handle.
-  /// @warning Internal use only
+  /**
+   @brief Internal handle.
+   @warning Internal use only
+   */
   xtd_handle internal_handle;
 };
 
-/// @cond
+/** @cond */
 typedef struct xtd_forms_control xtd_forms_control;
 
-#define XTD_FORMS_CONTROL_TYPE (xtd_forms_control())
-/// @endcond
+#define XTD_FORMS_CONTROL_TYPE \
+  (xtd_forms_control())
+/** @endcond */
 
 /**
  @name Converter
@@ -39,7 +42,8 @@ typedef struct xtd_forms_control xtd_forms_control;
  xtd_c.core
  @ingroup xtd_c_forms controls control
  */
-#define XTD_FORMS_CONTROL(object) (XTD_TYPE_CAST(object, XTD_FORMS_CONTROL_TYPE, xtd_forms_control))
+#define XTD_FORMS_CONTROL(object) \
+  (XTD_TYPE_CAST(object, XTD_FORMS_CONTROL_TYPE, xtd_forms_control))
 
 /**
  @}

@@ -7,15 +7,18 @@
 #include "control.h"
 
 struct xtd_forms_button {
-  /// @brief Internal handle.
-  /// @warning Internal use only
+  /**
+   @brief Internal handle.
+   @warning Internal use only
+   */
   xtd_handle internal_handle;
 };
-/// @cond
+/** @cond */
 typedef struct xtd_forms_button xtd_forms_button;
 
-#define XTD_FORMS_BUTTON_TYPE (xtd_forms_button())
-/// @endcond
+#define XTD_FORMS_BUTTON_TYPE \
+  (xtd_forms_button())
+/** @endcond */
 
 /**
  @name Converter
@@ -29,7 +32,8 @@ typedef struct xtd_forms_button xtd_forms_button;
  xtd_c.core
  @ingroup xtd_c_forms controls button
  */
-#define XTD_FORMS_BUTTON(object) (XTD_TYPE_CAST(object, XTD_FORMS_BUTTON_TYPE, xtd_forms_button))
+#define XTD_FORMS_BUTTON(object) \
+  (XTD_TYPE_CAST(object, XTD_FORMS_BUTTON_TYPE, xtd_forms_button))
 
 /**
  @}

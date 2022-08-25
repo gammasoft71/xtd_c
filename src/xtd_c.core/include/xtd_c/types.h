@@ -13,12 +13,15 @@
  @todo Add check current type with global type in debug mode...
  */
 
-#define __XTD_CHECK_TYPE_CAST__(object, global_type, current_type) ((current_type*)object)
+#define __XTD_CHECK_TYPE_CAST__(object, global_type, current_type) \
+  ((current_type*)object)
 #else
-#define __XTD_CHECK_TYPE_CAST__(object, global_type, current_type) ((current_type*)object)
+#define __XTD_CHECK_TYPE_CAST__(object, global_type, current_type) \
+  ((current_type*)object)
 #endif
 
-#define XTD_TYPE_CAST(object, global_type, current_type) __XTD_CHECK_TYPE_CAST__(object, global_type, current_type)
+#define XTD_TYPE_CAST(object, global_type, current_type) \
+  __XTD_CHECK_TYPE_CAST__(object, global_type, current_type)
 
 /**
 @cond

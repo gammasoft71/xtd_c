@@ -1,160 +1,161 @@
-/// @file
-/// @brief Contains dialog appearances page.
+/**
+ @file
+ @brief Contains dialog appearances page.
 
-/// @page DialogsAppearancesPage Dialogs appearances
-/// @brief Contains dialogs appearances.
-///
-/// @par About dialog appearance
-/// <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
-///   <tr>
-///     <td style="width:100px">xtd_about_dialog</td>
-///     <th><b>Windows</b></th>
-///     <th><b>macOS</b></th>
-///     <th><b>Gnome</b></th>
-///   </tr>
-///   <tr>
-///     <td>Light</td>
-///     <td>@image html dialog_about_dialog_w.png</td>
-///     <td>@image html dialog_about_dialog_m.png</td>
-///     <td>@image html dialog_about_dialog_g.png</td>
-///   </tr>
-///   <tr>
-///     <td>Dark</td>
-///     <td>@image html dialog_about_dialog_wd.png</td>
-///     <td>@image html dialog_about_dialog_md.png</td>
-///     <td>@image html dialog_about_dialog_gd.png</td>
-///   </tr>
-/// </table>
-///
-/// @par Busy dialog appearance
-/// <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
-///   <tr>
-///     <td style="width:100px">xtd_busy_dialog</td>
-///     <th><b>Windows</b></th>
-///     <th><b>macOS</b></th>
-///     <th><b>Gnome</b></th>
-///   </tr>
-///   <tr>
-///     <td>Light</td>
-///     <td>@image html dialog_busy_dialog_w.png</td>
-///     <td>@image html dialog_busy_dialog_m.png</td>
-///     <td>@image html dialog_busy_dialog_g.png</td>
-///   </tr>
-///   <tr>
-///     <td>Dark</td>
-///     <td>@image html dialog_busy_dialog_wd.png</td>
-///     <td>@image html dialog_busy_dialog_md.png</td>
-///     <td>@image html dialog_busy_dialog_gd.png</td>
-///   </tr>
-/// </table>
-///
-/// @par Color folder browser appearance
-/// <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
-///   <tr>
-///     <td style="width:100px">xtd_folder_browser_dialog</td>
-///     <th><b>Windows</b></th>
-///     <th><b>macOS</b></th>
-///     <th><b>Gnome</b></th>
-///   </tr>
-///   <tr>
-///     <td>Light</td>
-///     <td>@image html dialog_color_dialog_w.png</td>
-///     <td>@image html dialog_color_dialog_m.png</td>
-///     <td>@image html dialog_color_dialog_g.png</td>
-///   </tr>
-///   <tr>
-///     <td>Dark</td>
-///     <td>@image html dialog_color_dialog_wd.png</td>
-///     <td>@image html dialog_color_dialog_md.png</td>
-///     <td>@image html dialog_color_dialog_gd.png</td>
-///   </tr>
-/// </table>
-///
-/// @par Exception dialog appearance
-/// <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
-///   <tr>
-///     <td style="width:100px">xtd_exception_dialog</td>
-///     <th><b>Windows</b></th>
-///     <th><b>macOS</b></th>
-///     <th><b>Gnome</b></th>
-///   </tr>
-///   <tr>
-///     <td>Light</td>
-///     <td>@image html dialog_exception_dialog_w.png</td>
-///     <td>@image html dialog_exception_dialog_m.png</td>
-///     <td>@image html dialog_exception_dialog_g.png</td>
-///   </tr>
-///   <tr>
-///     <td>Dark</td>
-///     <td>@image html dialog_exception_dialog_wd.png</td>
-///     <td>@image html dialog_exception_dialog_md.png</td>
-///     <td>@image html dialog_exception_dialog_gd.png</td>
-///   </tr>
-/// </table>
-///
-/// @par Folder browser dialog appearance
-/// <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
-///   <tr>
-///     <td style="width:100px">xtd_folder_browser_dialog</td>
-///     <th><b>Windows</b></th>
-///     <th><b>macOS</b></th>
-///     <th><b>Gnome</b></th>
-///   </tr>
-///   <tr>
-///     <td>Light</td>
-///     <td>@image html dialog_folder_browser_dialog_w.png</td>
-///     <td>@image html dialog_folder_browser_dialog_m.png</td>
-///     <td>@image html dialog_folder_browser_dialog_g.png</td>
-///   </tr>
-///   <tr>
-///     <td>Dark</td>
-///     <td>@image html dialog_folder_browser_dialog_wd.png</td>
-///     <td>@image html dialog_folder_browser_dialog_md.png</td>
-///     <td>@image html dialog_folder_browser_dialog_gd.png</td>
-///   </tr>
-/// </table>
-///
-/// @par Font dialog appearance
-/// <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
-///   <tr>
-///     <td style="width:100px">xtd_font_dialog</td>
-///     <th><b>Windows</b></th>
-///     <th><b>macOS</b></th>
-///     <th><b>Gnome</b></th>
-///   </tr>
-///   <tr>
-///     <td>Light</td>
-///     <td>@image html dialog_font_dialog_w.png</td>
-///     <td>@image html dialog_font_dialog_m.png</td>
-///     <td>@image html dialog_font_dialog_g.png</td>
-///   </tr>
-///   <tr>
-///     <td>Dark</td>
-///     <td>@image html dialog_font_dialog_wd.png</td>
-///     <td>@image html dialog_font_dialog_md.png</td>
-///     <td>@image html dialog_font_dialog_gd.png</td>
-///   </tr>
-/// </table>
-///
-/// @par Input dialog appearance
-/// <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
-///   <tr>
-///     <td style="width:100px">xtd_input_dialog</td>
-///     <th><b>Windows</b></th>
-///     <th><b>macOS</b></th>
-///     <th><b>Gnome</b></th>
-///   </tr>
-///   <tr>
-///     <td>Light</td>
-///     <td>@image html dialog_input_dialog_w.png</td>
-///     <td>@image html dialog_input_dialog_m.png</td>
-///     <td>@image html dialog_input_dialog_g.png</td>
-///   </tr>
-///   <tr>
-///     <td>Dark</td>
-///     <td>@image html dialog_input_dialog_wd.png</td>
-///     <td>@image html dialog_input_dialog_md.png</td>
-///     <td>@image html dialog_input_dialog_gd.png</td>
-///   </tr>
-/// </table>
-///
+ @page DialogsAppearancesPage Dialogs appearances
+ @brief Contains dialogs appearances.
+
+ @par About dialog appearance
+ <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
+   <tr>
+     <td style="width:100px">xtd_about_dialog</td>
+     <th><b>Windows</b></th>
+     <th><b>macOS</b></th>
+     <th><b>Gnome</b></th>
+   </tr>
+   <tr>
+     <td>Light</td>
+     <td>@image html dialog_about_dialog_w.png</td>
+     <td>@image html dialog_about_dialog_m.png</td>
+     <td>@image html dialog_about_dialog_g.png</td>
+   </tr>
+   <tr>
+     <td>Dark</td>
+     <td>@image html dialog_about_dialog_wd.png</td>
+     <td>@image html dialog_about_dialog_md.png</td>
+     <td>@image html dialog_about_dialog_gd.png</td>
+   </tr>
+ </table>
+
+ @par Busy dialog appearance
+ <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
+   <tr>
+     <td style="width:100px">xtd_busy_dialog</td>
+     <th><b>Windows</b></th>
+     <th><b>macOS</b></th>
+     <th><b>Gnome</b></th>
+   </tr>
+   <tr>
+     <td>Light</td>
+     <td>@image html dialog_busy_dialog_w.png</td>
+     <td>@image html dialog_busy_dialog_m.png</td>
+     <td>@image html dialog_busy_dialog_g.png</td>
+   </tr>
+   <tr>
+     <td>Dark</td>
+     <td>@image html dialog_busy_dialog_wd.png</td>
+     <td>@image html dialog_busy_dialog_md.png</td>
+     <td>@image html dialog_busy_dialog_gd.png</td>
+   </tr>
+ </table>
+
+ @par Color folder browser appearance
+ <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
+   <tr>
+     <td style="width:100px">xtd_folder_browser_dialog</td>
+     <th><b>Windows</b></th>
+     <th><b>macOS</b></th>
+     <th><b>Gnome</b></th>
+   </tr>
+   <tr>
+     <td>Light</td>
+     <td>@image html dialog_color_dialog_w.png</td>
+     <td>@image html dialog_color_dialog_m.png</td>
+     <td>@image html dialog_color_dialog_g.png</td>
+   </tr>
+   <tr>
+     <td>Dark</td>
+     <td>@image html dialog_color_dialog_wd.png</td>
+     <td>@image html dialog_color_dialog_md.png</td>
+     <td>@image html dialog_color_dialog_gd.png</td>
+   </tr>
+ </table>
+
+ @par Exception dialog appearance
+ <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
+   <tr>
+     <td style="width:100px">xtd_exception_dialog</td>
+     <th><b>Windows</b></th>
+     <th><b>macOS</b></th>
+     <th><b>Gnome</b></th>
+   </tr>
+   <tr>
+     <td>Light</td>
+     <td>@image html dialog_exception_dialog_w.png</td>
+     <td>@image html dialog_exception_dialog_m.png</td>
+     <td>@image html dialog_exception_dialog_g.png</td>
+   </tr>
+   <tr>
+     <td>Dark</td>
+     <td>@image html dialog_exception_dialog_wd.png</td>
+     <td>@image html dialog_exception_dialog_md.png</td>
+     <td>@image html dialog_exception_dialog_gd.png</td>
+   </tr>
+ </table>
+
+ @par Folder browser dialog appearance
+ <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
+   <tr>
+     <td style="width:100px">xtd_folder_browser_dialog</td>
+     <th><b>Windows</b></th>
+     <th><b>macOS</b></th>
+     <th><b>Gnome</b></th>
+   </tr>
+   <tr>
+     <td>Light</td>
+     <td>@image html dialog_folder_browser_dialog_w.png</td>
+     <td>@image html dialog_folder_browser_dialog_m.png</td>
+     <td>@image html dialog_folder_browser_dialog_g.png</td>
+   </tr>
+   <tr>
+     <td>Dark</td>
+     <td>@image html dialog_folder_browser_dialog_wd.png</td>
+     <td>@image html dialog_folder_browser_dialog_md.png</td>
+     <td>@image html dialog_folder_browser_dialog_gd.png</td>
+   </tr>
+ </table>
+
+ @par Font dialog appearance
+ <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
+   <tr>
+     <td style="width:100px">xtd_font_dialog</td>
+     <th><b>Windows</b></th>
+     <th><b>macOS</b></th>
+     <th><b>Gnome</b></th>
+   </tr>
+   <tr>
+     <td>Light</td>
+     <td>@image html dialog_font_dialog_w.png</td>
+     <td>@image html dialog_font_dialog_m.png</td>
+     <td>@image html dialog_font_dialog_g.png</td>
+   </tr>
+   <tr>
+     <td>Dark</td>
+     <td>@image html dialog_font_dialog_wd.png</td>
+     <td>@image html dialog_font_dialog_md.png</td>
+     <td>@image html dialog_font_dialog_gd.png</td>
+   </tr>
+ </table>
+
+ @par Input dialog appearance
+ <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
+   <tr>
+     <td style="width:100px">xtd_input_dialog</td>
+     <th><b>Windows</b></th>
+     <th><b>macOS</b></th>
+     <th><b>Gnome</b></th>
+   </tr>
+   <tr>
+     <td>Light</td>
+     <td>@image html dialog_input_dialog_w.png</td>
+     <td>@image html dialog_input_dialog_m.png</td>
+     <td>@image html dialog_input_dialog_g.png</td>
+   </tr>
+   <tr>
+     <td>Dark</td>
+     <td>@image html dialog_input_dialog_wd.png</td>
+     <td>@image html dialog_input_dialog_md.png</td>
+     <td>@image html dialog_input_dialog_gd.png</td>
+   </tr>
+ </table>
+*/

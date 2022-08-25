@@ -1,50 +1,52 @@
-/// @file
-/// @brief Contains controls appearances page.
+/**
+ @file
+ @brief Contains controls appearances page.
 
-/// @page ControlsAppearancesPage Controls appearances
-/// @brief Contains controls appearances.
-///
-/// @par Button appearance
-/// <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
-///   <tr>
-///     <td style="width:100px">xtd_forms_button</td>
-///     <th><b>Windows</b></th>
-///     <th><b>macOS</b></th>
-///     <th><b>Gnome</b></th>
-///   </tr>
-///   <tr>
-///     <td>Light</td>
-///     <td>@image html control_button_w.png</td>
-///     <td>@image html control_button_m.png</td>
-///     <td>@image html control_button_g.png</td>
-///   </tr>
-///   <tr>
-///     <td>Dark</td>
-///     <td>@image html control_button_wd.png</td>
-///     <td>@image html control_button_md.png</td>
-///     <td>@image html control_button_gd.png</td>
-///   </tr>
-/// </table>
-///
-/// @par Check box appearance
-/// <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
-///   <tr>
-///     <td style="width:100px">xtd_check_box</td>
-///     <th><b>Windows</b></th>
-///     <th><b>macOS</b></th>
-///     <th><b>Gnome</b></th>
-///   </tr>
-///   <tr>
-///     <td>Light</td>
-///     <td>@image html control_check_box_w.png</td>
-///     <td>@image html control_check_box_m.png</td>
-///     <td>@image html control_check_box_g.png</td>
-///   </tr>
-///   <tr>
-///     <td>Dark</td>
-///     <td>@image html control_check_box_wd.png</td>
-///     <td>@image html control_check_box_md.png</td>
-///     <td>@image html control_check_box_gd.png</td>
-///   </tr>
-/// </table>
-///
+ @page ControlsAppearancesPage Controls appearances
+ @brief Contains controls appearances.
+
+ @par Button appearance
+ <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
+   <tr>
+     <td style="width:100px">xtd_forms_button</td>
+     <th><b>Windows</b></th>
+     <th><b>macOS</b></th>
+     <th><b>Gnome</b></th>
+   </tr>
+   <tr>
+     <td>Light</td>
+     <td>@image html control_button_w.png</td>
+     <td>@image html control_button_m.png</td>
+     <td>@image html control_button_g.png</td>
+   </tr>
+   <tr>
+     <td>Dark</td>
+     <td>@image html control_button_wd.png</td>
+     <td>@image html control_button_md.png</td>
+     <td>@image html control_button_gd.png</td>
+   </tr>
+ </table>
+
+ @par Check box appearance
+ <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
+   <tr>
+     <td style="width:100px">xtd_check_box</td>
+     <th><b>Windows</b></th>
+     <th><b>macOS</b></th>
+     <th><b>Gnome</b></th>
+   </tr>
+   <tr>
+     <td>Light</td>
+     <td>@image html control_check_box_w.png</td>
+     <td>@image html control_check_box_m.png</td>
+     <td>@image html control_check_box_g.png</td>
+   </tr>
+   <tr>
+     <td>Dark</td>
+     <td>@image html control_check_box_wd.png</td>
+     <td>@image html control_check_box_md.png</td>
+     <td>@image html control_check_box_gd.png</td>
+   </tr>
+ </table>
+
+*/

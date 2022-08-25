@@ -13,16 +13,19 @@
  @ingroup xtd_c_core system object
  */
 struct xtd_object {
-  /// @brief Internal handle.
-  /// @warning Internal use only
+  /**
+   @brief Internal handle.
+   @warning Internal use only
+   */
   xtd_handle internal_handle;
 };
 
-/// @cond
+/** @cond */
 typedef struct xtd_object xtd_object;
 
-#define XTD_OBJECT_TYPE (xtd_object())
-/// @endcond
+#define XTD_OBJECT_TYPE \
+  (xtd_object())
+/** @endcond */
 
 /**
  @name Converter
@@ -36,7 +39,8 @@ typedef struct xtd_object xtd_object;
  xtd_c.core
  @ingroup xtd_c_core system object
  */
-#define XTD_OBJECT(object) (XTD_TYPE_CAST(object, XTD_OBJECT_TYPE, xtd_object))
+#define XTD_OBJECT(object) \
+  (XTD_TYPE_CAST(object, XTD_OBJECT_TYPE, xtd_object))
 
 /**
  @}
