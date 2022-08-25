@@ -15,11 +15,8 @@ void xtd_graphics_draw_line(xtd_graphics* graphics, xtd_drawing_point point) {
 
 /* The main entry point for the application. */
 int main(int argc, char* argv[]) {
-  /*printf("Hello, World!\n");*/
-  xtd_console_set_background_color(xtd_console_color_blue);
-  xtd_console_set_foreground_color(xtd_console_color_white);
-  const char s[14]  = {'H', 'e', 'l', 'l', 'o', ',', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
-  //xtd_console_write_line("Hello, World!");
-  xtd_console_write_line(s);
+  xtd_console_write_line(xtd_error_to_string(ENONE));
+  xtd_console_write_line(xtd_error_to_string(EBADEXEC));
+  xtd_console_write_line(xtd_error_to_string(1024));
   return EXIT_SUCCESS;
 }

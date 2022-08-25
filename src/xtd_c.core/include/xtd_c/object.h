@@ -4,6 +4,7 @@
  @copyright Copyright (c) 2022 Gammasoft. All rights reserved.
  */
 #pragma once
+#include "errors.h"
 #include "types.h"
 
 /**
@@ -31,7 +32,7 @@ typedef struct xtd_object xtd_object;
  
 /**  @{ */
 /**
- @brief Convert n xtd object to ultimate base object.
+ @brief Convert an xtd object to ultimate base object.
  @par Library
  xtd_c.core
  @ingroup xtd_c_core system object
@@ -93,6 +94,16 @@ void xtd_object_destroy(xtd_object* value);
 /**
  @brief Returns a string that represents the specified object.
  @param value The object to retrieve the string.
+ @return  pointer to the string that will contain the representation of the specified object.
+ @par Library
+ xtd_c.core
+ @ingroup xtd_c_core system object
+ @remarks No thread safe.
+ */
+const char* xtd_object_to_string(const xtd_object* value);
+/**
+ @brief Returns a string that represents the specified object.
+ @param value The object to retrieve the string.
  @param string A pointer to the string that will contain the representation of the specified object.
  @param size The size og the specified string.
  @return The size in characters of the representation of the specified object.
@@ -104,26 +115,26 @@ void xtd_object_destroy(xtd_object* value);
  This example shows how to use xtd_object_to_string with an xtd_version object.
  @code
  int main(int argc, char* argv[]) {
-   xtd_version* version = xtd_create_version(1, 2, 3);
-   size_t size = xtd_object_to_string(XTD_OBJECT(version), NULL, 0);
-   char version_string[256];
-   xtd_object_to_string(XTD_OBJECT(version), version_string, 256);
-   console::write_line("%s", version_string);
-   xtd_version_destroy(version);
+ xtd_version* version = xtd_create_version(1, 2, 3);
+ size_t size = xtd_object_to_string(XTD_OBJECT(version), NULL, 0);
+ char version_string[256];
+ xtd_object_to_string(XTD_OBJECT(version), version_string, 256);
+ console::write_line("%s", version_string);
+ xtd_version_destroy(version);
  }
  @endcode
  @par Examples
  This example shows how to use xtd_object_to_string with the xtd_version object by using the possibility to get the size before allocating the string.
  @code
-   xtd_version* version = xtd_create_version(1, 2, 3);
-   size_t size = xtd_object_to_string(XTD_OBJECT(version), NULL, 0);
-   char* version_string = (char*)malloc(size);
-   xtd_object_to_string(XTD_OBJECT(version), version_string, size);
-   console_write_line("%s", version_string);
-   free(version_string);
-   xtd_version_destroy(version);
+ xtd_version* version = xtd_create_version(1, 2, 3);
+ size_t size = xtd_object_to_string(XTD_OBJECT(version), NULL, 0);
+ char* version_string = (char*)malloc(size);
+ xtd_object_to_string(XTD_OBJECT(version), version_string, size);
+ console_write_line("%s", version_string);
+ free(version_string);
+ xtd_version_destroy(version);
  }
  @endcode
  */
-size_t xtd_object_to_string(const xtd_object* value, char* string, size_t size);
+size_t xtd_object_to_string_s(const xtd_object* value, char* string, size_t size);
 /** @} */

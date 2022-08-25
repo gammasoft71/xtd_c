@@ -1,11 +1,11 @@
 #include <xtd/console.h>
 #include "../include/xtd_c/privates/__ustring_helper__.h"
 
+using namespace xtd;
+
 extern "C" {
 #include "../include/xtd_c/console.h"
 
-  using namespace xtd;
-  
   xtd_console_color xtd_console_get_background_color() {
     return static_cast<xtd_console_color>(console::background_color());
   }

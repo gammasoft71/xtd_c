@@ -91,7 +91,8 @@ xtd_forms_control* xtd_forms_control_get_parent(xtd_forms_control* control);
 void xtd_forms_control_set_parent(xtd_forms_control* control, xtd_forms_control* parent);
 void xtd_forms_control_reset_parent(xtd_forms_control* control);
 
-size_t xtd_forms_control_get_text(xtd_forms_control* control, char* text, size_t size);
+const char* xtd_forms_control_get_text(xtd_forms_control* control);
+size_t xtd_forms_control_get_text_s(xtd_forms_control* control, char* text, size_t size);
 void xtd_forms_control_set_text(xtd_forms_control* control, const char* text);
 /** @} */
 

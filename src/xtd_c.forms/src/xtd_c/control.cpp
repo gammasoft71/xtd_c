@@ -40,10 +40,14 @@ extern "C" {
     reinterpret_cast<class control*>(control)->parent(nullptr);
   }
   
-  size_t xtd_forms_control_get_text(xtd_forms_control* control, char* text, size_t size) {
-    return to_c_string(reinterpret_cast<class control*>(control)->text(), text, size);
+  const char* xtd_forms_control_get_text(xtd_forms_control* control) {
+    return to_c_string(reinterpret_cast<class control*>(control)->text());
   }
   
+  size_t xtd_forms_control_get_text_s(xtd_forms_control* control, char* text, size_t size) {
+    return to_c_string_s(reinterpret_cast<class control*>(control)->text(), text, size);
+  }
+
   void xtd_forms_control_set_text(xtd_forms_control* control, const char* text) {
     reinterpret_cast<class control*>(control)->text(text);
   }
