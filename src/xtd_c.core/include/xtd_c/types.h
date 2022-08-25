@@ -8,11 +8,9 @@
 #include <stdint.h>
 #include <stdlib.h>
 
+/** @cond */
 #ifdef NDEBUG
-/**
- @todo Add check current type with global type in debug mode...
- */
-
+/** @todo Add check current type with global type in debug mode... */
 #define __XTD_CHECK_TYPE_CAST__(object, global_type, current_type) \
   ((current_type*)object)
 #else
@@ -23,9 +21,6 @@
 #define XTD_TYPE_CAST(object, global_type, current_type) \
   __XTD_CHECK_TYPE_CAST__(object, global_type, current_type)
 
-/**
-@cond
- */
 typedef uint8_t byte_t;
 typedef char char_t;
 typedef long double decimal_t;
@@ -42,9 +37,7 @@ typedef unsigned long long int ullong_t;
 typedef long llong_t;
 typedef unsigned long ullong_t;
 #endif
-/**
-@endcond
- */
+/** @endcond */
 
 /**
  @brief Represents a 8-bit unsigned integer.

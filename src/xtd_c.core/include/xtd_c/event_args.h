@@ -19,7 +19,10 @@ struct xtd_event_args {
    */
   xtd_handle user_data;
 };
+
+/** @cond */
 typedef struct xtd_event_args xtd_event_args;
+/** @endcond */
 
 /**
  @name Fields
