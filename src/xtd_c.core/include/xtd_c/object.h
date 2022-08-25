@@ -17,7 +17,30 @@ struct xtd_object {
   /// @warning Internal use only
   xtd_handle internal_handle;
 };
+
+/// @cond
 typedef struct xtd_object xtd_object;
+
+#define XTD_OBJECT_TYPE (xtd_object())
+/// @endcond
+
+/**
+ @name Converter
+ 
+ @{
+ */
+
+/**
+ @brief Convert n xtd object to ultimate base object.
+ @par Library
+ xtd_c.core
+ @ingroup xtd_c_core system object
+ */
+#define XTD_OBJECT(object) (XTD_TYPE_CAST(object, XTD_OBJECT_TYPE, xtd_object))
+
+/**
+ @}
+ */
 
 /**
  @name Creation/Destruction
@@ -58,15 +81,16 @@ int main(int argc, char* argv[]) {
   xtd_object_destroy(object);
 }
 @endcode
- This example shows how to use xtd_object_destroy to destroy an xtd_version object by using the xtd_ptr_to_xtd_object_ptr method to convert xtd_version to xtd_object.
+ This example shows how to use xtd_object_destroy to destroy an xtd_version object by using the XTD_OBJECT method to convert xtd_version to xtd_object.
 @code
 int main(int argc, char* argv[]) {
   xtd_version* version = xtd_create_version(1, 2, 3);
-  xtd_object_destroy(xtd_ptr_to_xtd_object_ptr(version));
+  xtd_object_destroy(XTD_OBJECT(version));
 }
 @endcode
 */
 void xtd_object_destroy(xtd_object* value);
+
 /**
  @}
  */
@@ -76,14 +100,6 @@ void xtd_object_destroy(xtd_object* value);
 
  @{
  */
-
-/**
- @brief Convert a pointer of any xtd object to ultimate base object.
- @par Library
- xtd_c.core
- @ingroup xtd_c_core system object
- */
-xtd_object* xtd_ptr_to_xtd_object_ptr(xtd_handle ptr);
 
 /**
  @brief Returns a string that represents the specified object.
@@ -100,9 +116,9 @@ xtd_object* xtd_ptr_to_xtd_object_ptr(xtd_handle ptr);
  @code
  int main(int argc, char* argv[]) {
    xtd_version* version = xtd_create_version(1, 2, 3);
-   size_t size = xtd_object_to_string(xtd_ptr_to_xtd_object_ptr(version), NULL, 0);
+   size_t size = xtd_object_to_string(XTD_OBJECT(version), NULL, 0);
    char version_string[256];
-   xtd_object_to_string(xtd_ptr_to_xtd_object_ptr(version), version_string, 256);
+   xtd_object_to_string(XTD_OBJECT(version), version_string, 256);
    console::write_line("%s", version_string);
    xtd_version_destroy(version);
  }
@@ -111,9 +127,9 @@ xtd_object* xtd_ptr_to_xtd_object_ptr(xtd_handle ptr);
  This example shows how to use xtd_object_to_string with the xtd_version object by using the possibility to get the size before allocating the string.
  @code
    xtd_version* version = xtd_create_version(1, 2, 3);
-   size_t size = xtd_object_to_string(xtd_ptr_to_xtd_object_ptr(version), NULL, 0);
+   size_t size = xtd_object_to_string(XTD_OBJECT(version), NULL, 0);
    char* version_string = (char*)malloc(size);
-   xtd_object_to_string(xtd_ptr_to_xtd_object_ptr(version), version_string, size);
+   xtd_object_to_string(XTD_OBJECT(version), version_string, size);
    console_write_line("%s", version_string);
    free(version_string);
    xtd_version_destroy(version);

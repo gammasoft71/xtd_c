@@ -11,9 +11,30 @@ struct xtd_forms_form {
   /// @warning Internal use only
   xtd_handle internal_handle;
 };
+
+/// @cond
 typedef struct xtd_forms_form xtd_forms_form;
 
-xtd_forms_form* xtd_ptr_to_xtd_forms_form_ptr(xtd_handle ptr);
+#define XTD_FORMS_FORM_TYPE (xtd_forms_form())
+/// @endcond
 
-xtd_forms_forms_control* xtd_forms_form_create(void);
+/**
+ @name Converter
+ 
+ @{
+ */
+
+/**
+ @brief Convert an xtd object to form object.
+ @par Library
+ xtd_c.core
+ @ingroup xtd_c_forms controls form
+ */
+#define XTD_FORMS_FORM(object) (XTD_TYPE_CAST(object, XTD_FORMS_FORM_TYPE, xtd_forms_form))
+
+/**
+ @}
+ */
+
+xtd_forms_control* xtd_forms_form_create(void);
 void xtd_forms_form_destroy(xtd_forms_form* value);

@@ -139,7 +139,7 @@ int main(void) {
   xtd_forms_control_set_text(button1, "&Click me");
   xtd_forms_control_set_click_event(button1, &on_button1_click, NULL);
 
-  xtd_forms_application_run(xtd_ptr_to_xtd_forms_form_ptr(form1));
+  xtd_forms_application_run(XTD_FORMS_FORM(form1));
   
   xtd_forms_control_destroy(button1);
   xtd_forms_control_destroy(form1);
