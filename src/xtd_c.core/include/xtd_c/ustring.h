@@ -14,8 +14,10 @@
  @ingroup xtd_c_core system ustring
  */
 struct xtd_ustring {
-  /// @brief Internal handle.
-  /// @warning Internal use only
+  /**
+   @brief Internal handle.
+   @warning Internal use only
+   */
   xtd_handle internal_handle;
 };
 typedef struct xtd_ustring xtd_ustring;

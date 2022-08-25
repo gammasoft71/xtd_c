@@ -24,6 +24,7 @@ typedef struct xtd_object xtd_object;
 
  @{
  */
+
 /**
 @brief Create a new instance of the ultimate base object.
 @return New object created.

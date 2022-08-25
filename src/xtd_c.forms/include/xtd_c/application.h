@@ -7,4 +7,26 @@
 #include "control.h"
 #include "form.h"
 
-void xtd_application_run(xtd_form* form);
+/**
+ @name Methods
+ 
+ @{
+ */
+
+/**
+ @brief Begins running a standard application message loop on the current thread, and makes the specified form visible.
+ @param main_form A form that represents the form to make visible.
+ @remarks Typically, the main function of an application calls this method and passes to it the main window of the application.
+ @par Library
+ xtd_c.forms
+ @ingroup xtd_c_forms application
+ @remarks This method adds an event handler to the main_form parameter for the closed event. The event handler calls exit_thread to clean up the application.
+ @par Examples
+ The following code example demonstrates the use of application run method.
+ @include application.c
+*/
+void xtd_application_run(xtd_form* main_form);
+
+/**
+ @}
+ */

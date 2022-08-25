@@ -21,6 +21,10 @@
 /// @brief Containers are  container for other controls.
 /// @ingroup gui
 
+/// @defgroup control control
+/// @brief control definitions.
+/// @ingroup controls
+
 /// @defgroup controls controls
 /// @brief Controls are children windows that an application uses in conjunction with another window to enable interaction with the user.
 /// @ingroup gui
@@ -78,6 +82,10 @@
 /// @defgroup menus_and_toolbars  menus and toolbars
 /// @brief menus and toolbars definitions.
 /// @ingroup gui
+
+/// @defgroup message_box message_box
+/// @brief message_box definitions.
+/// @ingroup dialogs
 
 /// @defgroup net net
 /// @brief Network definitions.
