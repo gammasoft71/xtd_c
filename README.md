@@ -191,13 +191,35 @@ xtdc run
 #### hello_world_test.c
 
 ```c++
-  Comming soon...
+#include <xtd_c/xtd_c.h>
+#include <string.h>
+
+void XTD_TUNIT_TEST(hello_world_test, create_string_from_literal) {
+ const char* s = "Hello, World!";
+ XTD_TUNIT_ASSERT_ARE_EQUAL("Hello, World!", s);
+}
+
+void XTD_TUNIT_TEST(hello_world_test, create_string_from_chars) {
+ const char s[14]  = {'H', 'e', 'l', 'l', 'o', ',', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
+ XTD_TUNIT_VALID_ARE_EQUAL(13, s.size());
+ XTD_TUNIT_STRING_ASSERT_STARTS_WIDTH("Hello,", s);
+ XTD_TUNIT_STRING_ASSERT_ENDS_WIDTH(" World!", s);
+}
+
+int main(void) {
+ return xtd_console_unit_test_run();
+}
 ```
 
 #### CMakeLists.txt
 
 ```cmake
-  Comming soon...
+cmake_minimum_required(VERSION 3.3)
+
+project(hello_world_test)
+find_package(xtd_c REQUIRED)
+add_sources(hello_world_test.c)
+target_type(C_TEST_APPLICATION)
 ```
 
 #### Build and run

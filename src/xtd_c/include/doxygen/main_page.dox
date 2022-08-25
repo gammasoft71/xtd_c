@@ -63,7 +63,7 @@
  cmake_minimum_required(VERSION 3.3)
 
  project(hello_world_console)
- find_package(xtd REQUIRED)
+ find_package(xtd_c REQUIRED)
  add_sources(hello_world_console.c)
  target_type(C_CONSOLE_APPLICATION)
  @endcode
@@ -111,7 +111,7 @@
  cmake_minimum_required(VERSION 3.3)
 
  project(hello_world_forms)
- find_package(xtd REQUIRED)
+ find_package(xtd_c REQUIRED)
  add_sources(hello_world_forms.c)
  target_type(C_GUI_APPLICATION)
  @endcode
@@ -145,20 +145,20 @@
  #include <xtd_c/xtd_c.h>
  #include <string.h>
 
- void test_(hello_world_test, create_string_from_literal) {
+ void XTD_TUNIT_TEST(hello_world_test, create_string_from_literal) {
    const char* s = "Hello, World!";
-   xtd_assert_are_equal("Hello, World!", s);
+   XTD_TUNIT_ASSERT_ARE_EQUAL("Hello, World!", s);
  }
 
- void test_(hello_world_test, create_string_from_chars) {
-   const char* s = {'H', 'e', 'l', 'l', 'o', ',', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
-   xtd_valid_are_equal(13, s.size());
-   xtd_string_assert_starts_with("Hello,", s);
-   xtd_string_assert_ends_with(" World!", s);
+ void XTD_TUNIT_TEST(hello_world_test, create_string_from_chars) {
+   const char s[14]  = {'H', 'e', 'l', 'l', 'o', ',', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
+   XTD_TUNIT_VALID_ARE_EQUAL(13, s.size());
+   XTD_TUNIT_STRING_ASSERT_STARTS_WIDTH("Hello,", s);
+   XTD_TUNIT_STRING_ASSERT_ENDS_WIDTH(" World!", s);
  }
 
- int main() {
-   return xtd_console_unit_test(argv, argc).run();
+ int main(void) {
+   return xtd_console_unit_test_run();
  }
  @endcode
 
@@ -167,7 +167,7 @@
  cmake_minimum_required(VERSION 3.3)
 
  project(hello_world_test)
- find_package(xtd REQUIRED)
+ find_package(xtd_c REQUIRED)
  add_sources(hello_world_test.c)
  target_type(C_TEST_APPLICATION)
  @endcode

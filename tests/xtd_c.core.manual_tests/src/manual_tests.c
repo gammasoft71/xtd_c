@@ -18,6 +18,8 @@ int main(int argc, char* argv[]) {
   /*printf("Hello, World!\n");*/
   xtd_console_set_background_color(xtd_console_color_blue);
   xtd_console_set_foreground_color(xtd_console_color_white);
-  xtd_console_write_line("Hello, World!");
+  const char s[14]  = {'H', 'e', 'l', 'l', 'o', ',', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
+  //xtd_console_write_line("Hello, World!");
+  xtd_console_write_line(s);
   return EXIT_SUCCESS;
 }
