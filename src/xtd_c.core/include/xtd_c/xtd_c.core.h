@@ -11,3 +11,5 @@
 #include "object.h"
 #include "types.h"
 #include "ustring.h"
+#include "diagnostics/debug.h"
+#include "diagnostics/stack_frame.h"

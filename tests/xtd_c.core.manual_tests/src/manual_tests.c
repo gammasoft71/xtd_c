@@ -1,8 +1,4 @@
-#include <xtd_c/console.h>
-#include <xtd_c/object.h>
-#include <xtd_c/ustring.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include <xtd_c/xtd_c.h>
 
 /*
 struct xtd_graphics;
@@ -13,10 +9,7 @@ void xtd_graphics_draw_line(xtd_graphics* graphics, xtd_drawing_point point) {
 }
  */
 
-/* The main entry point for the application. */
-int main(int argc, char* argv[]) {
-  xtd_console_write_line(xtd_error_to_string(ENONE));
-  xtd_console_write_line(xtd_error_to_string(EBADEXEC));
-  xtd_console_write_line(xtd_error_to_string(1024));
+int main(void) {
+  xtd_console_write_line("csf = %s", xtd_stack_frame_to_string(CSF));
   return EXIT_SUCCESS;
 }

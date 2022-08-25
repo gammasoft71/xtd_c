@@ -12,6 +12,6 @@ extern "C" {
   }
   
   void xtd_forms_form_destroy(xtd_forms_form* value) {
-    delete reinterpret_cast<control*>(value);
+    xtd_object_destroy(XTD_OBJECT(value));
   }
 }

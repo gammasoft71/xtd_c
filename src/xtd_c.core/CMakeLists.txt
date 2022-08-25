@@ -17,12 +17,16 @@ add_sources(
   include/xtd_c/xtd_c.core.h
   include/xtd_c/privates/__ustring_helper__.h
   include/xtd_c/object_template.txt
-)
+  include/xtd_c/diagnostics/debug.h
+  include/xtd_c/diagnostics/stack_frame.h
+  )
 add_sources(
   src/xtd_c/console.cpp
   src/xtd_c/event_args.cpp
   src/xtd_c/errors.cpp
   src/xtd_c/object.cpp
   src/xtd_c/ustring.cpp
+  src/xtd_c/diagnostics/debug.cpp
+  src/xtd_c/diagnostics/stack_frame.cpp
 )
 target_type(STATIC_LIBRARY)

@@ -98,7 +98,6 @@ void xtd_object_destroy(xtd_object* value);
  @par Library
  xtd_c.core
  @ingroup xtd_c_core system object
- @remarks No thread safe.
  */
 const char* xtd_object_to_string(const xtd_object* value);
 /**

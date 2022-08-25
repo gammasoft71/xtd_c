@@ -12,7 +12,7 @@ inline size_t to_c_string_s(const xtd::ustring& value, char* string, size_t size
 }
 
 inline const char* to_c_string(const xtd::ustring& value) {
-  static char buffer[__C_STRING_BUFFER_SIZE__];
+  thread_local static char buffer[__C_STRING_BUFFER_SIZE__];
   to_c_string_s(value, buffer, __C_STRING_BUFFER_SIZE__);
   return buffer;
 }
@@ -27,3 +27,21 @@ inline const xtd::ustring* to_ustring(const type_t* value) {
   return dynamic_cast<const xtd::ustring*>(reinterpret_cast<const xtd::object*>(value));
 }
 
+inline const char* string_format(const char* format, ...) {
+  thread_local static char buffer[__C_STRING_BUFFER_SIZE__];
+  va_list args;
+  va_start(args, format);
+  vsnprintf(buffer, __C_STRING_BUFFER_SIZE__, format, args);
+  va_end(args);
+  return buffer;
+}
+
+inline size_t string_format_s(char* string, size_t size, const char* format, ...) {
+  va_list args;
+  va_start(args, format);
+  size_t result = 0;
+  if (string == nullptr) result =  vsnprintf(nullptr, 0, format, args) + 1;
+  else result = vsnprintf(string, size, format, args);
+  va_end(args);
+  return result;
+}
