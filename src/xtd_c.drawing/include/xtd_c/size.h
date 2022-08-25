@@ -6,8 +6,8 @@
 #pragma once
 #include <xtd_c/object.h>
 
-struct xtd_size {
+struct xtd_drawing_size {
   int32_t width;
   int32_t height;
 };
-typedef struct xtd_size xtd_size;
+typedef struct xtd_drawing_size xtd_drawing_size;

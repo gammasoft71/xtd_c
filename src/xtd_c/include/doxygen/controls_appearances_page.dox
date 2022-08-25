@@ -7,7 +7,7 @@
 /// @par Button appearance
 /// <table align="center" border="0" cellpadding="10" cellspacing="0" style="width:100%">
 ///   <tr>
-///     <td style="width:100px">xtd_button</td>
+///     <td style="width:100px">xtd_forms_forms_button</td>
 ///     <th><b>Windows</b></th>
 ///     <th><b>macOS</b></th>
 ///     <th><b>Gnome</b></th>

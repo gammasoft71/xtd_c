@@ -15,12 +15,12 @@
  xtd_c.forms
  @ingroup xtd_c_forms controls control
  */
-struct xtd_control {
+struct xtd_forms_forms_control {
   /// @brief Internal handle.
   /// @warning Internal use only
   xtd_handle internal_handle;
 };
-typedef struct xtd_control xtd_control;
+typedef struct xtd_forms_forms_control xtd_forms_forms_control;
 
 /**
  @name Creation/Destruction
@@ -30,14 +30,14 @@ typedef struct xtd_control xtd_control;
 
 
 /**
- @brief Initializes a new instance of the xtd_control with default settings.
+ @brief Initializes a new instance of the xtd_forms_forms_control with default settings.
  @return New control created.
  @par Library
  xtd_c.forms
  @ingroup xtd_c_forms controls control
- @remarks The xtd_control structure is the base structure for all controls used in a Windows Forms application. Because this class is not typically used to create an instance of the class, this constructor is typically not called directly but is instead called by a derived control.
+ @remarks The xtd_forms_forms_control structure is the base structure for all controls used in a Windows Forms application. Because this class is not typically used to create an instance of the class, this constructor is typically not called directly but is instead called by a derived control.
  */
-xtd_control* xtd_control_create(void);
+xtd_forms_forms_control* xtd_forms_forms_control_create(void);
 /**
  @brief Destroy the instance of the specfied control
  @param value The control to delete.
@@ -45,7 +45,7 @@ xtd_control* xtd_control_create(void);
  xtd_c.forms
  @ingroup xtd_c_forms controls control
  */
-void xtd_control_destroy(xtd_control* value);
+void xtd_forms_forms_control_destroy(xtd_forms_forms_control* value);
 
 /**
  @}
@@ -65,7 +65,7 @@ void xtd_control_destroy(xtd_control* value);
  xtd_c.forms
  @ingroup xtd_c_forms controls control
  */
-xtd_point xtd_control_get_location(xtd_control* control);
+xtd_drawing_point xtd_forms_forms_control_get_location(xtd_forms_forms_control* control);
 /**
  @brief Sets the coordinates of the upper-left corner of the control relative to the upper-left corner of its container.
  @param control The control.
@@ -74,14 +74,14 @@ xtd_point xtd_control_get_location(xtd_control* control);
  xtd_c.forms
  @ingroup xtd_c_forms controls control
  */
-void xtd_control_set_location(xtd_control* control, xtd_point point);
+void xtd_forms_forms_control_set_location(xtd_forms_forms_control* control, xtd_drawing_point point);
 
-xtd_control* xtd_control_get_parent(xtd_control* control);
-void xtd_control_set_parent(xtd_control* control, xtd_control* parent);
-void xtd_control_reset_parent(xtd_control* control);
+xtd_forms_forms_control* xtd_forms_forms_control_get_parent(xtd_forms_forms_control* control);
+void xtd_forms_forms_control_set_parent(xtd_forms_forms_control* control, xtd_forms_forms_control* parent);
+void xtd_forms_forms_control_reset_parent(xtd_forms_forms_control* control);
 
-size_t xtd_control_get_text(xtd_control* control, char* text, size_t size);
-void xtd_control_set_text(xtd_control* control, const char* text);
+size_t xtd_forms_forms_control_get_text(xtd_forms_forms_control* control, char* text, size_t size);
+void xtd_forms_forms_control_set_text(xtd_forms_forms_control* control, const char* text);
 
 /**
  @}
@@ -93,8 +93,8 @@ void xtd_control_set_text(xtd_control* control, const char* text);
  @{
  */
 
-void xtd_control_set_click_event(xtd_control* control, xtd_event_handler e, xtd_handle user_data);
-void xtd_control_reset_click_event(xtd_control* control);
+void xtd_forms_forms_control_set_click_event(xtd_forms_forms_control* control, xtd_event_handler e, xtd_handle user_data);
+void xtd_forms_forms_control_reset_click_event(xtd_forms_forms_control* control);
 
 /**
  @}
@@ -106,7 +106,7 @@ void xtd_control_reset_click_event(xtd_control* control);
  @{
  */
 
-xtd_control* xtd_ptr_to_xtd_control_ptr(xtd_handle ptr);
+xtd_forms_forms_control* xtd_ptr_to_xtd_forms_forms_control_ptr(xtd_handle ptr);
 
 /**
  @}

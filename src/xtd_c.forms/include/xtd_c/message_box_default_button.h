@@ -5,9 +5,9 @@
  */
 #pragma once
 
-enum xtd_message_box_default_button {
-  xtd_message_box_default_button_1,
-  xtd_message_box_default_button_2,
-  xtd_message_box_default_button_3,
+enum xtd_forms_message_box_default_button {
+  xtd_forms_message_box_default_button_1,
+  xtd_forms_message_box_default_button_2,
+  xtd_forms_message_box_default_button_3,
 };
-typedef enum xtd_message_box_default_button xtd_message_box_default_button;
+typedef enum xtd_forms_message_box_default_button xtd_forms_message_box_default_button;

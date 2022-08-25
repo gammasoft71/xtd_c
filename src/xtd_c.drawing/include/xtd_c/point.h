@@ -6,8 +6,8 @@
 #pragma once
 #include <xtd_c/object.h>
 
-struct xtd_point {
+struct xtd_drawing_point {
   int32_t x;
   int32_t y;
 };
-typedef struct xtd_point xtd_point;
+typedef struct xtd_drawing_point xtd_drawing_point;

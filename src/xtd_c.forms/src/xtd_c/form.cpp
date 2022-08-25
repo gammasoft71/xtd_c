@@ -6,16 +6,16 @@ extern "C" {
   using namespace xtd;
   using namespace xtd::forms;
   
-  xtd_form* xtd_ptr_to_xtd_form_ptr(xtd_handle ptr) {
-    return (xtd_form*)ptr;
+  xtd_forms_form* xtd_ptr_to_xtd_forms_form_ptr(xtd_handle ptr) {
+    return (xtd_forms_form*)ptr;
   }
   
-  xtd_control* xtd_form_create(void) {
+  xtd_forms_forms_control* xtd_forms_form_create(void) {
     object* result = new form();
-    return reinterpret_cast<xtd_control*>(result);
+    return reinterpret_cast<xtd_forms_forms_control*>(result);
   }
   
-  void xtd_form_destroy(xtd_form* value) {
+  void xtd_forms_form_destroy(xtd_forms_form* value) {
     delete reinterpret_cast<control*>(value);
   }
 }

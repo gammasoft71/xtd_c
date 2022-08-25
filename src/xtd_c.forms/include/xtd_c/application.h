@@ -25,7 +25,7 @@
  The following code example demonstrates the use of application run method.
  @include application.c
 */
-void xtd_application_run(xtd_form* main_form);
+void xtd_forms_forms_application_run(xtd_forms_form* main_form);
 
 /**
  @}
