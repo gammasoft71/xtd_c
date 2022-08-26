@@ -20,7 +20,7 @@
  xtd_c.core
  @ingroup xtd_c stack_frame
  */
-struct xtd_current_stack_frame {
+struct xtd_diagnostics_current_stack_frame {
   const char* file_name;
   uint32_t file_line_number;
   const char* method_name;
@@ -28,10 +28,10 @@ struct xtd_current_stack_frame {
 };
 
 /** @cond */
-typedef struct xtd_current_stack_frame xtd_current_stack_frame;
+typedef struct xtd_diagnostics_current_stack_frame xtd_diagnostics_current_stack_frame;
 
 #define current_stack_frame_  \
-((xtd_current_stack_frame){__FILE__, __LINE__, __func__})
+((xtd_diagnostics_current_stack_frame){__FILE__, __LINE__, __func__})
 
 #define csf_  \
 current_stack_frame_
@@ -41,7 +41,7 @@ current_stack_frame_
 /** @name Properties */
 
 /** @{ */
-xtd_current_stack_frame xtd_current_stack_frame_empty();
+xtd_diagnostics_current_stack_frame xtd_diagnostics_current_stack_frame_empty();
 /** @} */
 
 /** @name Events */
@@ -52,7 +52,7 @@ xtd_current_stack_frame xtd_current_stack_frame_empty();
 /** @name Methods */
 
 /** @{ */
-bool xtd_current_stack_frame_is_empty(xtd_current_stack_frame stack_frame);
-const char* xtd_current_stack_frame_to_string(xtd_current_stack_frame value);
-size_t xtd_current_stack_frame_to_string_s(xtd_current_stack_frame value, char* string, size_t size);
+bool xtd_diagnostics_current_stack_frame_is_empty(xtd_diagnostics_current_stack_frame stack_frame);
+const char* xtd_diagnostics_current_stack_frame_to_string(xtd_diagnostics_current_stack_frame value);
+size_t xtd_diagnostics_current_stack_frame_to_string_s(xtd_diagnostics_current_stack_frame value, char* string, size_t size);
 /** @} */

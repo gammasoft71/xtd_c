@@ -23,7 +23,7 @@
  xtdc.core
  @ingroup xtdc_core debug debugger
  */
-bool xtd_debugger_is_attached();
+bool xtd_diagnostics_debugger_is_attached();
 
 /**
  @brief Signals a breakpoint to an attached debugger.
@@ -37,7 +37,7 @@ bool xtd_debugger_is_attached();
  xtd_console_write_line("Hello, world.");
  @endcode
  */
-void xtd_debugger_debug_break();
+void xtd_diagnostics_debugger_debug_break();
 
 /**
  @brief Checks to see if logging is enabled by an attached debugger.
@@ -46,7 +46,7 @@ void xtd_debugger_debug_break();
  xtdc.core
  @ingroup xtdc_core debug debugger
  */
-bool xtd_debugger_is_logging();
+bool xtd_diagnostics_debugger_is_logging();
 
 /**
  @brief Launches and attaches a debugger to the process.
@@ -57,7 +57,7 @@ bool xtd_debugger_is_logging();
  @remarks If a debugger is already attached, nothing happens.
  @remarks Debugger launch is only supported on Windows. On Unix and macOS operating systems, the method returns true without launching a debugger.
  */
-bool xtd_debugger_launch();
+bool xtd_diagnostics_debugger_launch();
 /**
  @brief Posts a message for the attached debugger.
  @param level A description of the importance of the message.
@@ -69,7 +69,7 @@ bool xtd_debugger_launch();
  @remarks If there is no debugger attached, this method has no effect. The debugger might or might not report the message, depending upon its settings.
  @note The category parameter is limited to 256 characters. std::string longer than 256 characters are truncated.
  */
-void xtd_debugger_log(int32_t level, const char* category, const char* message);
+void xtd_diagnostics_debugger_log(int32_t level, const char* category, const char* message);
 /** @} */
 
 #if defined(_MSC_VER)
@@ -86,7 +86,7 @@ void xtd_debugger_log(int32_t level, const char* category, const char* message);
  @endcode
  */
 #define debug_break_() \
-  if (xtd_debugger_launch()) __debugbreak()
+  if (xtd_diagnostics_debugger_launch()) __debugbreak()
 #else
 /**
  @brief Signals a breakpoint to an attached debugger.
@@ -101,5 +101,5 @@ void xtd_debugger_log(int32_t level, const char* category, const char* message);
  @endcode
  */
 #define debug_break_() \
-  if (xtd_debugger_launch()) abort()
+  if (xtd_diagnostics_debugger_launch()) abort()
 #endif

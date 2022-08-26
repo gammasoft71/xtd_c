@@ -7,23 +7,23 @@ extern "C" {
   using namespace xtd;
   using namespace xtd::diagnostics;
   
-  bool xtd_debugger_is_attached() {
+  bool xtd_diagnostics_debugger_is_attached() {
     return debugger::is_attached();
   }
   
-  void xtd_debugger_debug_break() {
+  void xtd_diagnostics_debugger_debug_break() {
     debugger::debug_break();
   }
   
-  bool xtd_debugger_is_logging() {
+  bool xtd_diagnostics_debugger_is_logging() {
     return debugger::is_logging();
   }
   
-  bool xtd_debugger_launch() {
+  bool xtd_diagnostics_debugger_launch() {
     return debugger::launch();
   }
   
-  void xtd_debugger_log(int32_t level, const char* category, const char* message) {
+  void xtd_diagnostics_debugger_log(int32_t level, const char* category, const char* message) {
     debugger::log(level, category == nullptr ? "" : category, message == nullptr ? "" : message);
   }
 }
