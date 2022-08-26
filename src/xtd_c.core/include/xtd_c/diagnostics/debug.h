@@ -22,6 +22,28 @@ void __xtd_debug_write_line__(const char* message, const char* category);
 void __xtd_debug_write_line_if__(bool condition, const char* message, const char* category);
 /** @endcond */
 
+/** @name Properties */
+
+/**  @{ */
+/**
+ @brief Gets whether xtd_debug_flush should be called on the xtd_debug_Listeners after every write.
+ @return true if xtd_debug_flush is called on the xtd_debug_listeners after every write; otherwise, false.
+ @remarks The default is false.
+ @remarks Flushing the stream will not flush its underlying encoder unless you explicitly call xtd_debug_flush or xtd_debug_close. Setting xtd_debug_auto_flush to true means that data will be flushed from the buffer to the stream.
+ */
+bool xtd_debug_get_auto_flush();
+/**
+ @brief Sets whether xtd_debug_flush should be called on the xtd_debug_Listeners after every write.
+ @param auto_flush true if xtd_debug_flush is called on the xtd_debug_listeners after every write; otherwise, false.
+ @remarks The default is false.
+ @remarks Flushing the stream will not flush its underlying encoder unless you explicitly call xtd_debug_flush or xtd_debug_close. Setting xtd_debug_auto_flush to true means that data will be flushed from the buffer to the stream.
+ */
+void xtd_debug_set_auto_flush(bool value);
+/** @} */
+
+/** @name Methods */
+
+/**  @{ */
 /**
  @brief Writes a category name and message to the trace listeners in the listeners collection.
  @param message A message to write.
@@ -89,6 +111,7 @@ inline_ void xtd_debug_write_line_if(bool condition, const char* message, const 
   __xtd_debug_write_line_if__(condition, message, category);
 #endif
 }
+/** @} */
 
 /**
  @brief Checks for a condition; if the condition is false, displays a message box that shows the call stack.
