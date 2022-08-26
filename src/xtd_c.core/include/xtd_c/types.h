@@ -127,3 +127,11 @@ typedef intptr_t intptr;
  @ingroup xtd_c_core types
  */
 typedef void* xtd_handle;
+
+#ifndef inline_
+# if __GNUC__ // && !__GNUC_STDC_INLINE__
+#  define inline_ extern inline
+# else
+#  define inline_ inline
+# endif
+#endif
