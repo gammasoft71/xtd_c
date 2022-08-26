@@ -28,6 +28,9 @@ void __xtd_debug_write_line_if__(bool condition, const char* message, const char
 /**
  @brief Gets whether xtd_debug_flush should be called on the xtd_debug_Listeners after every write.
  @return true if xtd_debug_flush is called on the xtd_debug_listeners after every write; otherwise, false.
+ @par Library
+ xtdc.core
+ @ingroup xtdc_core debug debugobj
  @remarks The default is false.
  @remarks Flushing the stream will not flush its underlying encoder unless you explicitly call xtd_debug_flush or xtd_debug_close. Setting xtd_debug_auto_flush to true means that data will be flushed from the buffer to the stream.
  */
@@ -35,6 +38,9 @@ bool xtd_debug_get_auto_flush();
 /**
  @brief Sets whether xtd_debug_flush should be called on the xtd_debug_Listeners after every write.
  @param auto_flush true if xtd_debug_flush is called on the xtd_debug_listeners after every write; otherwise, false.
+ @par Library
+ xtdc.core
+ @ingroup xtdc_core debug debugobj
  @remarks The default is false.
  @remarks Flushing the stream will not flush its underlying encoder unless you explicitly call xtd_debug_flush or xtd_debug_close. Setting xtd_debug_auto_flush to true means that data will be flushed from the buffer to the stream.
  */
