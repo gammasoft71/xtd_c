@@ -13,8 +13,10 @@
  @ingroup xtd_c_forms controls xxx
  */
 struct xtd_forms_xxx {
-  /// @brief Internal handle.
-  /// @warning Internal use only
+  /**
+   @brief Internal handle.
+   @warning Internal use only
+   */
   xtd_handle internal_handle;
 };
 

@@ -24,6 +24,22 @@ extern "C" {
     debug::auto_flush(value);
   }
 
+  uint32_t xtd_diagnostics_debug_get_indent_level() {
+    return debug::indent_level();
+  }
+
+  void xtd_diagnostics_debug_set_indent_level(uint32_t indent_level) {
+    debug::indent_level(indent_level);
+  }
+  
+  uint32_t xtd_diagnostics_debug_get_indent_size() {
+    return debug::indent_size();
+  }
+
+  void xtd_diagnostics_debug_set_indent_size(uint32_t indent_size) {
+    debug::indent_size(indent_size);
+  }
+
   void __xtd_diagnostics_debug_write__(const char* message, const char* category) {
     if (category == nullptr) debug::write(ustring(message == nullptr ? "" : message));
     else debug::write(ustring(message == nullptr ? "" : message), ustring(category));

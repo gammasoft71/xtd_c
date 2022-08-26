@@ -7,6 +7,7 @@
 #include "../types.h"
 #include "current_stack_frame.h"
 #include "debugger.h"
+#include "trace_listener_collection.h"
 
 /**
  @defgroup debugobj debug
@@ -41,6 +42,10 @@ void __xtd_diagnostics_debug_write_line__(const char* message, const char* categ
 void __xtd_diagnostics_debug_write_line_if__(bool condition, const char* message, const char* category);
 /** @endcond */
 
+/// @brief Represents a collection of xtd_diagnostics_trace_listener.
+typedef xtd_diagnostics_trace_listener_collection xtd_diagnostics_listener_collection;
+
+
 /** @name Properties */
 
 /**  @{ */
@@ -64,6 +69,32 @@ bool xtd_diagnostics_debug_get_auto_flush();
  @remarks Flushing the stream will not flush its underlying encoder unless you explicitly call xtd_diagnostics_debug_flush or xtd_diagnostics_debug_close. Setting xtd_diagnostics_debug_auto_flush to true means that data will be flushed from the buffer to the stream.
  */
 void xtd_diagnostics_debug_set_auto_flush(bool value);
+
+/**
+@brief Gets the indent level.
+@return The indent level. The default is zero.
+@remarks The xtd::diagnostics::debug::indent_level property represents the number of times the indent of size xtd::diagnostics::debug::indent_size is applied. This property is stored on per-thread/per-request basis.
+ */
+uint32_t xtd_diagnostics_debug_get_indent_level();
+/**
+@brief Sets the indent level.
+@param indent_level The indent level. The default is zero.
+@remarks The xtd::diagnostics::debug::indent_level property represents the number of times the indent of size xtd::diagnostics::debug::indent_size is applied. This property is stored on per-thread/per-request basis.
+ */
+void xtd_diagnostics_debug_set_indent_level(uint32_t indent_level);
+
+/**
+@brief Gets the number of spaces in an indent.
+@return The number of spaces in an indent. The default is four.
+@remarks A xtd::diagnostics::ostream_trace_listener interprets this number as spaces. An xtd::diagnostics::event_log_trace_listener ignores this value.
+ */
+uint32_t xtd_diagnostics_debug_get_indent_size();
+/**
+@brief Sets the number of spaces in an indent.
+@param indent_size The number of spaces in an indent. The default is four.
+@remarks A xtd::diagnostics::ostream_trace_listener interprets this number as spaces. An xtd::diagnostics::event_log_trace_listener ignores this value.
+ */
+void xtd_diagnostics_debug_set_indent_size(uint32_t indent_size);
 /** @} */
 
 /** @name Methods */

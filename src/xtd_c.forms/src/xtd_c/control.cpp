@@ -49,7 +49,7 @@ extern "C" {
   }
 
   void xtd_forms_control_set_text(xtd_forms_control* control, const char* text) {
-    reinterpret_cast<class control*>(control)->text(text);
+    reinterpret_cast<class control*>(control)->text(text == nullptr ? "" : text);
   }
   
   void xtd_forms_control_set_click_event(xtd_forms_control* control, xtd_event_handler e, xtd_handle user_data) {

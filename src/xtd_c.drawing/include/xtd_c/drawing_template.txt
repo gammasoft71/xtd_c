@@ -13,8 +13,10 @@
  @ingroup xtd_c_drawing xxx
  */
 struct xtd_drawing_xxx {
-  /// @brief Internal handle.
-  /// @warning Internal use only
+  /**
+   @brief Internal handle.
+   @warning Internal use only
+   */
   xtd_handle internal_handle;
 };
 

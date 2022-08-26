@@ -20,6 +20,9 @@ add_sources(
   include/xtd_c/diagnostics/debug.h
   include/xtd_c/diagnostics/debugger.h
   include/xtd_c/diagnostics/current_stack_frame.h
+  include/xtd_c/diagnostics/trace_listener.h
+  include/xtd_c/diagnostics/trace_listener_collection.h
+  include/xtd_c/diagnostics/trace_options.h
   )
 add_sources(
   src/xtd_c/console.cpp
