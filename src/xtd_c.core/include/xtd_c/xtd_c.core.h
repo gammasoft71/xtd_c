@@ -12,4 +12,5 @@
 #include "types.h"
 #include "ustring.h"
 #include "diagnostics/debug.h"
+#include "diagnostics/debugger.h"
 #include "diagnostics/current_stack_frame.h"

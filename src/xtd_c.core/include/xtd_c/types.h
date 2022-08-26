@@ -6,6 +6,7 @@
 #pragma once
 #include <stddef.h>
 #include <stdint.h>
+#include <stdbool.h>
 #include <stdlib.h>
 
 /** @cond */
@@ -118,28 +119,6 @@ typedef int64_t int64;
  @ingroup xtd_c_core types
  */
 typedef intptr_t intptr;
-
-/**
- @brief Represent a boolean.
- @par Library
- xtd_c.core
- @ingroup xtd_c_core types
- */
-typedef char xtd_bool;
-/**
- @brief Represent a false value for a boolean.
- @par Library
- xtd_c.core
- @ingroup xtd_c_core types
- */
-const char xtd_false = 0;
-/**
- @brief Represent a true value for a boolean.
- @par Library
- xtd_c.core
- @ingroup xtd_c_core types
- */
-const char xtd_true = !xtd_false;
 
 /**
  @brief Represent a pointer or a handle.

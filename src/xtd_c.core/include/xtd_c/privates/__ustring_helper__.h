@@ -2,7 +2,7 @@
 
 #define __C_STRING_BUFFER_SIZE__ (4096)
 
-inline size_t to_c_string_s(const xtd::ustring& value, char* string, size_t size) {
+inline size_t to_c_string_s(char* string, size_t size, const xtd::ustring& value) {
   if (string == nullptr) return value.size() + 1;
   
   if (value.size() + 1 < size) size = value.size() + 1;
@@ -13,7 +13,7 @@ inline size_t to_c_string_s(const xtd::ustring& value, char* string, size_t size
 
 inline const char* to_c_string(const xtd::ustring& value) {
   thread_local static char buffer[__C_STRING_BUFFER_SIZE__];
-  to_c_string_s(value, buffer, __C_STRING_BUFFER_SIZE__);
+  to_c_string_s(buffer, __C_STRING_BUFFER_SIZE__, value);
   return buffer;
 }
 

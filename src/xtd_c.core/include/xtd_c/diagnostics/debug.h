@@ -6,8 +6,16 @@
 #pragma once
 #include "../types.h"
 #include "current_stack_frame.h"
+#include "debugger.h"
 
-xtd_bool __xtd_debug_should_aborted_with_condition__(xtd_bool condition);
-xtd_bool __xtd_debug_should_aborted_with_condition_message___(xtd_bool condition, const char* message);
-xtd_bool __xtd_debug_should_aborted_with_condition_current_stack_frame__(xtd_bool condition, const xtd_current_stack_frame* current_stack_frame);
-xtd_bool __xtd_debug_should_aborted_with_conditio_message_current_stack_frame__(xtd_bool condition, const char* message, const xtd_current_stack_frame* current_stack_frame);
+/** @cond */
+typedef struct {
+  bool condition;
+  const char* message;
+} __assert_args__;
+bool __var_xtd_debug_should_aborted__(xtd_current_stack_frame current_stack_frame, __assert_args__ args);
+/** @endcond */
+
+#define assert_(...) \
+  if (__var_xtd_debug_should_aborted__(csf_, (__assert_args__){__VA_ARGS__})) debug_break_()
+

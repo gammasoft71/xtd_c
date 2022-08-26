@@ -31,7 +31,7 @@ extern "C" {
     console::buffer_width(width);
   }
   
-  xtd_bool xtd_console_get_caps_lock() {
+  bool xtd_console_get_caps_lock() {
     return console::caps_lock();
   }
 
@@ -59,11 +59,11 @@ extern "C" {
     console::cursor_top(top);
   }
 
-  xtd_bool xtd_console_get_cursor_visible() {
+  bool xtd_console_get_cursor_visible() {
     return console::cursor_visible();
   }
 
-  void xtd_console_set_cursor_visible(xtd_bool visible) {
+  void xtd_console_set_cursor_visible(bool visible) {
     console::cursor_visible(visible);
   }
 

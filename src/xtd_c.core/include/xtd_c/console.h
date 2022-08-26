@@ -89,7 +89,7 @@ void xtd_console_set_buffer_width(int32_t width);
  xtd_c.core
  @ingroup xtd_c_core system console
  */
-xtd_bool xtd_console_get_caps_lock();
+bool xtd_console_get_caps_lock();
 
 /**
  @brief Gets the column position of the cursor within the buffer area.
@@ -172,7 +172,7 @@ void xtd_console_set_cursor_top(int32_t top);
  This example demonstrates the cursor_visible property. The example makes the cursor visible if the first column of input is a '+' character or invisible if the input is a '-' character.
  @include console_cursor_visible.c
  */
-xtd_bool xtd_console_get_cursor_visible();
+bool xtd_console_get_cursor_visible();
 /**
  @brief Sets a value indicating whether the cursor is visible.
  @param visible true if the cursor is visible; otherwise, false.
@@ -183,7 +183,7 @@ xtd_bool xtd_console_get_cursor_visible();
  This example demonstrates the cursor_visible property. The example makes the cursor visible if the first column of input is a '+' character or invisible if the input is a '-' character.
  @include console_cursor_visible.c
  */
-void xtd_console_set_cursor_visible(xtd_bool visible);
+void xtd_console_set_cursor_visible(bool visible);
 
 /**
  @brief Gets the foreground color of the console.

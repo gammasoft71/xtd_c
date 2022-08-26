@@ -21,6 +21,6 @@ extern "C" {
   }
   
   size_t xtd_error_to_string_s(errno_t error, char* string, size_t size) {
-    return to_c_string_s(errno_to_string(error), string, size);
+    return to_c_string_s(string, size, errno_to_string(error));
   }
 }

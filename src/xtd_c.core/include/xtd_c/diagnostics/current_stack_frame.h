@@ -30,11 +30,11 @@ struct xtd_current_stack_frame {
 /** @cond */
 typedef struct xtd_current_stack_frame xtd_current_stack_frame;
 
-#define CURRENT_CURRENT_STACK_FRAME  \
+#define current_stack_frame_  \
 ((xtd_current_stack_frame){__FILE__, __LINE__, __func__})
 
-#define CSF  \
-CURRENT_CURRENT_STACK_FRAME
+#define csf_  \
+current_stack_frame_
 
 /** @endcond */
 
@@ -52,7 +52,7 @@ xtd_current_stack_frame xtd_current_stack_frame_empty();
 /** @name Methods */
 
 /** @{ */
-xtd_bool xtd_current_stack_frame_is_empty(xtd_current_stack_frame stack_frame);
+bool xtd_current_stack_frame_is_empty(xtd_current_stack_frame stack_frame);
 const char* xtd_current_stack_frame_to_string(xtd_current_stack_frame value);
 size_t xtd_current_stack_frame_to_string_s(xtd_current_stack_frame value, char* string, size_t size);
 /** @} */

@@ -26,4 +26,4 @@
  xtd_c.forms
  @ingroup xtd_c_forms dialogs message_box
  */
-xtd_forms_dialog_result xtd_forms_message_box_show(xtd_forms_control* owner, const char* text, const char* caption, xtd_forms_message_box_buttons buttons, xtd_forms_message_box_icon icon, xtd_forms_message_box_default_button default_button, xtd_forms_message_box_options options, xtd_bool display_help_button);
+xtd_forms_dialog_result xtd_forms_message_box_show(xtd_forms_control* owner, const char* text, const char* caption, xtd_forms_message_box_buttons buttons, xtd_forms_message_box_icon icon, xtd_forms_message_box_default_button default_button, xtd_forms_message_box_options options, bool display_help_button);
