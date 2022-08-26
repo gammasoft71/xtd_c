@@ -10,6 +10,6 @@ void xtd_graphics_draw_line(xtd_graphics* graphics, xtd_drawing_point point) {
  */
 
 int main(void) {
-  xtd_console_write_line("csf = %s", xtd_stack_frame_to_string(CSF));
+  xtd_console_write_line("csf = %s", xtd_current_stack_frame_to_string(CSF));
   return EXIT_SUCCESS;
 }
