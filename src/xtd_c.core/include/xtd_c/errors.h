@@ -7,6 +7,11 @@
 #include "types.h"
 #include <errno.h>
 
+/**
+ @defgroup errors errors
+ @brief Contains error handling methods.
+ */
+
 /** @name Fieds */
 
 /** @{ */

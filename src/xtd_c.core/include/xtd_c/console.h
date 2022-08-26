@@ -7,6 +7,15 @@
 #include "console_color.h"
 #include "types.h"
 
+/**
+ @defgroup console console
+ @brief Represents the standard input, output, and error streams for console applications.
+ @par Examples
+ The following example demonstrates how to read data from, and write data to, the standard input and output streams. Note that these streams can be redirected by using the set_in and set_out methods.
+ @include console_read_line.c
+ @include console_in_out.c
+ @ingroup system
+ */
 /** @name Properties */
 
 /** @{ */

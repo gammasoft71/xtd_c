@@ -7,6 +7,12 @@
 #include "../types.h"
 #include <stdlib.h>
 
+/**
+ @defgroup debugger debugger
+ @brief debugger definition.
+ @ingroup debug
+ */
+
 /** @name Methods */
 
 /**  @{ */

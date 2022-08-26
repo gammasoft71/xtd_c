@@ -8,6 +8,13 @@
 #include <wchar.h>
 
 /**
+ @defgroup ustring ustring
+ @brief Represents text as a sequence of UTF-8 code units.
+ @ingroup system
+ 
+ */
+
+/**
  @brief Represents text as a sequence of UTF-8 code units.
  @par Library
  xtd_c.core

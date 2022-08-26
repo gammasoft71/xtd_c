@@ -8,6 +8,13 @@
 #include "types.h"
 
 /**
+ @defgroup object object
+ @brief Represent an instance of the ultimate base object.
+ @ingroup system
+
+ */
+
+/**
  @brief Represent an instance of the ultimate base object.
  @par Library
  xtd_c.core
