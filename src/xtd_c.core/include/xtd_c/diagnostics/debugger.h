@@ -9,7 +9,7 @@
 
 /**
  @defgroup debugger debugger
- @brief Enables communication with a debugger. This class cannot be inherited.
+ @brief Enables communication with a debugger.
  @ingroup debug
  */
 
