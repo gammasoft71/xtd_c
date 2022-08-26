@@ -10,11 +10,11 @@ void xtd_graphics_draw_line(xtd_graphics* graphics, xtd_drawing_point point) {
  */
 
 int main(void) {
-  //xtd_console_write_line("csf_ = %s", xtd_current_stack_frame_to_string(csf_));
+  //xtd_console_write_line("csf_ = %s", xtd_diagnostics_current_stack_frame_to_string(csf_));
   int index = 0;
-  xtd_debug_write_line_if(index == 0, "Start application", NULL);
+  xtd_diagnostics_debug_write_line_if(index == 0, "Start application", "Init");
   //assert_(index > 0, "index must be greater than 0");
-  xtd_debug_write_line("End application", NULL);
+  xtd_diagnostics_debug_write_line("End application", NULL);
 
   return EXIT_SUCCESS;
 }
