@@ -10,6 +10,9 @@
 /**
  @brief Launches and attaches a debugger to the process.
  @return true if the startup is successful or if the debugger is already attached; otherwise, false.
+ @par Library
+ xtdc.core
+ @ingroup xtdc_core debug debugger
  @remarks If a debugger is already attached, nothing happens.
  @remarks Debugger launch is only supported on Windows. On Unix and macOS operating systems, the method returns true without launching a debugger.
  */
