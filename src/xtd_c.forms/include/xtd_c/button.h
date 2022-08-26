@@ -6,6 +6,12 @@
 #pragma once
 #include "control.h"
 
+/**
+ @defgroup button button
+ @brief Represents a Windows button control.
+ @ingroup controls
+ */
+
 struct xtd_forms_button {
   /**
    @brief Internal handle.

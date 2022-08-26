@@ -12,6 +12,15 @@
 #include "message_box_options.h"
 
 /**
+ @defgroup message_box message_box
+ @brief Displays a message window, also known as a dialog box, which presents a message to the user. It is a modal window, blocking other actions in the application until the user closes it. A message_box can contain text, buttons, and symbols that inform and instruct the user.
+ @ingroup dialogs
+ @par Examples
+ The following code example demonstrates the use of message_box dialog.
+ @include message_box.c
+ */
+
+/**
  @brief Displays a message box in front of the specified window with the specified text, caption, buttons, icon, default button, options, and Help button.
  @param owner An xtd_forms_control that will own the modal dialog box.
  @param text The text to display in the message box.
