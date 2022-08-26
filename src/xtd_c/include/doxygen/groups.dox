@@ -34,8 +34,21 @@
  @brief All needed for debugging and tracing.
 
  @defgroup debugobj debug
- @brief debug definition.
+ @brief Provides a set of methods and properties that help you debug the execution of your code.
  @ingroup debug
+ @remarks You can use the properties and methods in the xtd_debug to instrument release builds. Instrumentation allows you to monitor the health of your application running in real-life settings. Tracing helps you isolate problems and fix them without disturbing a running system.
+ @remarks This class provides methods to display an assert dialog box, and to emit an assertion that will always fail. This class provides write methods in the following variations: xtd_debug_write, xtd_debug_write_line, xtd_debug_write_if, and xtd_debug_write_line_if.
+ @remarks The xtd_boolean_switch and xtd_trace_switch classes provide means to dynamically control the tracing output. You can modify the values of these switches without recompiling your application. For information on using the configuration file to set a switch, see the xtd_switch class and the xtd_trace_switches topic.
+ @remarks You can customize the tracing output's target by adding xtd_trace_listener instances to or removing instances from the xtd_debug_listeners collection. The xtd_debug_listeners collection is shared by both the xtd_debug and the xtd_trace; adding a trace listener to either class adds the listener to both. By default, trace output is emitted using the xtd_default_trace_listener class.
+ @note Adding a trace listener to the xtd_debug_listeners collection can cause an exception to be thrown while tracing, if a resource used by the trace listener is not available. The conditions and the exception thrown depend on the trace listener and cannot be enumerated in this topic. It may be useful to place calls to the debug methods in try/catch blocks to detect and handle any exceptions from trace listeners.
+ @remarks You can modify the level of indentation using the xtd_debug_indent method or the xtd_debug_indent_level property. To modify the indent spacing, use the xtd_debug_indent_size property. You can specify whether to automatically flush the output buffer after each write by setting the xtd_debug_auto_flush property to true.
+ @remarks The debug class provides properties to get or set the level of indent, the xtd_debug_indent_size, and whether to xtd_debug_auto_flush after each write.
+ @remarks You must enable debug mode to use a trace listener. The syntax is compiler specific. If you use other than cmake to manage your build, refer to the documentation of your build manager.
+  * To enable debug mode with cmake, add the add_definitions(-DDEBUG) command line in the CMakeLists.txt of your project, or you can add #define DEBUG to the top of your file.
+ @remarks To activate your code if DEBUG is defined, you must enclose calls to the methods of Debug in an #if defined(DEBUG) ... #endif block, and add the /DDEBUG option to the compiler command line or add #define DEBUG to the file.
+ @par Examples
+ The following example uses debug to indicate the beginning and the end of a program's execution. The example also uses the debug::indent and debug::unindent methods to distinguish the tracing output.
+ @include debug.cpp
 
  @defgroup debugger debugger
  @brief debugger definition.
@@ -51,8 +64,8 @@
 
  @defgroup drawing drawing
  @brief All needed for drawing something.
- @remarks A xtd::drawing::graphics class is create from xtd::forms::control::create_graphics or xtd::forms::screen::create_graphics or xtd::drawing::image::create_graphics.
- @remarks And also when xtd::forms::control::paint event is sent, the xtd::forms::paint_event_args contains a xtd::drawing::graphics associate to the control event paint.
+ @remarks A xtd_drawing_graphics object is create from xtd_forms_control_create_graphics or xtd_forms_screen_create_graphics or xtd_drawing_image_create_graphics.
+ @remarks And also when xtd_forms_control_paint event is sent, the xtd_forms_paint_event_args contains a xtd_drawing_graphics associate to the control event paint.
 
  @defgroup events events
  @brief events are event args and event handler needed to response to window messages.
