@@ -28,8 +28,8 @@ void __xtd_debug_write_line_if__(bool condition, const char* message, const char
  @param category A category name used to organize the output. If the value is NULL, this is equivalent to no category.
  @par Library
  xtdc.core
- @ingroup xtdc_core debug
-@remarks By default, the output is written to an instance of default_trace_listener.
+ @ingroup xtdc_core debug debugobj
+ @remarks By default, the output is written to an instance of default_trace_listener.
  @remarks Use the category parameter to group output messages.
  @remarks This method calls the write method of the trace listener.
  */
@@ -46,8 +46,8 @@ inline_ void xtd_debug_write(const char* message, const char* category) {
  @param category A category name used to organize the output. If the value is NULL, this is equivalent to no category.
  @par Library
  xtdc.core
- @ingroup xtdc_core debug
-@remarks By default, the output is written to an instance of default_trace_listener.
+ @ingroup xtdc_core debug debugobj
+ @remarks By default, the output is written to an instance of default_trace_listener.
  @remarks This method calls the write method of the trace listener.
  */
 inline_ void xtd_debug_write_if(bool condition, const char* message, const char* category) {
@@ -62,8 +62,8 @@ inline_ void xtd_debug_write_if(bool condition, const char* message, const char*
  @param category A category name used to organize the output. If the value is NULL, this is equivalent to no category.
  @par Library
  xtdc.core
- @ingroup xtdc_core debug
-@remarks By default, the output is written to an instance of default_trace_listener.
+ @ingroup xtdc_core debug debugobj
+ @remarks By default, the output is written to an instance of default_trace_listener.
  @remarks Use the category parameter to group output messages.
  @remarks This method calls the write method of the trace listener.
  */
@@ -80,8 +80,8 @@ inline_ void xtd_debug_write_line(const char* message, const char* category) {
  @param category A category name used to organize the output. If the value is NULL, this is equivalent to no category.
  @par Library
  xtdc.core
- @ingroup xtdc_core debug
-@remarks By default, the output is written to an instance of default_trace_listener.
+ @ingroup xtdc_core debug debugobj
+ @remarks By default, the output is written to an instance of default_trace_listener.
  @remarks This method calls the write method of the trace listener.
  */
 inline_ void xtd_debug_write_line_if(bool condition, const char* message, const char* category) {
