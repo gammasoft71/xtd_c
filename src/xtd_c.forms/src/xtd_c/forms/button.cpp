@@ -1,7 +1,7 @@
 #include <xtd/forms/button.h>
 
 extern "C" {
-#include "../include/xtd_c/button.h"
+#include "../../../include/xtd_c/forms/button.h"
 
   using namespace xtd;
   using namespace xtd::forms;

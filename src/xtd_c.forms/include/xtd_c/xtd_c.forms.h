@@ -5,13 +5,13 @@
  */
 #pragma once
 #include <xtd_c/xtd_c.core.h>
-#include "application.h"
-#include "button.h"
-#include "control.h"
-#include "dialog_result.h"
-#include "form.h"
-#include "message_box.h"
-#include "message_box_buttons.h"
-#include "message_box_default_button.h"
-#include "message_box_icon.h"
-#include "message_box_options.h"
+#include "forms/application.h"
+#include "forms/button.h"
+#include "forms/control.h"
+#include "forms/dialog_result.h"
+#include "forms/form.h"
+#include "forms/message_box.h"
+#include "forms/message_box_buttons.h"
+#include "forms/message_box_default_button.h"
+#include "forms/message_box_icon.h"
+#include "forms/message_box_options.h"

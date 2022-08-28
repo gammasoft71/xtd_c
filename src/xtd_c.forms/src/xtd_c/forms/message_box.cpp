@@ -2,7 +2,7 @@
 #include <xtd/forms/message_box.h>
 
 extern "C" {
-#include "../include/xtd_c/message_box.h"
+#include "../../../include/xtd_c/forms/message_box.h"
 
   using namespace xtd;
   using namespace xtd::forms;

@@ -1,7 +1,7 @@
 #include <xtd/forms/form.h>
 
 extern "C" {
-#include "../include/xtd_c/form.h"
+#include "../../../include/xtd_c/forms/form.h"
 
   using namespace xtd;
   using namespace xtd::forms;

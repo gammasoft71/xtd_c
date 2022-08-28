@@ -2,7 +2,7 @@
 #include <xtd_c/privates/__ustring_helper__.h>
 
 extern "C" {
-#include "../include/xtd_c/control.h"
+#include "../../../include/xtd_c/forms/control.h"
 
   using namespace xtd;
   using namespace xtd::forms;
@@ -16,40 +16,44 @@ extern "C" {
     delete reinterpret_cast<control*>(value);
   }
   
-  xtd_drawing_point xtd_forms_control_get_location(xtd_forms_control* control) {
-    auto point = reinterpret_cast<class control*>(control)->location();
+  xtd_drawing_point xtd_forms_control_get_location(const xtd_forms_control* control) {
+    auto point = reinterpret_cast<const class control*>(control)->location();
     return xtd_drawing_point {point.x(), point.y()};
   }
   
-  void xtd_forms_control_set_location(xtd_forms_control* control, xtd_drawing_point point) {
+  xtd_forms_control* xtd_forms_control_set_location(xtd_forms_control* control, xtd_drawing_point point) {
     reinterpret_cast<class control*>(control)->location({point.x, point.y});
+    return control;
   }
   
-  xtd_forms_control* xtd_forms_control_get_parent(xtd_forms_control* control) {
-    auto parent = reinterpret_cast<class control*>(control)->parent();
+  xtd_forms_control* xtd_forms_control_get_parent(const xtd_forms_control* control) {
+    auto parent = reinterpret_cast<const class control*>(control)->parent();
     if (!parent.has_value()) return nullptr;
     return reinterpret_cast<xtd_forms_control*>(&parent.value().get());
   }
   
-  void xtd_forms_control_set_parent(xtd_forms_control* control, xtd_forms_control* parent) {
+  xtd_forms_control* xtd_forms_control_set_parent(xtd_forms_control* control, xtd_forms_control* parent) {
     if (parent == nullptr) reinterpret_cast<class control*>(control)->parent(nullptr);
     else reinterpret_cast<class control*>(control)->parent(*reinterpret_cast<class control*>(parent));
+    return control;
   }
   
-  void xtd_forms_control_reset_parent(xtd_forms_control* control) {
+  xtd_forms_control* xtd_forms_control_reset_parent(xtd_forms_control* control) {
     reinterpret_cast<class control*>(control)->parent(nullptr);
+    return control;
   }
   
-  const char* xtd_forms_control_get_text(xtd_forms_control* control) {
-    return to_c_string(reinterpret_cast<class control*>(control)->text());
+  const char* xtd_forms_control_get_text(const xtd_forms_control* control) {
+    return to_c_string(reinterpret_cast<const class control*>(control)->text());
   }
   
   size_t xtd_forms_control_get_text_s(xtd_forms_control* control, char* text, size_t size) {
     return to_c_string_s(text, size, reinterpret_cast<class control*>(control)->text());
   }
 
-  void xtd_forms_control_set_text(xtd_forms_control* control, const char* text) {
+  xtd_forms_control* xtd_forms_control_set_text(xtd_forms_control* control, const char* text) {
     reinterpret_cast<class control*>(control)->text(text == nullptr ? "" : text);
+    return control;
   }
   
   void xtd_forms_control_set_click_event(xtd_forms_control* control, xtd_event_handler e, xtd_handle user_data) {

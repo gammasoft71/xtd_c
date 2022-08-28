@@ -5,5 +5,6 @@
  */
 #pragma once
 #include <xtd_c/xtd_c.core.h>
-#include "point.h"
-#include "size.h"
+#include "drawing/point.h"
+#include "drawing/rectangle.h"
+#include "drawing/size.h"
