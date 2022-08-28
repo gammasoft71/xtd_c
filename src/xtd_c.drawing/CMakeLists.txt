@@ -17,3 +17,7 @@ add_sources(
   src/xtd_c/size.cpp
 )
 target_type(STATIC_LIBRARY)
+
+# Install
+add_install_include_directories(include/xtd_c)
+install_component()

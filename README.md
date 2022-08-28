@@ -126,7 +126,7 @@ xtdc run
 #include <xtd_c/xtd_c.h>
 
 void on_button1_click(xtd_object* sender, xtd_event_args e) {
-  xtd_forms_message_box_show(NULL, "Hello, World!", "", xtd_message_box_buttons_ok, xtd_message_box_icon_none, xtd_message_box_default_button_1, xtd_message_box_options_none, false);
+  xtd_forms_message_box_show(NULL, "Hello, World!", "", xtd_forms_message_box_buttons_ok, xtd_forms_message_box_icon_none, xtd_forms_message_box_default_button_1, xtd_forms_message_box_options_none, false);
 }
 
 int main(void) {

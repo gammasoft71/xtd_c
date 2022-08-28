@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.3)
 
-project(xtd.forms.examples)
-find_package(xtd REQUIRED)
+project(xtd_c.forms.examples)
+find_package(xtd_c REQUIRED)
 
 add_projects(
   hello_worlds

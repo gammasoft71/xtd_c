@@ -6,3 +6,6 @@ find_package(xtd REQUIRED)
 
 add_projects(src)
 add_projects(tests)
+
+# install
+install_package()

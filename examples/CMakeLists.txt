@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.3)
 
 # Solution
-project(xtdc.examples)
+project(xtd_c.examples)
 
 # Options
 option(XTD_C_BUILD_EXAMPLES_XTD_C_CMAKE "Build xtd_c.cmake examples" ON)
@@ -11,7 +11,7 @@ option(XTD_C_BUILD_EXAMPLES_XTD_C_FORMS "Build xtd_c.forms examples" ON)
 option(XTD_C_BUILD_EXAMPLES_XTD_C_TUNIT "Build xtd_c.tunit examples" ON)
 
 # Find xtd package
-find_package(xtdc REQUIRED)
+find_package(xtd_c REQUIRED)
 
 # Projects
 if (XTD_C_BUILD_EXAMPLES_XTD_C_CMAKE)
