@@ -13,10 +13,10 @@
  @par Library
  xtd_c.drawing
  @ingroup xtd_drawing drawing color
- @remarks Named colors are represented by using the properties of the xtd::drawing::color structure. For more information about these colors, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">see Colors by Name</a>.
- @remarks The color of each pixel is represented as a 32-bit number: 8 bits each for alpha, red, green, and blue (ARGB). Each of the four components is a number from 0 through 255, with 0 representing no intensity and 255 representing full intensity. The alpha component specifies the transparency of the color: 0 is fully transparent, and 255 is fully opaque. To determine the alpha, red, green, or blue component of a color, use the xtd::drawing::color::a, xtd::drawing::color::r, xtd::drawing::color::g, or xtd::drawing::color::b property, respectively. You can create a custom color by using one of the xtd::drawing::color::from_argb methods
+ @remarks Named colors are represented by using the properties of the xtd_drawing_color structure. For more information about these colors, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">see Colors by Name</a>.
+ @remarks The color of each pixel is represented as a 32-bit number: 8 bits each for alpha, red, green, and blue (ARGB). Each of the four components is a number from 0 through 255, with 0 representing no intensity and 255 representing full intensity. The alpha component specifies the transparency of the color: 0 is fully transparent, and 255 is fully opaque. To determine the alpha, red, green, or blue component of a color, use the xtd_drawing_color::a, xtd_drawing_color::r, xtd_drawing_color::g, or xtd_drawing_color::b property, respectively. You can create a custom color by using one of the xtd_drawing_color::from_argb methods
  @par Examples
- The following code example demonstrates the xtd::drawing::color::a, xtd::drawing::color::r, xtd::drawing::color::g, and B properties of a xtd::drawing::color, and the Implicit(size to size_f) member.<br>
+ The following code example demonstrates the xtd_drawing_color::a, xtd_drawing_color::r, xtd_drawing_color::g, and B properties of a xtd_drawing_color, and the Implicit(size to size_f) member.<br>
  This example is designed to be used with a Windows Form (xtd::forms). Paste the code into the form and call the show_properties_of_slate_blue method from the form's  xtd::forms::control::paint event-handling method, passing e as xtd::forms::paint_event_args.
  @code
  void show_properties_of_slate_blue(xtd_forms_paint_event_args e) {
@@ -37,10 +37,10 @@
  @par Library
  xtd_c.drawing
  @ingroup xtd_drawing drawing color
- @remarks Named colors are represented by using the properties of the xtd::drawing::color structure. For more information about these colors, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">see Colors by Name</a>.
- @remarks The color of each pixel is represented as a 32-bit number: 8 bits each for alpha, red, green, and blue (ARGB). Each of the four components is a number from 0 through 255, with 0 representing no intensity and 255 representing full intensity. The alpha component specifies the transparency of the color: 0 is fully transparent, and 255 is fully opaque. To determine the alpha, red, green, or blue component of a color, use the xtd::drawing::color::a, xtd::drawing::color::r, xtd::drawing::color::g, or xtd::drawing::color::b property, respectively. You can create a custom color by using one of the xtd::drawing::color::from_argb methods
+ @remarks Named colors are represented by using the properties of the xtd_drawing_color structure. For more information about these colors, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">see Colors by Name</a>.
+ @remarks The color of each pixel is represented as a 32-bit number: 8 bits each for alpha, red, green, and blue (ARGB). Each of the four components is a number from 0 through 255, with 0 representing no intensity and 255 representing full intensity. The alpha component specifies the transparency of the color: 0 is fully transparent, and 255 is fully opaque. To determine the alpha, red, green, or blue component of a color, use the xtd_drawing_color::a, xtd_drawing_color::r, xtd_drawing_color::g, or xtd_drawing_color::b property, respectively. You can create a custom color by using one of the xtd_drawing_color::from_argb methods
  @par Examples
- The following code example demonstrates the xtd::drawing::color::a, xtd::drawing::color::r, xtd::drawing::color::g, and B properties of a xtd::drawing::color, and the Implicit(size to size_f) member.<br>
+ The following code example demonstrates the xtd_drawing_color::a, xtd_drawing_color::r, xtd_drawing_color::g, and B properties of a xtd_drawing_color, and the Implicit(size to size_f) member.<br>
  This example is designed to be used with a Windows Form (xtd::forms). Paste the code into the form and call the show_properties_of_slate_blue method from the form's  xtd::forms::control::paint event-handling method, passing e as xtd::forms::paint_event_args.
  @code
  void show_properties_of_slate_blue(xtd_forms_paint_event_args e) {
@@ -56,39 +56,39 @@
  */
 struct xtd_drawing_color {
   /**
-   @brief Gets or sets the alpha component value of this xtd::drawing::color class.
-   @return byte The alpha component value of this xtd::drawing::color.
+   @brief Gets or sets the alpha component value of this xtd_drawing_color struct.
+   @return byte The alpha component value of this xtd_drawing_color.
    @par Library
    xtd_c.drawing
    @ingroup xtd_drawing drawing color
-   @remarks The color of each pixel is represented as a 32-bit number: 8 bits each for alpha, red, green, and blue (ARGB). The alpha component specifies the transparency of the color: 0 is fully transparent, and 255 is fully opaque. Likewise, an xtd::drawing::color::a value of 255 represents an opaque color. An xtd::drawing::color::a value from 1 through 254 represents a semitransparent color. The color becomes more opaque as xtd::drawing::color::a approaches 255.
+   @remarks The color of each pixel is represented as a 32-bit number: 8 bits each for alpha, red, green, and blue (ARGB). The alpha component specifies the transparency of the color: 0 is fully transparent, and 255 is fully opaque. Likewise, an xtd_drawing_color::a value of 255 represents an opaque color. An xtd_drawing_color::a value from 1 through 254 represents a semitransparent color. The color becomes more opaque as xtd_drawing_color::a approaches 255.
    */
   byte_t a;
   /**
-   @brief Gets or sets the red component value of this xtd::drawing::color class.
-   @return byte The red component value of this xtd::drawing::color.
+   @brief Gets or sets the red component value of this xtd_drawing_color struct.
+   @return byte The red component value of this xtd_drawing_color.
    @par Library
    xtd_c.drawing
    @ingroup xtd_drawing drawing color
-   @remarks The color of each pixel is represented as a 32-bit number: 8 bits each for alpha, red, green, and blue (ARGB). The alpha component specifies the transparency of the color: 0 is fully transparent, and 255 is fully opaque. Likewise, an xtd::drawing::color::a value of 255 represents an opaque color. An xtd::drawing::color::a value from 1 through 254 represents a semitransparent color. The color becomes more opaque as xtd::drawing::color::a approaches 255.
+   @remarks The color of each pixel is represented as a 32-bit number: 8 bits each for alpha, red, green, and blue (ARGB). The alpha component specifies the transparency of the color: 0 is fully transparent, and 255 is fully opaque. Likewise, an xtd_drawing_color::a value of 255 represents an opaque color. An xtd_drawing_color::a value from 1 through 254 represents a semitransparent color. The color becomes more opaque as xtd_drawing_color::a approaches 255.
    */
   byte_t r;
    /**
-    @brief Gets or sets the green component value of this xtd::drawing::color class.
-    @return byte The green component value of this xtd::drawing::color.
+    @brief Gets or sets the green component value of this xtd_drawing_color struct.
+    @return byte The green component value of this xtd_drawing_color.
     @par Library
     xtd_c.drawing
     @ingroup xtd_drawing drawing color
-    @remarks The color of each pixel is represented as a 32-bit number: 8 bits each for alpha, red, green, and blue (ARGB). The alpha component specifies the transparency of the color: 0 is fully transparent, and 255 is fully opaque. Likewise, an xtd::drawing::color::a value of 255 represents an opaque color. An xtd::drawing::color::a value from 1 through 254 represents a semitransparent color. The color becomes more opaque as xtd::drawing::color::a approaches 255.
+    @remarks The color of each pixel is represented as a 32-bit number: 8 bits each for alpha, red, green, and blue (ARGB). The alpha component specifies the transparency of the color: 0 is fully transparent, and 255 is fully opaque. Likewise, an xtd_drawing_color::a value of 255 represents an opaque color. An xtd_drawing_color::a value from 1 through 254 represents a semitransparent color. The color becomes more opaque as xtd_drawing_color::a approaches 255.
     */
   byte_t g;
    /**
-    @brief Gets or sets the blue component value of this xtd::drawing::color class.
-    @return byte The blue component value of this xtd::drawing::color.
+    @brief Gets or sets the blue component value of this xtd_drawing_color struct.
+    @return byte The blue component value of this xtd_drawing_color.
     @par Library
     xtd_c.drawing
     @ingroup xtd_drawing drawing color
-    @remarks The color of each pixel is represented as a 32-bit number: 8 bits each for alpha, red, green, and blue (ARGB). The alpha component specifies the transparency of the color: 0 is fully transparent, and 255 is fully opaque. Likewise, an xtd::drawing::color::a value of 255 represents an opaque color. An xtd::drawing::color::a value from 1 through 254 represents a semitransparent color. The color becomes more opaque as xtd::drawing::color::a approaches 255.
+    @remarks The color of each pixel is represented as a 32-bit number: 8 bits each for alpha, red, green, and blue (ARGB). The alpha component specifies the transparency of the color: 0 is fully transparent, and 255 is fully opaque. Likewise, an xtd_drawing_color::a value of 255 represents an opaque color. An xtd_drawing_color::a value from 1 through 254 represents a semitransparent color. The color becomes more opaque as xtd_drawing_color::a approaches 255.
     */
   byte_t b;
   /**
@@ -1273,7 +1273,7 @@ xtd_drawing_color xtd_drawing_color_yellow_green();
 
 /** @{ */
 /**
- @brief Gets a value indicating wheter this xtd::drawing::color structure is dark color.
+ @brief Gets a value indicating wheter the specified xtd_drawing_color structure is dark color.
  @par Library
  xtd_c.drawing
  @ingroup xtd_drawing drawing color
@@ -1282,7 +1282,7 @@ xtd_drawing_color xtd_drawing_color_yellow_green();
 bool xtd_drawing_color_is_dark(xtd_drawing_color color);
 
 /**
- @brief Specifies whether this xtd::drawing::color class is uninitialized.
+ @brief Specifies whether the specified xtd_drawing_color class is uninitialized.
  @return bool Returns true if this color is uninitialized; otherwise, false.
  @par Library
  xtd_c.drawing
@@ -1291,17 +1291,17 @@ bool xtd_drawing_color_is_dark(xtd_drawing_color color);
 bool xtd_drawing_color_is_empty(xtd_drawing_color color);
 
 /**
- @brief Gets a value indicating whether this xtd::drawing::color structure is a predefined color. Predefined colors are represented by the elements of the xtd::drawing::known_color enumeration.
- @return bool Returns true if this xtd::drawing::color was created from a predefined color by using either the from_name method or the from_known_color method; otherwise, false.
+ @brief Gets a value indicating whether the specified xtd_drawing_color structure is a predefined color. Predefined colors are represented by the elements of the xtd::drawing::known_color enumeration.
+ @return bool Returns true if the specified xtd_drawing_color was created from a predefined color by using either the from_name method or the from_known_color method; otherwise, false.
  @par Library
  xtd_c.drawing
  @ingroup xtd_drawing drawing color
- @remarks This property does not do a comparison of the ARGB values. Therefore, when the is_known_color property is applied to a xtd::drawing::color structure that is created by using the xtd::drawing::color::from_argb method, is_known_color returns false, even if the ARGB value matches the ARGB value of a predefined color.
+ @remarks This property does not do a comparison of the ARGB values. Therefore, when the is_known_color property is applied to a xtd_drawing_color structure that is created by using the xtd_drawing_color::from_argb method, is_known_color returns false, even if the ARGB value matches the ARGB value of a predefined color.
  */
 bool xtd_drawing_color_is_known_color(xtd_drawing_color color);
 
 /**
- @brief Gets a value indicating wheter this xtd::drawing::color structure is light color.
+ @brief Gets a value indicating wheter the specified xtd_drawing_color structure is light color.
  @par Library
  xtd_c.drawing
  @ingroup xtd_drawing drawing color
@@ -1310,8 +1310,8 @@ bool xtd_drawing_color_is_known_color(xtd_drawing_color color);
 bool xtd_drawing_color_is_light(xtd_drawing_color color);
 
 /**
- @brief Gets a value indicating whether this xtd::drawing::color structure is a named color or a member of the xtd::drawing::known_color enumeration.
- @return bool Returns true if this xtd::drawing::color was created by using either the xtd::drawing::color::from_name method or the xtd::drawing::color::from_known_color method; otherwise, false.
+ @brief Gets a value indicating whether the specified xtd_drawing_color structure is a named color or a member of the xtd::drawing::known_color enumeration.
+ @return bool Returns true if the specified xtd_drawing_color was created by using either the xtd_drawing_color::from_name method or the xtd_drawing_color::from_known_color method; otherwise, false.
  @par Library
  xtd_c.drawing
  @ingroup xtd_drawing drawing color
@@ -1319,8 +1319,8 @@ bool xtd_drawing_color_is_light(xtd_drawing_color color);
 bool xtd_drawing_color_is_named_color(xtd_drawing_color color);
 
 /**
- @brief Gets a value indicating whether this xtd::drawing::color structure is a system color. A system color is a color that is used in a Windows display element. System colors are represented by elements of the xtd::drawing::known_color enumeration.
- @return bool Returns true if this xtd::drawing::color was created from a system color by using either the xtd::drawing::color::from_name method or the xtd::drawing::color::from_known_color method; otherwise, false.
+ @brief Gets a value indicating whether the specified xtd_drawing_color structure is a system color. A system color is a color that is used in a Windows display element. System colors are represented by elements of the xtd::drawing::known_color enumeration.
+ @return bool Returns true if the specified xtd_drawing_color was created from a system color by using either the xtd_drawing_color::from_name method or the xtd_drawing_color::from_known_color method; otherwise, false.
  @par Library
  xtd_c.drawing
  @ingroup xtd_drawing drawing color
@@ -1328,8 +1328,8 @@ bool xtd_drawing_color_is_named_color(xtd_drawing_color color);
 bool xtd_drawing_color_is_system_color(xtd_drawing_color color);
 
 /**
- @brief Gets the name of this xtd::drawing::color.
- @return string The name of this xtd::drawing::color.
+ @brief Gets the name of the specified xtd_drawing_color.
+ @return string The name of the specified xtd_drawing_color.
  @par Library
  xtd_c.drawing
  @ingroup xtd_drawing drawing color
@@ -1337,8 +1337,8 @@ bool xtd_drawing_color_is_system_color(xtd_drawing_color color);
 const char* xtd_drawing_color_name(xtd_drawing_color color);
 
 /**
- @brief Gets the name of this xtd::drawing::color.
- @return string The name of this xtd::drawing::color.
+ @brief Gets the name of the specified xtd_drawing_color.
+ @return string The name of the specified xtd_drawing_color.
  @par Library
  xtd_c.drawing
  @ingroup xtd_drawing drawing color
@@ -1349,4 +1349,196 @@ size_t xtd_drawing_color_name_s(xtd_drawing_color color, char* string, size_t si
 /** @name Methods */
 
 /** @{ */
+/**
+ @brief Returns the weighted average color between the two given colors.
+ @param color1 The first color.
+ @param color2 The second color.
+ @param weight The weighting factor
+ @param average_alpha if true alpha was compute to; otherwise the alpha result is the alpha of color1
+ @return The average color.
+ @remarks The alpha, red, green and blue values are averages using the following formula:
+ @code
+ color = color1 * (1 - weight) + color2 * weight;
+ @endcode
+ @remarks Thus, a weight value of 1.0 will return the first color, while a value of 0.0 will return the second color.
+ */
+xtd_drawing_color xtd_drawing_color_average_with_alpha(xtd_drawing_color color1, xtd_drawing_color color2, double weight, bool average_alpha);
+
+/**
+ @brief Returns the weighted average color between the two given colors.
+ @param color1 The first color.
+ @param color2 The second color.
+ @param weight The weighting factor
+ @return The average color.
+ @remarks The alpha of color1 is conserved.
+ @remarks The red, green and blue values are averages using the following formula:
+ @code
+ color = color1 * (1 - weight) + color2 * weight;
+ @endcode
+ @remarks Thus, a weight value of 1.0 will return the second color, while a value of 0.0 will return the first color.
+ */
+xtd_drawing_color xtd_drawing_color_average(xtd_drawing_color color1, xtd_drawing_color color2, double weight);
+
+/**
+ @brief Returns a darker version of the specified color.
+ @param color The color to dark.
+ @return the darker color result.
+ */
+xtd_drawing_color xtd_drawing_color_dark_with_weight(xtd_drawing_color color, double weight);
+
+/**
+ @brief Returns a darker version of the specified color.
+ @param color The color to dark.
+ @return the darker color result.
+ */
+xtd_drawing_color xtd_drawing_color_dark(xtd_drawing_color color);
+
+/**
+ @brief Returns a lighter version of the specified color.
+ @param color The color to light.
+ @return the lighter color result.
+ */
+xtd_drawing_color xtd_drawing_color_light_with_weight(xtd_drawing_color color, double weight);
+
+/**
+ @brief Returns a lighter version of the specified color.
+ @param color The color to light.
+ @return the lighter color result.
+ */
+xtd_drawing_color xtd_drawing_color_light(xtd_drawing_color color);
+
+/**
+ @brief Creates a xtd_drawing_color class from a 32-bit ARGB value.
+ @param argb A value specifying the 32-bit ARGB value
+ @return The xtd_drawing_color structure that this method creates.
+ @remarks The byte-ordering of the 32-bit ARGB value is AARRGGBB. The most significant byte (MSB), represented by AA, is the alpha component value. The second, third, and fourth bytes, represented by RR, GG, and BB, respectively, are the color components red, green, and blue, respectively.
+ */
+xtd_drawing_color xtd_drawing_color_from_argb_with_32bits(uint32_t argb);
+
+/**
+ @brief Creates a xtd_drawing_color class from the specified xtd_drawing_color structure, but with the new specified alpha value. Although this method allows a 32-bit value to be passed for the alpha value, the value is limited to 8 bits.
+ @param alpha The alpha value for the new xtd_drawing_color. Valid values are 0 through 255.
+ @param base_color The xtd_drawing_color from which to create the new xtd_drawing_color.
+ @return xtd_drawing_color The xtd_drawing_color structure that this method creates.
+ */
+xtd_drawing_color from_argb_with_base_color(uint8_t alpha, xtd_drawing_color base_color);
+
+/**
+ @brief Creates a xtd_drawing_color class from the four ARGB component (alpha, red, green, and blue) values. Although this method allows a 32-bit value to be passed for each component, the value of each component is limited to 8 bits.
+ @param alpha The alpha value for the new xtd_drawing_color. Valid values are 0 through 255.
+ @param red The red component. Valid values are 0 through 255.
+ @param green The green component. Valid values are 0 through 255.
+ @param blue The blue component. Valid values are 0 through 255.
+ @return xtd_drawing_color The xtd_drawing_color structure that this method creates.
+ */
+xtd_drawing_color xtd_drawing_color_from_argb(uint8_t alpha, uint8_t red, uint8_t green, uint8_t blue);
+
+/**
+ @brief Creates a xtd_drawing_color structure from the specified 8-bit color values (red, green, and blue). The alpha value is implicitly 255 (fully opaque). Although this method allows a 32-bit value to be passed for each color component, the value of each component is limited to 8 bits.
+ @param red The red component. Valid values are 0 through 255.
+ @param green The green component. Valid values are 0 through 255.
+ @param blue The blue component. Valid values are 0 through 255.
+ @return xtd_drawing_color The xtd_drawing_color structure that this method creates.
+ */
+xtd_drawing_color xtd_drawing_color_from_argb_without_alpha(uint8_t red, uint8_t green, uint8_t blue);
+
+/**
+ @brief Creates a xtd_drawing_color class from native handle.
+ @param handle the handle for the new xtd_drawing_color.
+ @return xtd_drawing_color The xtd_drawing_color structure that this method creates.
+ @remarks For internal use only.
+ */
+xtd_drawing_color xtd_drawing_color_from_handle(intptr_t handle);
+
+/**
+ @brief Creates a xtd_drawing_color class from the three HSV component (hue, saturation, and brightness) values.
+ @param hue The xtd_drawing_color saturation. The saturation ranges from 0.0 through 1.0, where 0.0 is grayscale and 1.0 is the most saturated.
+ @param saturation The xtd_drawing_color saturation. The saturation ranges from 0.0 through 1.0, where 0.0 is grayscale and 1.0 is the most saturated.
+ @param brightness The xtd_drawing_color lightness. The brightness ranges from 0.0 through 1.0, where 0.0 represents black and 1.0 represents white.
+ */
+xtd_drawing_color xtd_drawing_color_from_hsb(float hue, float saturation, float brightness);
+
+/**
+ @brief Creates a xtd_drawing_color class from the three HSL component (hue, saturation, and lightness) values.
+ @param hue The xtd_drawing_color saturation. The saturation ranges from 0.0 through 1.0, where 0.0 is grayscale and 1.0 is the most saturated.
+ @param saturation The xtd_drawing_color saturation. The saturation ranges from 0.0 through 1.0, where 0.0 is grayscale and 1.0 is the most saturated.
+ @param lightness The xtd_drawing_color lightness. The lightness ranges from 0.0 through 1.0, where 0.0 represents black and 1.0 represents white.
+ */
+xtd_drawing_color xtd_drawing_color_from_hsl(float hue, float saturation, float lightness);
+
+/**
+ @brief Creates a xtd_drawing_color class from the four ARGB component (alpha, red, green, and blue) values. Although this method allows a 32-bit value to be passed for each component, the value of each component is limited to 8 bits.
+ @param alpha The alpha value for the new xtd_drawing_color. Valid values are 0 through 255.
+ @param red The red component. Valid values are 0 through 255.
+ @param green The green component. Valid values are 0 through 255.
+ @param blue The blue component. Valid values are 0 through 255.
+ @return xtd_drawing_color The xtd_drawing_color structure that this method creates.
+ @exception std::invalid_argument color is not a known_color.
+ */
+xtd_drawing_color xtd_drawing_color_from_known_color(xtd_drawing_known_color color);
+
+/**
+ @brief Creates a xtd_drawing_color class from the specified name of a predefined color.
+ @param name A string that is the name of a predefined color. Valid names are the same as the names of the elements of the xtd::drawing::known_color enumeration.
+ @return xtd_drawing_color The xtd_drawing_color structure that this method creates.
+ @remarks A predefined color is also called a known color and is represented by an element of the xtd::drawing::known_color enumeration. If the name parameter is not the valid name of a predefined color, the xtd_drawing_color::from_name method creates a xtd_drawing_color structure that has an ARGB value of 0 (that is, all ARGB components are 0).
+ */
+xtd_drawing_color xtd_drawing_color_from_name(const char* name);
+
+/**
+ @brief Gets the hue-saturation-brightness (HSB) brightness value for the specified xtd_drawing_color structure.
+ @return The brightness of the specified xtd_drawing_color. The lightness ranges from 0.0 through 1.0, where 0.0 represents black and 1.0 represents white.
+ */
+float xtd_drawing_color_get_brightness(xtd_drawing_color color);
+
+/**
+ @brief Gets the hue-saturation-brightness (HSB) hue value, in degrees, for the specified xtd_drawing_color structure.
+ @return The hue, in degrees, of the specified xtd_drawing_color. The hue is measured in degrees, ranging from 0.0 through 360.0, in HSL color space.
+ */
+float xtd_drawing_color_get_hue(xtd_drawing_color color);
+
+/**
+ @brief Gets the hue-saturation-lightness (HSL) lightness value for the specified xtd_drawing_color structure.
+ @return The lightness of the specified xtd_drawing_color. The lightness ranges from 0.0 through 1.0, where 0.0 represents black and 1.0 represents white.
+ */
+float xtd_drawing_color_get_lightness(xtd_drawing_color color);
+
+/**
+ @brief Gets the hue-saturation-brightness (HSB) saturation value for the specified xtd_drawing_color structure.
+ @return The saturation of the specified xtd_drawing_color. The saturation ranges from 0.0 through 1.0, where 0.0 is grayscale and 1.0 is the most saturated.
+ */
+float xtd_drawing_color_get_saturation(xtd_drawing_color color);
+
+/**
+ @brief Creates a xtd_drawing_color class from the specified name.
+ @param name A string that is the name of a predefined color. Valid names are the same as the names of the elements of the xtd::drawing::known_color enumeration or hexadecimal value that represents argb value, or four decimal values separated by a comma representing respectively a, r, g, b, values.
+ @return xtd_drawing_color The xtd_drawing_color structure that this method creates.
+ */
+xtd_drawing_color xtd_drawing_color_parse(const char* color);
+
+/**
+ @brief Gets the 32-bit ARGB value of the specified xtd_drawing_color class.
+ @return The 32-bit ARGB value of the specified xtd_drawing_color.
+ @remarks The byte-ordering of the 32-bit ARGB value is AARRGGBB. The most significant byte (MSB), represented by AA, is the alpha component value. The second, third, and fourth bytes, represented by RR, GG, and BB, respectively, are the color components red, green, and blue, respectively.
+ */
+uint32_t xtd_drawing_color_to_argb(xtd_drawing_color color);
+
+/**
+ @brief Gets the xtd::drawing::known_color value of the specified xtd_drawing_color class.
+ @return xtd::drawing::known_color An element of the xtd::drawing::known_color enumeration, if the xtd_drawing_color is created from a predefined color by using either the xtd_drawing_color::from_name method or the xtd_drawing_color::from_known_color method; otherwise, 0.
+ @remarks A predefined color is also called a known color and is represented by an element of the xtd::drawing::known_color enumeration. When the xtd_drawing_color::to_known_color method is applied to a xtd_drawing_color structure that is created by using the FromArgb method, xtd_drawing_color::to_known_color returns 0, even if the ARGB value matches the ARGB value of a predefined color. xtd_drawing_color::to_known_color also returns 0 when it is applied to a xtd_drawing_color structure that is created by using the xtd_drawing_color::from_name method with a string name that is not valid.
+ */
+xtd_drawing_known_color xtd_drawing_color_to_known_color(xtd_drawing_color color);
+
+/**
+ @brief Creates a human-readable string that represents this color class.
+ @return string A string that represents this Size.
+ */
+const char* xtd_drawing_color_to_string(xtd_drawing_color color);
+
+/**
+ @brief Creates a human-readable string that represents this color class.
+ @return string A string that represents this Size.
+ */
+size_t xtd_drawing_color_to_string_s(char* string, size_t size, xtd_drawing_color color);
 /** @} */

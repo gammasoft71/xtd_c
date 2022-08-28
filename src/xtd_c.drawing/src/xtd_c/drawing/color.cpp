@@ -7,12 +7,14 @@ extern "C" {
   using namespace xtd;
   using namespace xtd::drawing;
 
-  xtd_drawing_color to_xtd_drawing_color(const color& color) {
-    return xtd_drawing_color {color.a(), color.r(), color.g(), color.b(), static_cast<xtd_drawing_known_color>(color.__known_color__()), color.handle(), color.is_empty()};
+  xtd_drawing_color to_xtd_drawing_color(const color& c) {
+    return xtd_drawing_color {c.a(), c.r(), c.g(), c.b(), static_cast<xtd_drawing_known_color>(c.to_known_color()), c.handle(), c.is_empty()};
   }
   
-  #define to_color_(color) \
-    (color.__handle__ != 0 ? drawing::color::from_handle(color.__handle__) : (color.__known_color__ != 0 ? drawing::color::from_known_color(static_cast<drawing::known_color>(color.__known_color__)) :  drawing::color::from_argb(color.a, color.r, color.g, color.b)))
+  #define to_color_(c) \
+    (c.__handle__ != 0 ? drawing::color::from_handle(c.__handle__) : \
+    (c.__known_color__ != 0 ? drawing::color::from_known_color(static_cast<drawing::known_color>(c.__known_color__)) : \
+    drawing::color::from_argb(c.a, c.r, c.g, c.b)))
   
   xtd_drawing_color xtd_drawing_color_empty() {
     return to_xtd_drawing_color(color::empty);
@@ -615,6 +617,102 @@ extern "C" {
   }
   
   size_t xtd_drawing_color_name_s(xtd_drawing_color color, char* string, size_t size) {
+    return to_c_string_s(string, size, to_color_(color).to_string());
+  }
+  
+  xtd_drawing_color xtd_drawing_color_average_with_alpha(xtd_drawing_color color1, xtd_drawing_color color2, double weight, bool average_alpha) {
+    return to_xtd_drawing_color(drawing::color::average(to_color_(color1), to_color_(color2), weight, average_alpha));
+  }
+  
+  xtd_drawing_color xtd_drawing_color_average(xtd_drawing_color color1, xtd_drawing_color color2, double weight) {
+    return to_xtd_drawing_color(drawing::color::average(to_color_(color1), to_color_(color2), weight));
+  }
+  
+  xtd_drawing_color xtd_drawing_color_dark_with_weight(xtd_drawing_color color, double weight) {
+    return to_xtd_drawing_color(drawing::color::dark(to_color_(color), weight));
+  }
+  
+  xtd_drawing_color xtd_drawing_color_dark(xtd_drawing_color color) {
+    return to_xtd_drawing_color(drawing::color::dark(to_color_(color)));
+  }
+  
+  xtd_drawing_color xtd_drawing_color_light_with_weight(xtd_drawing_color color, double weight) {
+    return to_xtd_drawing_color(drawing::color::light(to_color_(color), weight));
+  }
+  
+  xtd_drawing_color xtd_drawing_color_light(xtd_drawing_color color) {
+    return to_xtd_drawing_color(drawing::color::light(to_color_(color)));
+  }
+  
+  xtd_drawing_color xtd_drawing_color_from_argb_with_32bits(uint32_t argb) {
+    return to_xtd_drawing_color(drawing::color::from_argb(argb));
+  }
+  
+  xtd_drawing_color from_argb_with_base_color(uint8_t alpha, xtd_drawing_color base_color) {
+    return to_xtd_drawing_color(drawing::color::from_argb(alpha, to_color_(base_color)));
+  }
+  
+  xtd_drawing_color xtd_drawing_color_from_argb(uint8_t alpha, uint8_t red, uint8_t green, uint8_t blue) {
+    return to_xtd_drawing_color(drawing::color::from_argb(alpha, red, green, blue));
+  }
+  
+  xtd_drawing_color xtd_drawing_color_from_argb_without_alpha(uint8_t red, uint8_t green, uint8_t blue) {
+    return to_xtd_drawing_color(drawing::color::from_argb(red, green, blue));
+  }
+  
+  xtd_drawing_color xtd_drawing_color_from_handle(intptr_t handle) {
+    return to_xtd_drawing_color(drawing::color::from_handle(handle));
+  }
+  
+  xtd_drawing_color xtd_drawing_color_from_hsb(float hue, float saturation, float brightness) {
+    return to_xtd_drawing_color(drawing::color::from_hsb(hue, saturation, brightness));
+  }
+  
+  xtd_drawing_color xtd_drawing_color_from_hsl(float hue, float saturation, float lightness) {
+    return to_xtd_drawing_color(drawing::color::from_hsl(hue, saturation, lightness));
+  }
+  
+  xtd_drawing_color xtd_drawing_color_from_known_color(xtd_drawing_known_color color) {
+    return to_xtd_drawing_color(drawing::color::from_known_color(static_cast<known_color>(color)));
+  }
+  
+  xtd_drawing_color xtd_drawing_color_from_name(const char* name) {
+    return to_xtd_drawing_color(drawing::color::from_name(name));
+  }
+  
+  float xtd_drawing_color_get_brightness(xtd_drawing_color color) {
+    return to_color_(color).get_brightness();
+  }
+  
+  float xtd_drawing_color_get_hue(xtd_drawing_color color) {
+    return to_color_(color).get_hue();
+  }
+  
+  float xtd_drawing_color_get_lightness(xtd_drawing_color color) {
+    return to_color_(color).get_lightness();
+  }
+  
+  float xtd_drawing_color_get_saturation(xtd_drawing_color color) {
+    return to_color_(color).get_saturation();
+  }
+  
+  xtd_drawing_color xtd_drawing_color_parse(const char* color) {
+    return to_xtd_drawing_color(drawing::color::parse(color));
+  }
+  
+  uint32_t xtd_drawing_color_to_argb(xtd_drawing_color color) {
+    return to_color_(color).to_argb();
+  }
+  
+  xtd_drawing_known_color xtd_drawing_color_to_known_color(xtd_drawing_color color) {
+    return static_cast<xtd_drawing_known_color>(to_color_(color).to_known_color());
+  }
+  
+  const char* xtd_drawing_color_to_string(xtd_drawing_color color) {
+    return to_c_string(to_color_(color).to_string());
+  }
+  
+  size_t xtd_drawing_color_to_string_s(char* string, size_t size, xtd_drawing_color color) {
     return to_c_string_s(string, size, to_color_(color).to_string());
   }
 }
