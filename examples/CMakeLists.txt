@@ -4,32 +4,32 @@ cmake_minimum_required(VERSION 3.3)
 project(xtdc.examples)
 
 # Options
-option(XTDC_BUILD_EXAMPLES_XTD_CMAKE "Build xtd.cmake examples" ON)
-option(XTDC_BUILD_EXAMPLES_XTD_CORE "Build xtd.core examples" ON)
-option(XTDC_BUILD_EXAMPLES_XTD_DRAWING "Build xtd.drawing examples" ON)
-option(XTDC_BUILD_EXAMPLES_XTD_FORMS "Build xtd.forms examples" ON)
-option(XTDC_BUILD_EXAMPLES_XTD_TUNIT "Build xtd.tunit examples" ON)
+option(XTD_C_BUILD_EXAMPLES_XTD_C_CMAKE "Build xtd_c.cmake examples" ON)
+option(XTD_C_BUILD_EXAMPLES_XTD_C_CORE "Build xtd_c.core examples" ON)
+option(XTD_C_BUILD_EXAMPLES_XTD_C_DRAWING "Build xtd_c.drawing examples" ON)
+option(XTD_C_BUILD_EXAMPLES_XTD_C_FORMS "Build xtd_c.forms examples" ON)
+option(XTD_C_BUILD_EXAMPLES_XTD_C_TUNIT "Build xtd_c.tunit examples" ON)
 
 # Find xtd package
 find_package(xtdc REQUIRED)
 
 # Projects
-if (XTD_BUILD_EXAMPLES_XTD_CMAKE)
-  #add_projects(xtdc.cmake.examples)
+if (XTD_C_BUILD_EXAMPLES_XTD_C_CMAKE)
+  add_projects(xtd_c.cmake.examples)
 endif()
 
-if (XTD_BUILD_EXAMPLES_XTD_CORE)
-  #add_projects(xtdc.core.examples)
+if (XTD_C_BUILD_EXAMPLES_XTD_C_CORE)
+  add_projects(xtd_c.core.examples)
 endif()
 
-if (XTD_BUILD_EXAMPLES_XTD_DRAWING)
-  #add_projects(xtdc.drawing.examples)
+if (XTD_C_BUILD_EXAMPLES_XTD_C_DRAWING)
+  #add_projects(xtd_c.drawing.examples)
 endif()
 
-if (XTD_BUILD_EXAMPLES_XTD_FORMS)
-  #add_projects(xtdc.forms.examples)
+if (XTD_C_BUILD_EXAMPLES_XTD_C_FORMS)
+  add_projects(xtd_c.forms.examples)
 endif()
 
-if (XTD_BUILD_EXAMPLES_XTD_TUNIT)
-  #add_projects(xtdc.tunit.examples)
+if (XTD_C_BUILD_EXAMPLES_XTD_C_TUNIT)
+  #add_projects(xtd_c.tunit.examples)
 endif()
