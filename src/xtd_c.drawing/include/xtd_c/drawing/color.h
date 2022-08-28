@@ -53,6 +53,7 @@
  sprintf(text, "Slate blue has these ARGB values: alpha:%d, red:%d, green:%d, blue:%d", a, r, g, b);
  e.graphics->draw_string(text, xtd_drawing_font(xtd_forms_control_get_font(main_form), xtd_drawing_font_style_italic), xtd_drawing_solid_brush_create(slate_blue), xtd_drawing_rectangle_f_create_from_point_f_and_size_f(xtd_drawing_point_f(0.0f, 0.0f), (xtd_drawing_size_f){xtd_forms_control_get_size().x, xtd_forms_control_get_size().y});
  }
+ @endcode
  */
 struct xtd_drawing_color {
   /**
