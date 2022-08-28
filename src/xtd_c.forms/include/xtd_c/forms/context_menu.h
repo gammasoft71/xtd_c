@@ -7,7 +7,7 @@
 #include "control.h"
 
 /**
- @defgroup context menu button
+ @defgroup context_menu context_menu
  @brief Represents a Windows context menu control.
  @ingroup controls
  */
@@ -30,10 +30,10 @@ typedef struct xtd_forms_context_menu xtd_forms_context_menu;
  
 /**  @{ */
 /**
- @brief Convert an xtd object to button object.
+ @brief Convert an xtd object to context_menu object.
  @par Library
  xtd_c.core
- @ingroup xtd_c_forms controls button
+ @ingroup xtd_c_forms controls context_menu
  */
 #define XTD_FORMS_CONTEXT_MENU(object) \
   (XTD_TYPE_CAST(object, XTD_FORMS_CONTEXT_MENU_TYPE, xtd_forms_context_menu))
