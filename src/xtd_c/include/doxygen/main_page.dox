@@ -93,7 +93,7 @@
    xtd_forms_control_set_text(form1, "Hello world (message_box)");
    
    xtd_forms_control* button1 = xtd_forms_button_create();
-   xtd_forms_control_set_location(button1, (xtd_drawing_point){10, 10});
+   xtd_forms_control_set_location(button1, (xtd_drawing_point){.x = 10, .y = 10});
    xtd_forms_control_set_parent(button1, form1);
    xtd_forms_control_set_text(button1, "&Click me");
    xtd_forms_control_set_click_event(button1, &on_button1_click, NULL);

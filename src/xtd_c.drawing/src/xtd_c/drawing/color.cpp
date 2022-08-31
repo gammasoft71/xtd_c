@@ -8,7 +8,7 @@ extern "C" {
   using namespace xtd::drawing;
 
   xtd_drawing_color to_xtd_drawing_color(const color& c) {
-    return xtd_drawing_color {c.a(), c.r(), c.g(), c.b(), static_cast<xtd_drawing_known_color>(c.to_known_color()), c.handle(), c.is_empty()};
+    return xtd_drawing_color {.a = c.a(), .r = c.r(), .g = c.g(), .b = c.b(), static_cast<xtd_drawing_known_color>(c.to_known_color()), c.handle(), c.is_empty()};
   }
   
   #define to_color_(c) \

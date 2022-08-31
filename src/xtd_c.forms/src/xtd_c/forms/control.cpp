@@ -18,7 +18,7 @@ extern "C" {
   
   xtd_drawing_point xtd_forms_control_get_location(const xtd_forms_control* control) {
     auto point = reinterpret_cast<const class control*>(control)->location();
-    return xtd_drawing_point {point.x(), point.y()};
+    return xtd_drawing_point {.x=point.x(), .y=point.y()};
   }
   
   xtd_forms_control* xtd_forms_control_set_location(xtd_forms_control* control, xtd_drawing_point point) {
@@ -40,6 +40,11 @@ extern "C" {
   
   xtd_forms_control* xtd_forms_control_reset_parent(xtd_forms_control* control) {
     reinterpret_cast<class control*>(control)->parent(nullptr);
+    return control;
+  }
+  
+  xtd_forms_control* xtd_forms_control_set_client_size(xtd_forms_control* control, xtd_drawing_size client_size) {
+    reinterpret_cast<class control*>(control)->client_size({client_size.width, client_size.height});
     return control;
   }
   
