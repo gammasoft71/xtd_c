@@ -1,6 +1,6 @@
 # xtd_c
 
-** xtd_c (pronounced "extend for c") is a C11 framework to create console (CLI), forms (GUI like WinForms) and tunit (unit tests like Microsoft Unit Testing Framework) applications on Microsoft Windows, Apple macOS, Linux, iOS and android (*).**
+**xtd_c (pronounced "extend for c") is a C11 framework to create console (CLI), forms (GUI like WinForms) and tunit (unit tests like Microsoft Unit Testing Framework) applications on Microsoft Windows, Apple macOS, Linux, iOS and android (*).**
 
 ![logo](https://github.com/gammasoft71/xtd_c/blob/main/docs/pictures/logo.png)
 
